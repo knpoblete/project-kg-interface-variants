@@ -1,0 +1,834 @@
+{
+  "participant_id": "P9",
+  "content_set": "C3",
+  "position": 3,
+  "variant": "B",
+  "role": {
+    "job_id": "job:data_engineering_lead",
+    "title": "Data Engineering Lead",
+    "sector": "Data Engineering",
+    "role_basis": "O*NET 15-1243.00 Database Architects, extended with a data-engineering-lead/people-management skill set",
+    "context_note": "Data engineering plus change management and coaching for leads; specific, not \"engineering in general\"."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Data Engineering Lead job ads.",
+    "based_on_chips": [
+      "Data Engineering Lead job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p9_c3_selected",
+      "title": "Coaching and Mentoring Engineering Leads",
+      "level": "Intermediate",
+      "duration_min": 110,
+      "updated": "2026-01",
+      "description": "Coaching and Mentoring Engineering Leads focuses on coaching and mentoring leads for people working toward a Data Engineering Lead role, through hands-on exercises and short review checkpoints. It also introduces cloud data platforms, enough to apply alongside coaching and mentoring leads in real Data Engineering Lead work. By the end, you'll be able to explain your approach to coaching and mentoring leads and show how cloud data platforms supports it.",
+      "learning_outcomes": [
+        "Applying coaching and mentoring leads to a real Data Engineering Lead scenario",
+        "Practicing coaching and mentoring leads through guided exercises",
+        "Getting a working introduction to cloud data platforms",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 50m · Updated Jan 2026",
+      "dur": "1h 50m",
+      "meta_no_duration": "Intermediate · Updated Jan 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:coaching_and_mentoring_leads",
+          "skill_name": "coaching and mentoring leads",
+          "teaches_confidence": 0.88,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:cloud_data_platforms",
+          "skill_name": "cloud data platforms",
+          "teaches_confidence": 0.53,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches coaching and mentoring leads, which comes up often in Data Engineering Lead job ads.",
+        "A": {
+          "panel_prose": "Coaching and mentoring leads comes up often in Data Engineering Lead job ads, and it's the main topic of this course. Cloud data platforms comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Engineering Lead job ads: coaching and mentoring leads is mentioned often.",
+              "report_ids": [
+                "P9-C3-main-requires"
+              ]
+            },
+            {
+              "text": "From Data Engineering Lead job ads: cloud data platforms is mentioned sometimes.",
+              "report_ids": [
+                "P9-C3-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: coaching and mentoring leads is the main topic; cloud data platforms is covered in part.",
+              "report_ids": [
+                "P9-C3-main-teaches",
+                "P9-C3-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches coaching and mentoring leads, which comes up often in Data Engineering Lead job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Engineering Lead"
+            },
+            {
+              "id": "skill:coaching_and_mentoring_leads",
+              "kind": "skill",
+              "label": "Coaching and mentoring leads",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:cloud_data_platforms",
+              "kind": "skill",
+              "label": "Cloud data platforms",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p9_c3_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:coaching_and_mentoring_leads",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Data Engineering Lead job ads",
+              "report_id": "P9-C3-main-requires"
+            },
+            {
+              "from": "skill:coaching_and_mentoring_leads",
+              "to": "course:p9_c3_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P9-C3-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:cloud_data_platforms",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Engineering Lead job ads",
+              "report_id": "P9-C3-secondary-requires"
+            },
+            {
+              "from": "skill:cloud_data_platforms",
+              "to": "course:p9_c3_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P9-C3-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Engineering Lead → Coaching and mentoring leads → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "coaching and mentoring leads",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "coaching and mentoring leads",
+                  "source_text": "Comes up often in Data Engineering Lead job ads",
+                  "report_id": "P9-C3-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "coaching and mentoring leads",
+                  "source_text": "From the course description",
+                  "report_id": "P9-C3-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "cloud data platforms",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "cloud data platforms",
+                  "source_text": "Comes up sometimes in Data Engineering Lead job ads",
+                  "report_id": "P9-C3-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "cloud data platforms",
+                  "source_text": "From the course description",
+                  "report_id": "P9-C3-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p9_c3_other_a",
+      "title": "ETL Design for Practitioners",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "ETL Design for Practitioners goes beyond the basics of etl design, for people already working toward a Data Engineering Lead role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in etl design and want to go further.",
+      "learning_outcomes": [
+        "Applying etl design to a real Data Engineering Lead scenario",
+        "Practicing etl design through guided exercises",
+        "Building a short etl design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:etl_design",
+          "skill_name": "etl design",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches etl design, which comes up often in Data Engineering Lead job ads.",
+        "A": {
+          "panel_prose": "Etl design comes up often in Data Engineering Lead job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From Data Engineering Lead job ads: etl design is mentioned often.",
+              "report_ids": [
+                "P9-C3-c3_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: etl design is main topic.",
+              "report_ids": [
+                "P9-C3-c3_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches etl design, which comes up often in Data Engineering Lead job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Engineering Lead"
+            },
+            {
+              "id": "skill:etl_design",
+              "kind": "skill",
+              "label": "Etl design",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p9_c3_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:etl_design",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Data Engineering Lead job ads",
+              "report_id": "P9-C3-c3_other_a-requires"
+            },
+            {
+              "from": "skill:etl_design",
+              "to": "course:p9_c3_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P9-C3-c3_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Engineering Lead → Etl design → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "etl design",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "etl design",
+                  "source_text": "Comes up often in Data Engineering Lead job ads",
+                  "report_id": "P9-C3-c3_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "etl design",
+                  "source_text": "From the course description",
+                  "report_id": "P9-C3-c3_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p9_c3_other_b",
+      "title": "Stakeholder Reporting Basics",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "Stakeholder Reporting Basics walks you through the basics of stakeholder reporting, built for people new to Data Engineering Lead work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of stakeholder reporting, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying stakeholder reporting to a real Data Engineering Lead scenario",
+        "Practicing stakeholder reporting through guided exercises",
+        "Building a short stakeholder reporting exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:stakeholder_reporting",
+          "skill_name": "stakeholder reporting",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches stakeholder reporting, which comes up sometimes in Data Engineering Lead job ads.",
+        "A": {
+          "panel_prose": "Stakeholder reporting comes up sometimes in Data Engineering Lead job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Engineering Lead job ads: stakeholder reporting is mentioned sometimes.",
+              "report_ids": [
+                "P9-C3-c3_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: stakeholder reporting is covered in part.",
+              "report_ids": [
+                "P9-C3-c3_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches stakeholder reporting, which comes up sometimes in Data Engineering Lead job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Engineering Lead"
+            },
+            {
+              "id": "skill:stakeholder_reporting",
+              "kind": "skill",
+              "label": "Stakeholder reporting",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p9_c3_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:stakeholder_reporting",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Engineering Lead job ads",
+              "report_id": "P9-C3-c3_other_b-requires"
+            },
+            {
+              "from": "skill:stakeholder_reporting",
+              "to": "course:p9_c3_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P9-C3-c3_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Engineering Lead → Stakeholder reporting → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "stakeholder reporting",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "stakeholder reporting",
+                  "source_text": "Comes up sometimes in Data Engineering Lead job ads",
+                  "report_id": "P9-C3-c3_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "stakeholder reporting",
+                  "source_text": "From the course description",
+                  "report_id": "P9-C3-c3_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p9_c3_other_c",
+      "title": "Budget Tracking for Data Teams in Brief",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "Budget Tracking for Data Teams in Brief is a short introduction to budget tracking for data teams for people moving toward a Data Engineering Lead role. You'll walk through the essential vocabulary and a few guided exercises that show budget tracking for data teams in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if budget tracking for data teams is new to you.",
+      "learning_outcomes": [
+        "Applying budget tracking for data teams to a real Data Engineering Lead scenario",
+        "Practicing budget tracking for data teams through guided exercises",
+        "Building a short budget tracking for data teams exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:budget_tracking_for_data_teams",
+          "skill_name": "budget tracking for data teams",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches budget tracking for data teams, which comes up sometimes in Data Engineering Lead job ads.",
+        "A": {
+          "panel_prose": "Budget tracking for data teams comes up sometimes in Data Engineering Lead job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Engineering Lead job ads: budget tracking for data teams is mentioned sometimes.",
+              "report_ids": [
+                "P9-C3-c3_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: budget tracking for data teams is covered in part.",
+              "report_ids": [
+                "P9-C3-c3_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches budget tracking for data teams, which comes up sometimes in Data Engineering Lead job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Engineering Lead"
+            },
+            {
+              "id": "skill:budget_tracking_for_data_teams",
+              "kind": "skill",
+              "label": "Budget tracking for data teams",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p9_c3_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:budget_tracking_for_data_teams",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Engineering Lead job ads",
+              "report_id": "P9-C3-c3_other_c-requires"
+            },
+            {
+              "from": "skill:budget_tracking_for_data_teams",
+              "to": "course:p9_c3_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P9-C3-c3_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Engineering Lead → Budget tracking for data teams → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "budget tracking for data teams",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "budget tracking for data teams",
+                  "source_text": "Comes up sometimes in Data Engineering Lead job ads",
+                  "report_id": "P9-C3-c3_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "budget tracking for data teams",
+                  "source_text": "From the course description",
+                  "report_id": "P9-C3-c3_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p9_c3_selected",
+  "course_score": 0.9849,
+  "paths": [
+    {
+      "skill_id": "skill:coaching_and_mentoring_leads",
+      "skill_name": "coaching and mentoring leads",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.88,
+      "requires_report_id": "P9-C3-main-requires",
+      "teaches_report_id": "P9-C3-main-teaches",
+      "evidence_span": {
+        "text": "coaching and mentoring leads",
+        "start": 52,
+        "end": 80
+      }
+    },
+    {
+      "skill_id": "skill:cloud_data_platforms",
+      "skill_name": "cloud data platforms",
+      "which": "secondary",
+      "requires_confidence": 0.53,
+      "teaches_confidence": 0.53,
+      "requires_report_id": "P9-C3-secondary-requires",
+      "teaches_report_id": "P9-C3-secondary-teaches",
+      "evidence_span": {
+        "text": "cloud data platforms",
+        "start": 213,
+        "end": 233
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches coaching and mentoring leads, which comes up often in Data Engineering Lead job ads.",
+    "A": {
+      "panel_prose": "Coaching and mentoring leads comes up often in Data Engineering Lead job ads, and it's the main topic of this course. Cloud data platforms comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From Data Engineering Lead job ads: coaching and mentoring leads is mentioned often.",
+          "report_ids": [
+            "P9-C3-main-requires"
+          ]
+        },
+        {
+          "text": "From Data Engineering Lead job ads: cloud data platforms is mentioned sometimes.",
+          "report_ids": [
+            "P9-C3-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: coaching and mentoring leads is the main topic; cloud data platforms is covered in part.",
+          "report_ids": [
+            "P9-C3-main-teaches",
+            "P9-C3-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches coaching and mentoring leads, which comes up often in Data Engineering Lead job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "Data Engineering Lead"
+        },
+        {
+          "id": "skill:coaching_and_mentoring_leads",
+          "kind": "skill",
+          "label": "Coaching and mentoring leads",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:cloud_data_platforms",
+          "kind": "skill",
+          "label": "Cloud data platforms",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p9_c3_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:coaching_and_mentoring_leads",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From Data Engineering Lead job ads",
+          "report_id": "P9-C3-main-requires"
+        },
+        {
+          "from": "skill:coaching_and_mentoring_leads",
+          "to": "course:p9_c3_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P9-C3-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:cloud_data_platforms",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From Data Engineering Lead job ads",
+          "report_id": "P9-C3-secondary-requires"
+        },
+        {
+          "from": "skill:cloud_data_platforms",
+          "to": "course:p9_c3_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P9-C3-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "Data Engineering Lead → Coaching and mentoring leads → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "coaching and mentoring leads",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "coaching and mentoring leads",
+              "source_text": "Comes up often in Data Engineering Lead job ads",
+              "report_id": "P9-C3-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "coaching and mentoring leads",
+              "source_text": "From the course description",
+              "report_id": "P9-C3-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "cloud data platforms",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "cloud data platforms",
+              "source_text": "Comes up sometimes in Data Engineering Lead job ads",
+              "report_id": "P9-C3-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "cloud data platforms",
+              "source_text": "From the course description",
+              "report_id": "P9-C3-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p9_c3_alt_a",
+      "title": "Coaching and Mentoring Leads Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Coaching and Mentoring Leads Essentials is a short introduction to coaching and mentoring leads for people moving toward a Data Engineering Lead role. You'll walk through the essential vocabulary and a few guided exercises that show coaching and mentoring leads in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if coaching and mentoring leads is new to you.",
+      "learning_outcomes": [
+        "Applying coaching and mentoring leads to a real Data Engineering Lead scenario",
+        "Practicing coaching and mentoring leads through guided exercises",
+        "Building a short coaching and mentoring leads exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:coaching_and_mentoring_leads",
+          "skill_name": "coaching and mentoring leads",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p9_c3_alt_b",
+      "title": "Advanced Coaching and Mentoring Leads Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Coaching and Mentoring Leads Techniques is a focused course on coaching and mentoring leads for people already working toward a Data Engineering Lead role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying coaching and mentoring leads on your own.",
+      "learning_outcomes": [
+        "Applying coaching and mentoring leads to a real Data Engineering Lead scenario",
+        "Practicing coaching and mentoring leads through guided exercises",
+        "Building a short coaching and mentoring leads exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:coaching_and_mentoring_leads",
+          "skill_name": "coaching and mentoring leads",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}

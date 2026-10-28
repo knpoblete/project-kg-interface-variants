@@ -1,0 +1,149 @@
+{
+  "participant_id": "W0",
+  "courses": [
+    {
+      "id": "course:w0_spreadsheet_basics_getting_started",
+      "title": "Spreadsheet Basics: Getting Started",
+      "level": "Beginner",
+      "duration_min": 45,
+      "updated": "2026-01",
+      "description": "Spreadsheet Basics: Getting Started is a short, practical course covering navigating a spreadsheet, entering data, and saving your work. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Finding your way around the spreadsheet interface",
+        "Entering and editing data",
+        "Saving and naming files clearly",
+        "Avoiding a few common beginner mistakes"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_formulas_and_functions_for_beginners",
+      "title": "Formulas and Functions for Beginners",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-12",
+      "description": "Formulas and Functions for Beginners is a short, practical course covering writing simple formulas and using common functions like SUM and AVERAGE. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Writing your first formula",
+        "Using SUM, AVERAGE and COUNT",
+        "Copying formulas across cells safely",
+        "Spotting and fixing formula errors"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_organising_data_with_sorting_and_filtering",
+      "title": "Organising Data with Sorting and Filtering",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-11",
+      "description": "Organising Data with Sorting and Filtering is a short, practical course covering sorting rows, filtering data, and keeping a sheet tidy. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Sorting rows by one or more columns",
+        "Filtering to find what you need",
+        "Keeping headers and data ranges tidy",
+        "Undoing a sort or filter safely"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_introduction_to_pivot_tables",
+      "title": "Introduction to Pivot Tables",
+      "level": "Intermediate",
+      "duration_min": 70,
+      "updated": "2026-02",
+      "description": "Introduction to Pivot Tables is a short, practical course covering summarising data with pivot tables. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Building a first pivot table",
+        "Choosing rows, columns and values",
+        "Summarising totals and counts",
+        "Refreshing a pivot table after data changes"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_charts_and_visual_summaries",
+      "title": "Charts and Visual Summaries",
+      "level": "Intermediate",
+      "duration_min": 65,
+      "updated": "2025-10",
+      "description": "Charts and Visual Summaries is a short, practical course covering turning data into simple charts and visual summaries. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Choosing a chart type for your data",
+        "Building a basic chart",
+        "Labelling axes and legends clearly",
+        "Avoiding common chart mistakes"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_vlookup_and_cross_referencing_data",
+      "title": "VLOOKUP and Cross-Referencing Data",
+      "level": "Intermediate",
+      "duration_min": 80,
+      "updated": "2026-03",
+      "description": "VLOOKUP and Cross-Referencing Data is a short, practical course covering looking up and cross-referencing data across sheets with VLOOKUP. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Understanding how VLOOKUP works",
+        "Looking up values across sheets",
+        "Avoiding common VLOOKUP errors",
+        "Trying a simpler alternative function"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_conditional_formatting_essentials",
+      "title": "Conditional Formatting Essentials",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "Conditional Formatting Essentials is a short, practical course covering highlighting data automatically with conditional formatting. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Highlighting values above or below a threshold",
+        "Using colour scales and data bars",
+        "Building a simple custom rule",
+        "Removing or editing existing rules"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    },
+    {
+      "id": "course:w0_cleaning_messy_spreadsheet_data",
+      "title": "Cleaning Messy Spreadsheet Data",
+      "level": "Intermediate",
+      "duration_min": 75,
+      "updated": "2025-08",
+      "description": "Cleaning Messy Spreadsheet Data is a short, practical course covering cleaning up messy data: removing duplicates, fixing formats, and more. You'll follow along with example spreadsheets and practise on your own data, with no prior spreadsheet experience assumed. Expect brief lessons and small hands-on exercises rather than a long project, so you can fit it into a short break and still come away with something you can use right away.",
+      "learning_outcomes": [
+        "Removing duplicate rows",
+        "Fixing inconsistent text and number formats",
+        "Splitting and combining columns",
+        "Checking your cleaned data for errors"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null
+    }
+  ]
+}

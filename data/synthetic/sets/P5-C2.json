@@ -1,0 +1,834 @@
+{
+  "participant_id": "P5",
+  "content_set": "C2",
+  "position": 2,
+  "variant": "C",
+  "role": {
+    "job_id": "job:architectural_visualiser",
+    "title": "Architectural Visualiser",
+    "sector": "Architecture & Visualization",
+    "role_basis": "O*NET 17-3011.01 Architectural Drafters, extended with a 3D-visualization/rendering skill set",
+    "context_note": "Rendering and visualisation, with project management as an adjacent skill. No data science."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Architectural Visualiser job ads.",
+    "based_on_chips": [
+      "Architectural Visualiser job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p5_c2_selected",
+      "title": "Architectural Visualization Techniques",
+      "level": "Intermediate",
+      "duration_min": 130,
+      "updated": "2026-03",
+      "description": "Architectural Visualization Techniques takes you from the basics of architectural visualization to applying it on a realistic Architectural Visualiser scenario, through short lessons and hands-on practice. Along the way, you'll also get a practical introduction to cad modeling, enough to use it alongside architectural visualization day to day. Expect a practical course, not a lecture-heavy one.",
+      "learning_outcomes": [
+        "Applying architectural visualization to a real Architectural Visualiser scenario",
+        "Practicing architectural visualization through guided exercises",
+        "Getting a working introduction to cad modeling",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 2h 10m · Updated Mar 2026",
+      "dur": "2h 10m",
+      "meta_no_duration": "Intermediate · Updated Mar 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:architectural_visualization",
+          "skill_name": "architectural visualization",
+          "teaches_confidence": 0.89,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:cad_modeling",
+          "skill_name": "cad modeling",
+          "teaches_confidence": 0.54,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches architectural visualization, which comes up often in Architectural Visualiser job ads.",
+        "A": {
+          "panel_prose": "Architectural visualization comes up often in Architectural Visualiser job ads, and it's the main topic of this course. Cad modeling comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Architectural Visualiser job ads: architectural visualization is mentioned often.",
+              "report_ids": [
+                "P5-C2-main-requires"
+              ]
+            },
+            {
+              "text": "From Architectural Visualiser job ads: cad modeling is mentioned sometimes.",
+              "report_ids": [
+                "P5-C2-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: architectural visualization is the main topic; cad modeling is covered in part.",
+              "report_ids": [
+                "P5-C2-main-teaches",
+                "P5-C2-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches architectural visualization, which comes up often in Architectural Visualiser job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Architectural Visualiser"
+            },
+            {
+              "id": "skill:architectural_visualization",
+              "kind": "skill",
+              "label": "Architectural visualization",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:cad_modeling",
+              "kind": "skill",
+              "label": "Cad modeling",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p5_c2_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:architectural_visualization",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Architectural Visualiser job ads",
+              "report_id": "P5-C2-main-requires"
+            },
+            {
+              "from": "skill:architectural_visualization",
+              "to": "course:p5_c2_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:cad_modeling",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Architectural Visualiser job ads",
+              "report_id": "P5-C2-secondary-requires"
+            },
+            {
+              "from": "skill:cad_modeling",
+              "to": "course:p5_c2_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Architectural Visualiser → Architectural visualization → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "architectural visualization",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "architectural visualization",
+                  "source_text": "Comes up often in Architectural Visualiser job ads",
+                  "report_id": "P5-C2-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "architectural visualization",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "cad modeling",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "cad modeling",
+                  "source_text": "Comes up sometimes in Architectural Visualiser job ads",
+                  "report_id": "P5-C2-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "cad modeling",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p5_c2_other_a",
+      "title": "Applying Animation Basics",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "Applying Animation Basics goes beyond the basics of animation basics, for people already working toward a Architectural Visualiser role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in animation basics and want to go further.",
+      "learning_outcomes": [
+        "Applying animation basics to a real Architectural Visualiser scenario",
+        "Practicing animation basics through guided exercises",
+        "Building a short animation basics exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:animation_basics",
+          "skill_name": "animation basics",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches animation basics, which comes up often in Architectural Visualiser job ads.",
+        "A": {
+          "panel_prose": "Animation basics comes up often in Architectural Visualiser job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From Architectural Visualiser job ads: animation basics is mentioned often.",
+              "report_ids": [
+                "P5-C2-c2_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: animation basics is main topic.",
+              "report_ids": [
+                "P5-C2-c2_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches animation basics, which comes up often in Architectural Visualiser job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Architectural Visualiser"
+            },
+            {
+              "id": "skill:animation_basics",
+              "kind": "skill",
+              "label": "Animation basics",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p5_c2_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:animation_basics",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Architectural Visualiser job ads",
+              "report_id": "P5-C2-c2_other_a-requires"
+            },
+            {
+              "from": "skill:animation_basics",
+              "to": "course:p5_c2_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-c2_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Architectural Visualiser → Animation basics → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "animation basics",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "animation basics",
+                  "source_text": "Comes up often in Architectural Visualiser job ads",
+                  "report_id": "P5-C2-c2_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "animation basics",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-c2_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p5_c2_other_b",
+      "title": "Getting Started with Site Documentation",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "Getting Started with Site Documentation is a short introduction to site documentation for people moving toward a Architectural Visualiser role. You'll walk through the essential vocabulary and a few guided exercises that show site documentation in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if site documentation is new to you.",
+      "learning_outcomes": [
+        "Applying site documentation to a real Architectural Visualiser scenario",
+        "Practicing site documentation through guided exercises",
+        "Building a short site documentation exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:site_documentation",
+          "skill_name": "site documentation",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches site documentation, which comes up sometimes in Architectural Visualiser job ads.",
+        "A": {
+          "panel_prose": "Site documentation comes up sometimes in Architectural Visualiser job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Architectural Visualiser job ads: site documentation is mentioned sometimes.",
+              "report_ids": [
+                "P5-C2-c2_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: site documentation is covered in part.",
+              "report_ids": [
+                "P5-C2-c2_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches site documentation, which comes up sometimes in Architectural Visualiser job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Architectural Visualiser"
+            },
+            {
+              "id": "skill:site_documentation",
+              "kind": "skill",
+              "label": "Site documentation",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p5_c2_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:site_documentation",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Architectural Visualiser job ads",
+              "report_id": "P5-C2-c2_other_b-requires"
+            },
+            {
+              "from": "skill:site_documentation",
+              "to": "course:p5_c2_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-c2_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Architectural Visualiser → Site documentation → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "site documentation",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "site documentation",
+                  "source_text": "Comes up sometimes in Architectural Visualiser job ads",
+                  "report_id": "P5-C2-c2_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "site documentation",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-c2_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p5_c2_other_c",
+      "title": "A Short Guide to Material Specification",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "A Short Guide to Material Specification is a short introduction to material specification for people moving toward a Architectural Visualiser role. You'll walk through the essential vocabulary and a few guided exercises that show material specification in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if material specification is new to you.",
+      "learning_outcomes": [
+        "Applying material specification to a real Architectural Visualiser scenario",
+        "Practicing material specification through guided exercises",
+        "Building a short material specification exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:material_specification",
+          "skill_name": "material specification",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches material specification, which comes up sometimes in Architectural Visualiser job ads.",
+        "A": {
+          "panel_prose": "Material specification comes up sometimes in Architectural Visualiser job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Architectural Visualiser job ads: material specification is mentioned sometimes.",
+              "report_ids": [
+                "P5-C2-c2_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: material specification is covered in part.",
+              "report_ids": [
+                "P5-C2-c2_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches material specification, which comes up sometimes in Architectural Visualiser job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Architectural Visualiser"
+            },
+            {
+              "id": "skill:material_specification",
+              "kind": "skill",
+              "label": "Material specification",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p5_c2_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:material_specification",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Architectural Visualiser job ads",
+              "report_id": "P5-C2-c2_other_c-requires"
+            },
+            {
+              "from": "skill:material_specification",
+              "to": "course:p5_c2_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-c2_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Architectural Visualiser → Material specification → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "material specification",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "material specification",
+                  "source_text": "Comes up sometimes in Architectural Visualiser job ads",
+                  "report_id": "P5-C2-c2_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "material specification",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-c2_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p5_c2_selected",
+  "course_score": 1.0036,
+  "paths": [
+    {
+      "skill_id": "skill:architectural_visualization",
+      "skill_name": "architectural visualization",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.89,
+      "requires_report_id": "P5-C2-main-requires",
+      "teaches_report_id": "P5-C2-main-teaches",
+      "evidence_span": {
+        "text": "architectural visualization",
+        "start": 68,
+        "end": 95
+      }
+    },
+    {
+      "skill_id": "skill:cad_modeling",
+      "skill_name": "cad modeling",
+      "which": "secondary",
+      "requires_confidence": 0.54,
+      "teaches_confidence": 0.54,
+      "requires_report_id": "P5-C2-secondary-requires",
+      "teaches_report_id": "P5-C2-secondary-teaches",
+      "evidence_span": {
+        "text": "cad modeling",
+        "start": 265,
+        "end": 277
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches architectural visualization, which comes up often in Architectural Visualiser job ads.",
+    "A": {
+      "panel_prose": "Architectural visualization comes up often in Architectural Visualiser job ads, and it's the main topic of this course. Cad modeling comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From Architectural Visualiser job ads: architectural visualization is mentioned often.",
+          "report_ids": [
+            "P5-C2-main-requires"
+          ]
+        },
+        {
+          "text": "From Architectural Visualiser job ads: cad modeling is mentioned sometimes.",
+          "report_ids": [
+            "P5-C2-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: architectural visualization is the main topic; cad modeling is covered in part.",
+          "report_ids": [
+            "P5-C2-main-teaches",
+            "P5-C2-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches architectural visualization, which comes up often in Architectural Visualiser job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "Architectural Visualiser"
+        },
+        {
+          "id": "skill:architectural_visualization",
+          "kind": "skill",
+          "label": "Architectural visualization",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:cad_modeling",
+          "kind": "skill",
+          "label": "Cad modeling",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p5_c2_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:architectural_visualization",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From Architectural Visualiser job ads",
+          "report_id": "P5-C2-main-requires"
+        },
+        {
+          "from": "skill:architectural_visualization",
+          "to": "course:p5_c2_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P5-C2-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:cad_modeling",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From Architectural Visualiser job ads",
+          "report_id": "P5-C2-secondary-requires"
+        },
+        {
+          "from": "skill:cad_modeling",
+          "to": "course:p5_c2_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P5-C2-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "Architectural Visualiser → Architectural visualization → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "architectural visualization",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "architectural visualization",
+              "source_text": "Comes up often in Architectural Visualiser job ads",
+              "report_id": "P5-C2-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "architectural visualization",
+              "source_text": "From the course description",
+              "report_id": "P5-C2-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "cad modeling",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "cad modeling",
+              "source_text": "Comes up sometimes in Architectural Visualiser job ads",
+              "report_id": "P5-C2-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "cad modeling",
+              "source_text": "From the course description",
+              "report_id": "P5-C2-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p5_c2_alt_a",
+      "title": "Architectural Visualization Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Architectural Visualization Essentials is a short introduction to architectural visualization for people moving toward a Architectural Visualiser role. You'll walk through the essential vocabulary and a few guided exercises that show architectural visualization in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if architectural visualization is new to you.",
+      "learning_outcomes": [
+        "Applying architectural visualization to a real Architectural Visualiser scenario",
+        "Practicing architectural visualization through guided exercises",
+        "Building a short architectural visualization exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:architectural_visualization",
+          "skill_name": "architectural visualization",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p5_c2_alt_b",
+      "title": "Advanced Architectural Visualization Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Architectural Visualization Techniques is a focused course on architectural visualization for people already working toward a Architectural Visualiser role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying architectural visualization on your own.",
+      "learning_outcomes": [
+        "Applying architectural visualization to a real Architectural Visualiser scenario",
+        "Practicing architectural visualization through guided exercises",
+        "Building a short architectural visualization exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:architectural_visualization",
+          "skill_name": "architectural visualization",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Blocklist for scripts/validate.py's check_blocklist.
+#
+# Every entry below is checked (case-insensitive, word-boundary) against all
+# participant-facing strings and the review sheets. Nothing in this starter
+# list should ever legitimately appear in synthetic content -- all course
+# titles/providers are fictional per spec §4.2 ("provider" is always the
+# literal string "[Learning platform]").
+#
+# Katherine: please extend this with any real participant names, employers,
+# or other identifying details from the Session 1 transcripts that must
+# never leak into Session 2 materials. Nothing in config/participants.yaml's
+# context_note fields is itself participant-facing, but double check before
+# reusing that text elsewhere.
+
+Coursera
+Udemy
+edX
+LinkedIn Learning
+Pluralsight
+Skillshare
+Khan Academy
+Udacity
+Google
+Microsoft
+Amazon
+Meta
+Apple
+PMP
+CSM
+Scrum Master
+AWS Certified
+Google Certified

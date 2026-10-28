@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Preview a participant</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="site">
+    <div class="header-inner">
+      <span class="brand">[Learning platform]</span>
+    </div>
+  </header>
+
+  <main class="picker">
+    <div class="picker-head">
+      <span class="step">Test harness</span>
+      <h1>Preview a participant</h1>
+      <p>Pick one of the 9 Session 1 participants, the D0 demo, or the W0 warm-up (no explanations), to
+      preview the synthetic data in <code>data/synthetic/</code>. This page isn't part of the real Session 2
+      flow — it's a test entry point so you can jump straight to any role or content set.</p>
+    </div>
+
+    <div id="role-grid" class="role-grid">
+      <p class="simple-note">Loading participants…</p>
+    </div>
+  </main>
+</div>
+
+<script>
+async function init() {
+  const grid = document.getElementById("role-grid");
+  try {
+    const summaries = await fetchRoleSummaries();
+    grid.innerHTML = summaries
+      .map(
+        (s) => `
+      <a class="role-card" href="app.html?participant=${encodeURIComponent(s.participantId)}">
+        <span class="pid">${s.participantId}</span>
+        <span class="name">${escapeHtml(s.roleTitle)}</span>
+        <span class="skills">${s.topSkills.length ? `Common skills: ${s.topSkills.map(escapeHtml).join(", ")}` : "Spreadsheet basics, no explanations"}</span>
+      </a>`
+      )
+      .join("");
+  } catch (err) {
+    grid.innerHTML = `<p class="simple-note">Couldn't load participant data: ${escapeHtml(String(err.message || err))}.
+      Make sure you're viewing this over http:// (see prototype/README.md) and that
+      <code>data/synthetic/</code> has been generated (<code>python3 scripts/generate.py</code>).</p>`;
+  }
+}
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+init();
+</script>
+</body>
+</html>

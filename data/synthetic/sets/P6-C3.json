@@ -1,0 +1,834 @@
+{
+  "participant_id": "P6",
+  "content_set": "C3",
+  "position": 3,
+  "variant": "B",
+  "role": {
+    "job_id": "job:hr_manager",
+    "title": "HR Manager",
+    "sector": "Human Resources",
+    "role_basis": "O*NET 11-3121.00 Human Resources Managers / ESCO 'human resources manager'",
+    "context_note": "Human resource management and recruitment."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in HR Manager job ads.",
+    "based_on_chips": [
+      "HR Manager job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p6_c3_selected",
+      "title": "Employee Relations in Practice",
+      "level": "Intermediate",
+      "duration_min": 110,
+      "updated": "2026-01",
+      "description": "Employee Relations in Practice takes you from the basics of employee relations to applying it on a realistic HR Manager scenario, through short lessons and hands-on practice. Along the way, you'll also get a practical introduction to onboarding design, enough to use it alongside employee relations day to day. Expect a practical course, not a lecture-heavy one.",
+      "learning_outcomes": [
+        "Applying employee relations to a real HR Manager scenario",
+        "Practicing employee relations through guided exercises",
+        "Getting a working introduction to onboarding design",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 50m · Updated Jan 2026",
+      "dur": "1h 50m",
+      "meta_no_duration": "Intermediate · Updated Jan 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:employee_relations",
+          "skill_name": "employee relations",
+          "teaches_confidence": 0.88,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:onboarding_design",
+          "skill_name": "onboarding design",
+          "teaches_confidence": 0.53,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches employee relations, which comes up often in HR Manager job ads.",
+        "A": {
+          "panel_prose": "Employee relations comes up often in HR Manager job ads, and it's the main topic of this course. Onboarding design comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From HR Manager job ads: employee relations is mentioned often.",
+              "report_ids": [
+                "P6-C3-main-requires"
+              ]
+            },
+            {
+              "text": "From HR Manager job ads: onboarding design is mentioned sometimes.",
+              "report_ids": [
+                "P6-C3-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: employee relations is the main topic; onboarding design is covered in part.",
+              "report_ids": [
+                "P6-C3-main-teaches",
+                "P6-C3-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches employee relations, which comes up often in HR Manager job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "HR Manager"
+            },
+            {
+              "id": "skill:employee_relations",
+              "kind": "skill",
+              "label": "Employee relations",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:onboarding_design",
+              "kind": "skill",
+              "label": "Onboarding design",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p6_c3_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:employee_relations",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From HR Manager job ads",
+              "report_id": "P6-C3-main-requires"
+            },
+            {
+              "from": "skill:employee_relations",
+              "to": "course:p6_c3_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P6-C3-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:onboarding_design",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From HR Manager job ads",
+              "report_id": "P6-C3-secondary-requires"
+            },
+            {
+              "from": "skill:onboarding_design",
+              "to": "course:p6_c3_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P6-C3-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "HR Manager → Employee relations → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "employee relations",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "employee relations",
+                  "source_text": "Comes up often in HR Manager job ads",
+                  "report_id": "P6-C3-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "employee relations",
+                  "source_text": "From the course description",
+                  "report_id": "P6-C3-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "onboarding design",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "onboarding design",
+                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "report_id": "P6-C3-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "onboarding design",
+                  "source_text": "From the course description",
+                  "report_id": "P6-C3-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p6_c3_other_a",
+      "title": "Diversity and Inclusion Practices for Practitioners",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "Diversity and Inclusion Practices for Practitioners is a focused course on diversity and inclusion practices for people already working toward a HR Manager role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying diversity and inclusion practices on your own.",
+      "learning_outcomes": [
+        "Applying diversity and inclusion practices to a real HR Manager scenario",
+        "Practicing diversity and inclusion practices through guided exercises",
+        "Building a short diversity and inclusion practices exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:diversity_and_inclusion_practices",
+          "skill_name": "diversity and inclusion practices",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches diversity and inclusion practices, which comes up often in HR Manager job ads.",
+        "A": {
+          "panel_prose": "Diversity and inclusion practices comes up often in HR Manager job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From HR Manager job ads: diversity and inclusion practices is mentioned often.",
+              "report_ids": [
+                "P6-C3-c3_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: diversity and inclusion practices is main topic.",
+              "report_ids": [
+                "P6-C3-c3_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches diversity and inclusion practices, which comes up often in HR Manager job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "HR Manager"
+            },
+            {
+              "id": "skill:diversity_and_inclusion_practices",
+              "kind": "skill",
+              "label": "Diversity and inclusion practices",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p6_c3_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:diversity_and_inclusion_practices",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From HR Manager job ads",
+              "report_id": "P6-C3-c3_other_a-requires"
+            },
+            {
+              "from": "skill:diversity_and_inclusion_practices",
+              "to": "course:p6_c3_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P6-C3-c3_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "HR Manager → Diversity and inclusion practices → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "diversity and inclusion practices",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "diversity and inclusion practices",
+                  "source_text": "Comes up often in HR Manager job ads",
+                  "report_id": "P6-C3-c3_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "diversity and inclusion practices",
+                  "source_text": "From the course description",
+                  "report_id": "P6-C3-c3_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p6_c3_other_b",
+      "title": "HR Analytics Basics",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "HR Analytics Basics walks you through the basics of hr analytics, built for people new to HR Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of hr analytics, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying hr analytics to a real HR Manager scenario",
+        "Practicing hr analytics through guided exercises",
+        "Building a short hr analytics exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:hr_analytics",
+          "skill_name": "hr analytics",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches hr analytics, which comes up sometimes in HR Manager job ads.",
+        "A": {
+          "panel_prose": "Hr analytics comes up sometimes in HR Manager job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From HR Manager job ads: hr analytics is mentioned sometimes.",
+              "report_ids": [
+                "P6-C3-c3_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: hr analytics is covered in part.",
+              "report_ids": [
+                "P6-C3-c3_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches hr analytics, which comes up sometimes in HR Manager job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "HR Manager"
+            },
+            {
+              "id": "skill:hr_analytics",
+              "kind": "skill",
+              "label": "Hr analytics",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p6_c3_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:hr_analytics",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From HR Manager job ads",
+              "report_id": "P6-C3-c3_other_b-requires"
+            },
+            {
+              "from": "skill:hr_analytics",
+              "to": "course:p6_c3_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P6-C3-c3_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "HR Manager → Hr analytics → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "hr analytics",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "hr analytics",
+                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "report_id": "P6-C3-c3_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "hr analytics",
+                  "source_text": "From the course description",
+                  "report_id": "P6-C3-c3_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p6_c3_other_c",
+      "title": "Employee Engagement Surveys in Brief",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "Employee Engagement Surveys in Brief walks you through the basics of employee engagement surveys, built for people new to HR Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of employee engagement surveys, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying employee engagement surveys to a real HR Manager scenario",
+        "Practicing employee engagement surveys through guided exercises",
+        "Building a short employee engagement surveys exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:employee_engagement_surveys",
+          "skill_name": "employee engagement surveys",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches employee engagement surveys, which comes up sometimes in HR Manager job ads.",
+        "A": {
+          "panel_prose": "Employee engagement surveys comes up sometimes in HR Manager job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From HR Manager job ads: employee engagement surveys is mentioned sometimes.",
+              "report_ids": [
+                "P6-C3-c3_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: employee engagement surveys is covered in part.",
+              "report_ids": [
+                "P6-C3-c3_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches employee engagement surveys, which comes up sometimes in HR Manager job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "HR Manager"
+            },
+            {
+              "id": "skill:employee_engagement_surveys",
+              "kind": "skill",
+              "label": "Employee engagement surveys",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p6_c3_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:employee_engagement_surveys",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From HR Manager job ads",
+              "report_id": "P6-C3-c3_other_c-requires"
+            },
+            {
+              "from": "skill:employee_engagement_surveys",
+              "to": "course:p6_c3_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P6-C3-c3_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "HR Manager → Employee engagement surveys → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "employee engagement surveys",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "employee engagement surveys",
+                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "report_id": "P6-C3-c3_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "employee engagement surveys",
+                  "source_text": "From the course description",
+                  "report_id": "P6-C3-c3_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p6_c3_selected",
+  "course_score": 0.9849,
+  "paths": [
+    {
+      "skill_id": "skill:employee_relations",
+      "skill_name": "employee relations",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.88,
+      "requires_report_id": "P6-C3-main-requires",
+      "teaches_report_id": "P6-C3-main-teaches",
+      "evidence_span": {
+        "text": "employee relations",
+        "start": 60,
+        "end": 78
+      }
+    },
+    {
+      "skill_id": "skill:onboarding_design",
+      "skill_name": "onboarding design",
+      "which": "secondary",
+      "requires_confidence": 0.53,
+      "teaches_confidence": 0.53,
+      "requires_report_id": "P6-C3-secondary-requires",
+      "teaches_report_id": "P6-C3-secondary-teaches",
+      "evidence_span": {
+        "text": "onboarding design",
+        "start": 234,
+        "end": 251
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches employee relations, which comes up often in HR Manager job ads.",
+    "A": {
+      "panel_prose": "Employee relations comes up often in HR Manager job ads, and it's the main topic of this course. Onboarding design comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From HR Manager job ads: employee relations is mentioned often.",
+          "report_ids": [
+            "P6-C3-main-requires"
+          ]
+        },
+        {
+          "text": "From HR Manager job ads: onboarding design is mentioned sometimes.",
+          "report_ids": [
+            "P6-C3-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: employee relations is the main topic; onboarding design is covered in part.",
+          "report_ids": [
+            "P6-C3-main-teaches",
+            "P6-C3-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches employee relations, which comes up often in HR Manager job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "HR Manager"
+        },
+        {
+          "id": "skill:employee_relations",
+          "kind": "skill",
+          "label": "Employee relations",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:onboarding_design",
+          "kind": "skill",
+          "label": "Onboarding design",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p6_c3_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:employee_relations",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From HR Manager job ads",
+          "report_id": "P6-C3-main-requires"
+        },
+        {
+          "from": "skill:employee_relations",
+          "to": "course:p6_c3_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P6-C3-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:onboarding_design",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From HR Manager job ads",
+          "report_id": "P6-C3-secondary-requires"
+        },
+        {
+          "from": "skill:onboarding_design",
+          "to": "course:p6_c3_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P6-C3-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "HR Manager → Employee relations → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "employee relations",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "employee relations",
+              "source_text": "Comes up often in HR Manager job ads",
+              "report_id": "P6-C3-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "employee relations",
+              "source_text": "From the course description",
+              "report_id": "P6-C3-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "onboarding design",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "onboarding design",
+              "source_text": "Comes up sometimes in HR Manager job ads",
+              "report_id": "P6-C3-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "onboarding design",
+              "source_text": "From the course description",
+              "report_id": "P6-C3-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p6_c3_alt_a",
+      "title": "Employee Relations Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Employee Relations Essentials is a short introduction to employee relations for people moving toward a HR Manager role. You'll walk through the essential vocabulary and a few guided exercises that show employee relations in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if employee relations is new to you.",
+      "learning_outcomes": [
+        "Applying employee relations to a real HR Manager scenario",
+        "Practicing employee relations through guided exercises",
+        "Building a short employee relations exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:employee_relations",
+          "skill_name": "employee relations",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p6_c3_alt_b",
+      "title": "Advanced Employee Relations Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Employee Relations Techniques is a focused course on employee relations for people already working toward a HR Manager role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying employee relations on your own.",
+      "learning_outcomes": [
+        "Applying employee relations to a real HR Manager scenario",
+        "Practicing employee relations through guided exercises",
+        "Building a short employee relations exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:employee_relations",
+          "skill_name": "employee relations",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}

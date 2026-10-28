@@ -1,0 +1,834 @@
+{
+  "participant_id": "P7",
+  "content_set": "C2",
+  "position": 2,
+  "variant": "B",
+  "role": {
+    "job_id": "job:product_designer",
+    "title": "Product Designer",
+    "sector": "Design",
+    "role_basis": "ESCO 'product designer' occupation / O*NET 27-1021.00 Commercial and Industrial Designers (UX-leaning profile)",
+    "context_note": "Product and UX design. No retail-oriented content."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Product Designer job ads.",
+    "based_on_chips": [
+      "Product Designer job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p7_c2_selected",
+      "title": "Interaction Design for Product Designers",
+      "level": "Intermediate",
+      "duration_min": 130,
+      "updated": "2026-03",
+      "description": "By the end of Interaction Design for Product Designers, you'll be able to apply interaction design confidently in Product Designer work, with a working sense of where design critique fits alongside it. The course moves from core interaction design technique through a few applied exercises, with a lighter look at design critique woven in throughout.",
+      "learning_outcomes": [
+        "Applying interaction design to a real Product Designer scenario",
+        "Practicing interaction design through guided exercises",
+        "Getting a working introduction to design critique",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 2h 10m · Updated Mar 2026",
+      "dur": "2h 10m",
+      "meta_no_duration": "Intermediate · Updated Mar 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:interaction_design",
+          "skill_name": "interaction design",
+          "teaches_confidence": 0.89,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:design_critique",
+          "skill_name": "design critique",
+          "teaches_confidence": 0.54,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches interaction design, which comes up often in Product Designer job ads.",
+        "A": {
+          "panel_prose": "Interaction design comes up often in Product Designer job ads, and it's the main topic of this course. Design critique comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Product Designer job ads: interaction design is mentioned often.",
+              "report_ids": [
+                "P7-C2-main-requires"
+              ]
+            },
+            {
+              "text": "From Product Designer job ads: design critique is mentioned sometimes.",
+              "report_ids": [
+                "P7-C2-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: interaction design is the main topic; design critique is covered in part.",
+              "report_ids": [
+                "P7-C2-main-teaches",
+                "P7-C2-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches interaction design, which comes up often in Product Designer job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Product Designer"
+            },
+            {
+              "id": "skill:interaction_design",
+              "kind": "skill",
+              "label": "Interaction design",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:design_critique",
+              "kind": "skill",
+              "label": "Design critique",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p7_c2_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:interaction_design",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Product Designer job ads",
+              "report_id": "P7-C2-main-requires"
+            },
+            {
+              "from": "skill:interaction_design",
+              "to": "course:p7_c2_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P7-C2-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:design_critique",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Product Designer job ads",
+              "report_id": "P7-C2-secondary-requires"
+            },
+            {
+              "from": "skill:design_critique",
+              "to": "course:p7_c2_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P7-C2-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Product Designer → Interaction design → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "interaction design",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "interaction design",
+                  "source_text": "Comes up often in Product Designer job ads",
+                  "report_id": "P7-C2-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "interaction design",
+                  "source_text": "From the course description",
+                  "report_id": "P7-C2-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "design critique",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "design critique",
+                  "source_text": "Comes up sometimes in Product Designer job ads",
+                  "report_id": "P7-C2-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "design critique",
+                  "source_text": "From the course description",
+                  "report_id": "P7-C2-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p7_c2_other_a",
+      "title": "Applying User Research",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "Applying User Research is a focused course on user research for people already working toward a Product Designer role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying user research on your own.",
+      "learning_outcomes": [
+        "Applying user research to a real Product Designer scenario",
+        "Practicing user research through guided exercises",
+        "Building a short user research exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:user_research",
+          "skill_name": "user research",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches user research, which comes up often in Product Designer job ads.",
+        "A": {
+          "panel_prose": "User research comes up often in Product Designer job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From Product Designer job ads: user research is mentioned often.",
+              "report_ids": [
+                "P7-C2-c2_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: user research is main topic.",
+              "report_ids": [
+                "P7-C2-c2_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches user research, which comes up often in Product Designer job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Product Designer"
+            },
+            {
+              "id": "skill:user_research",
+              "kind": "skill",
+              "label": "User research",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p7_c2_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:user_research",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Product Designer job ads",
+              "report_id": "P7-C2-c2_other_a-requires"
+            },
+            {
+              "from": "skill:user_research",
+              "to": "course:p7_c2_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P7-C2-c2_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Product Designer → User research → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "user research",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "user research",
+                  "source_text": "Comes up often in Product Designer job ads",
+                  "report_id": "P7-C2-c2_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "user research",
+                  "source_text": "From the course description",
+                  "report_id": "P7-C2-c2_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p7_c2_other_b",
+      "title": "Getting Started with Accessibility Auditing",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "Getting Started with Accessibility Auditing is a short introduction to accessibility auditing for people moving toward a Product Designer role. You'll walk through the essential vocabulary and a few guided exercises that show accessibility auditing in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if accessibility auditing is new to you.",
+      "learning_outcomes": [
+        "Applying accessibility auditing to a real Product Designer scenario",
+        "Practicing accessibility auditing through guided exercises",
+        "Building a short accessibility auditing exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:accessibility_auditing",
+          "skill_name": "accessibility auditing",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches accessibility auditing, which comes up sometimes in Product Designer job ads.",
+        "A": {
+          "panel_prose": "Accessibility auditing comes up sometimes in Product Designer job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Product Designer job ads: accessibility auditing is mentioned sometimes.",
+              "report_ids": [
+                "P7-C2-c2_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: accessibility auditing is covered in part.",
+              "report_ids": [
+                "P7-C2-c2_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches accessibility auditing, which comes up sometimes in Product Designer job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Product Designer"
+            },
+            {
+              "id": "skill:accessibility_auditing",
+              "kind": "skill",
+              "label": "Accessibility auditing",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p7_c2_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:accessibility_auditing",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Product Designer job ads",
+              "report_id": "P7-C2-c2_other_b-requires"
+            },
+            {
+              "from": "skill:accessibility_auditing",
+              "to": "course:p7_c2_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P7-C2-c2_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Product Designer → Accessibility auditing → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "accessibility auditing",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "accessibility auditing",
+                  "source_text": "Comes up sometimes in Product Designer job ads",
+                  "report_id": "P7-C2-c2_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "accessibility auditing",
+                  "source_text": "From the course description",
+                  "report_id": "P7-C2-c2_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p7_c2_other_c",
+      "title": "A Short Guide to Packaging Design",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "A Short Guide to Packaging Design walks you through the basics of packaging design, built for people new to Product Designer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of packaging design, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying packaging design to a real Product Designer scenario",
+        "Practicing packaging design through guided exercises",
+        "Building a short packaging design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:packaging_design",
+          "skill_name": "packaging design",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches packaging design, which comes up sometimes in Product Designer job ads.",
+        "A": {
+          "panel_prose": "Packaging design comes up sometimes in Product Designer job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Product Designer job ads: packaging design is mentioned sometimes.",
+              "report_ids": [
+                "P7-C2-c2_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: packaging design is covered in part.",
+              "report_ids": [
+                "P7-C2-c2_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches packaging design, which comes up sometimes in Product Designer job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Product Designer"
+            },
+            {
+              "id": "skill:packaging_design",
+              "kind": "skill",
+              "label": "Packaging design",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p7_c2_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:packaging_design",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Product Designer job ads",
+              "report_id": "P7-C2-c2_other_c-requires"
+            },
+            {
+              "from": "skill:packaging_design",
+              "to": "course:p7_c2_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P7-C2-c2_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Product Designer → Packaging design → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "packaging design",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "packaging design",
+                  "source_text": "Comes up sometimes in Product Designer job ads",
+                  "report_id": "P7-C2-c2_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "packaging design",
+                  "source_text": "From the course description",
+                  "report_id": "P7-C2-c2_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p7_c2_selected",
+  "course_score": 1.0036,
+  "paths": [
+    {
+      "skill_id": "skill:interaction_design",
+      "skill_name": "interaction design",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.89,
+      "requires_report_id": "P7-C2-main-requires",
+      "teaches_report_id": "P7-C2-main-teaches",
+      "evidence_span": {
+        "text": "interaction design",
+        "start": 80,
+        "end": 98
+      }
+    },
+    {
+      "skill_id": "skill:design_critique",
+      "skill_name": "design critique",
+      "which": "secondary",
+      "requires_confidence": 0.54,
+      "teaches_confidence": 0.54,
+      "requires_report_id": "P7-C2-secondary-requires",
+      "teaches_report_id": "P7-C2-secondary-teaches",
+      "evidence_span": {
+        "text": "design critique",
+        "start": 167,
+        "end": 182
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches interaction design, which comes up often in Product Designer job ads.",
+    "A": {
+      "panel_prose": "Interaction design comes up often in Product Designer job ads, and it's the main topic of this course. Design critique comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From Product Designer job ads: interaction design is mentioned often.",
+          "report_ids": [
+            "P7-C2-main-requires"
+          ]
+        },
+        {
+          "text": "From Product Designer job ads: design critique is mentioned sometimes.",
+          "report_ids": [
+            "P7-C2-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: interaction design is the main topic; design critique is covered in part.",
+          "report_ids": [
+            "P7-C2-main-teaches",
+            "P7-C2-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches interaction design, which comes up often in Product Designer job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "Product Designer"
+        },
+        {
+          "id": "skill:interaction_design",
+          "kind": "skill",
+          "label": "Interaction design",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:design_critique",
+          "kind": "skill",
+          "label": "Design critique",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p7_c2_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:interaction_design",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From Product Designer job ads",
+          "report_id": "P7-C2-main-requires"
+        },
+        {
+          "from": "skill:interaction_design",
+          "to": "course:p7_c2_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P7-C2-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:design_critique",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From Product Designer job ads",
+          "report_id": "P7-C2-secondary-requires"
+        },
+        {
+          "from": "skill:design_critique",
+          "to": "course:p7_c2_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P7-C2-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "Product Designer → Interaction design → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "interaction design",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "interaction design",
+              "source_text": "Comes up often in Product Designer job ads",
+              "report_id": "P7-C2-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "interaction design",
+              "source_text": "From the course description",
+              "report_id": "P7-C2-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "design critique",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "design critique",
+              "source_text": "Comes up sometimes in Product Designer job ads",
+              "report_id": "P7-C2-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "design critique",
+              "source_text": "From the course description",
+              "report_id": "P7-C2-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p7_c2_alt_a",
+      "title": "Interaction Design Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Interaction Design Essentials walks you through the basics of interaction design, built for people new to Product Designer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of interaction design, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying interaction design to a real Product Designer scenario",
+        "Practicing interaction design through guided exercises",
+        "Building a short interaction design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:interaction_design",
+          "skill_name": "interaction design",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p7_c2_alt_b",
+      "title": "Advanced Interaction Design Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Interaction Design Techniques goes beyond the basics of interaction design, for people already working toward a Product Designer role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in interaction design and want to go further.",
+      "learning_outcomes": [
+        "Applying interaction design to a real Product Designer scenario",
+        "Practicing interaction design through guided exercises",
+        "Building a short interaction design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:interaction_design",
+          "skill_name": "interaction design",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}

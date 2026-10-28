@@ -1,0 +1,44 @@
+/* Supplement to prototype/styles.css for the pilot-demo build: a clean progress
+   indicator instead of the test prototype's dashed dev bar, plus the start/end
+   screens. */
+
+.progress-bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 10px 20px; font-size: 14px; color: var(--text-muted);
+}
+.progress-bar .steps { display: flex; gap: 8px; }
+.progress-dot {
+  width: 10px; height: 10px; border-radius: 50%; background: var(--border-strong);
+}
+.progress-dot.done { background: var(--accent); }
+.progress-dot.current { background: var(--accent); box-shadow: 0 0 0 3px #DCE5FB; }
+
+.intro-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 32px; display: flex; flex-direction: column; gap: 16px;
+}
+.intro-card .role-line { font-size: 15px; color: var(--text-muted); }
+.intro-card .role-line b { color: var(--text); }
+
+.end-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 32px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start;
+}
+
+/* In-app survey page (NASA-TLX + transparency), shown after each round in
+   place of the comparative-study docx's Qualtrics step. */
+.survey-form {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 32px; display: flex; flex-direction: column; gap: 24px; max-width: 760px; margin: 0 auto;
+}
+.survey-section h2 { font-size: 17px; margin: 0 0 14px; }
+.survey-item { padding: 14px 0; border-top: 1px solid var(--border); }
+.survey-item:first-of-type { border-top: none; padding-top: 0; }
+.survey-question { font-size: 14.5px; margin-bottom: 10px; }
+.survey-slider-row { display: flex; align-items: center; gap: 10px; }
+.survey-slider { flex: 1; }
+.survey-scale-label { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.survey-slider-value { font-size: 13px; color: var(--text-muted); width: 90px; text-align: right; flex-shrink: 0; }
+.survey-likert-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.survey-likert-option { display: flex; align-items: center; gap: 6px; font-size: 13.5px; cursor: pointer; }
+.survey-likert-text { color: var(--text-muted); }

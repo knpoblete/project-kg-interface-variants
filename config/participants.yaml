@@ -1,0 +1,68 @@
+# Target role per participant, confirmed in mockups/SYNTHETIC_DATA_SPEC.md §3.
+# role_title is the exact string shown in the prototype UI and used inside
+# every wording template ("<role_title> job ads", "<role_title>s need...").
+# context_note is NOT shown to participants -- it's the spec's "context to
+# reflect" column, kept here only for traceability into scripts/roles_data.py.
+#
+# P3's spec §3 role column is literally "Product Designer (front-end skills)",
+# to distinguish it from P7's plain "Product Designer". Shown on-screen as
+# just "Product Designer" (same as P7) -- rendering the parenthetical into
+# generated sentences ("Product Designer (front-end skills) job ads often...")
+# would read as broken, not informative, to a participant. The front-end
+# distinction lives in context_note and in which skills roles_data.py
+# authored for job:product_designer_frontend instead.
+
+P1:
+  role_title: Consultant
+  job_id: "job:consultant"
+  context_note: "Assertive, confident stakeholder communication. Avoid generic project-management or relationship-management results."
+
+P2:
+  role_title: UX Researcher
+  job_id: "job:ux_researcher"
+  context_note: "Research methods, focus groups, usability testing."
+
+P3:
+  role_title: Product Designer
+  job_id: "job:product_designer_frontend"
+  context_note: "Product Designer (front-end skills): design plus hands-on front-end skills (e.g. React) and some data/database literacy."
+
+P4:
+  role_title: Communications Specialist
+  job_id: "job:communications_specialist"
+  context_note: "Practical content skills (video editing, social content), intermediate or advanced level. No management courses."
+
+P5:
+  role_title: Architectural Visualiser
+  job_id: "job:architectural_visualiser"
+  context_note: "Rendering and visualisation, with project management as an adjacent skill. No data science."
+
+P6:
+  role_title: HR Manager
+  job_id: "job:hr_manager"
+  context_note: "Human resource management and recruitment."
+
+P7:
+  role_title: Product Designer
+  job_id: "job:product_designer"
+  context_note: "Product and UX design. No retail-oriented content."
+
+P8:
+  role_title: Senior Software Engineer
+  job_id: "job:senior_software_engineer"
+  context_note: "Technical depth plus some leadership."
+
+P9:
+  role_title: Data Engineering Lead
+  job_id: "job:data_engineering_lead"
+  context_note: "Data engineering plus change management and coaching for leads; specific, not \"engineering in general\"."
+
+D0:
+  role_title: UX Designer
+  job_id: "job:ux_designer"
+  context_note: "Demo, not a participant. Must reproduce the strings in the mid-fi mockups. Exempt from the content-set rules in spec §5.4."
+
+W0:
+  role_title: null
+  job_id: null
+  context_note: "Warm-up, no role. Spreadsheet basics; no explanations (spec §9)."

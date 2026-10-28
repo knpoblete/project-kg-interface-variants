@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pilot session — start</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../prototype/styles.css">
+<link rel="stylesheet" href="pilot.css">
+<script src="../prototype/data.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="site">
+    <div class="header-inner">
+      <span class="brand">[Learning platform]</span>
+    </div>
+  </header>
+
+  <main class="picker">
+    <div class="picker-head">
+      <span class="step">Pilot session</span>
+      <h1>Course recommendations — explanation pilot</h1>
+      <p>You'll start with a short warm-up (spreadsheet basics, no explanations), then see three rounds, one
+      per explanation style (natural language, graph, rule-based). Each round shows a recommended course and
+      asks you to look at why it was suggested, then ends when you click Save or Not for me. A short
+      questionnaire follows each round before moving to the next. Move through in order with the button at
+      the bottom of each screen.</p>
+    </div>
+
+    <div class="intro-card">
+      <div id="role-line" class="role-line">Loading role…</div>
+      <div>
+        <a id="begin-link" class="btn-primary" style="display:inline-flex;align-items:center;text-decoration:none" href="app.html?step=warmup">Begin pilot session</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../prototype/render.js"></script>
+<script>
+async function init() {
+  const participantId = new URLSearchParams(location.search).get("participant") || "D0";
+  document.getElementById("begin-link").href = `app.html?step=warmup&participant=${encodeURIComponent(participantId)}`;
+
+  const roleLine = document.getElementById("role-line");
+  try {
+    const sets = await fetchContentSets(participantId);
+    roleLine.innerHTML = `Participant <b>${escapeHtml(participantId)}</b> -- target role for this session: <b>${escapeHtml(sets[0].role.title)}</b>. All course and job-ad data is synthetic.`;
+  } catch (err) {
+    roleLine.textContent = `Couldn't load the pilot's role data: ${err.message || err}. Make sure data/synthetic/ has been generated and you're viewing this over http://, not file://.`;
+  }
+}
+init();
+</script>
+</body>
+</html>

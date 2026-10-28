@@ -1,0 +1,25 @@
+# Variant order per participant (spec §4.4, confirmed). Task assignment is by
+# position: the 1st variant listed shows T1, the 2nd shows T2, the 3rd shows T3.
+#
+# Confirmed Latin square:
+#   A -> B -> C : P1, P4, P7
+#   B -> C -> A : P2, P5, P8
+#   C -> A -> B : P3, P6, P9
+#
+# D0 is a demo persona, not part of the confirmed Latin square -- its order is
+# fixed to A -> B -> C because that's the sequence the existing mid-fi mockups
+# already show (Main.dc.html = A = T1, Graph.dc.html = B = T2, Rules.dc.html = C = T3).
+
+P1: [A, B, C]
+P4: [A, B, C]
+P7: [A, B, C]
+
+P2: [B, C, A]
+P5: [B, C, A]
+P8: [B, C, A]
+
+P3: [C, A, B]
+P6: [C, A, B]
+P9: [C, A, B]
+
+D0: [A, B, C]

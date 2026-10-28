@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pilot session — course recommendations</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../prototype/styles.css">
+<link rel="stylesheet" href="pilot.css">
+<script src="../prototype/data.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="site">
+    <div class="header-inner">
+      <span class="brand">[Learning platform]</span>
+      <form role="search" class="search-form" onsubmit="return false">
+        <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search courses</label>
+        <input id="q" class="search-input" type="search" placeholder="Search courses, skills or roles">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="app">
+    <div class="progress-bar">
+      <span id="progress-label">Task 1 of 3</span>
+      <span class="steps" id="progress-dots"></span>
+      <a href="index.html">Restart pilot</a>
+    </div>
+
+    <section class="role-bar">
+      <div>
+        <div class="role-bar-label">Your target role</div>
+        <div class="role-bar-title" id="role-title">Loading…</div>
+      </div>
+      <div class="role-bar-right">
+        <span class="role-bar-msg" id="role-bar-msg"></span>
+      </div>
+    </section>
+
+    <div id="content" class="columns">
+      <p class="simple-note">Loading…</p>
+    </div>
+
+    <div id="pilot-nav"></div>
+  </main>
+</div>
+
+<script src="../prototype/render.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

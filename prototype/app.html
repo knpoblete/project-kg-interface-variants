@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course recommendations — test prototype</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="site">
+    <div class="header-inner">
+      <span class="brand">[Learning platform]</span>
+      <form role="search" class="search-form" onsubmit="return false">
+        <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search courses</label>
+        <input id="q" class="search-input" type="search" placeholder="Search courses, skills or roles">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="app">
+    <div class="test-bar">
+      <b>Test harness</b> (not shown to real participants) —
+      <label>Participant
+        <select id="ctl-participant"></select>
+      </label>
+      <label id="ctl-variant-wrap">Variant
+        <span class="seg-group" id="ctl-variant">
+          <button type="button" class="seg" data-variant="A">A · Natural language</button>
+          <button type="button" class="seg" data-variant="B">B · Graph</button>
+          <button type="button" class="seg" data-variant="C">C · Rule-based</button>
+        </span>
+      </label>
+      <label id="ctl-cs-wrap">Content set
+        <span class="seg-group" id="ctl-cs"></span>
+      </label>
+      <label><input type="checkbox" id="ctl-debug"> Show report_ids</label>
+      <label><input type="checkbox" id="ctl-preview"> Preview as participant would see it</label>
+      <button type="button" class="btn-secondary" id="ctl-preview-survey" hidden>Preview questionnaire</button>
+      <a href="index.html">Back to participant list</a>
+    </div>
+
+    <section class="role-bar">
+      <div>
+        <div class="role-bar-label">Your target role</div>
+        <div class="role-bar-title" id="role-title">Loading…</div>
+      </div>
+      <div class="role-bar-right">
+        <span class="role-bar-msg" id="role-bar-msg"></span>
+        <a href="index.html">Change role</a>
+      </div>
+    </section>
+
+    <div id="content" class="columns">
+      <p class="simple-note">Loading…</p>
+    </div>
+  </main>
+</div>
+
+<script src="render.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
