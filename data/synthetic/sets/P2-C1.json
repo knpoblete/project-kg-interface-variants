@@ -4,32 +4,32 @@
   "position": 1,
   "variant": "B",
   "role": {
-    "job_id": "job:ux_researcher",
-    "title": "UX Researcher",
-    "sector": "Research",
-    "role_basis": "ESCO 'user researcher' occupation group / O*NET-adjacent UX Researcher profile",
-    "context_note": "Research methods, focus groups, usability testing."
+    "job_id": "job:devops_engineer_ai",
+    "title": "DevOps Engineer (AI Specialization)",
+    "sector": "Software Engineering",
+    "role_basis": "O*NET 15-1252.00 Software Developers, extended with an AI/MLOps specialization skill set (DevOps Engineer profile)",
+    "context_note": "Currently a DevOps Engineer (IT/electrical signal analysis, 8+ yrs; programming/scripting, AWS, CI/CD); growing into building AI agents, LLM integration, AI infrastructure design."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
-    "sort_line": "Best fit first, based on the skills employers ask for in UX Researcher job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in DevOps Engineer (AI Specialization) job ads.",
     "based_on_chips": [
-      "UX Researcher job ads",
+      "DevOps Engineer (AI Specialization) job ads",
       "Course description"
     ]
   },
   "courses": [
     {
       "id": "course:p2_c1_selected",
-      "title": "Running Usability Tests That Matter",
+      "title": "Building AI Agents for DevOps Engineers",
       "level": "Intermediate",
       "duration_min": 125,
       "updated": "2026-02",
-      "description": "By the end of Running Usability Tests That Matter, you'll be able to apply usability testing confidently in UX Researcher work, with a working sense of where survey design fits alongside it. The course moves from core usability testing technique through a few applied exercises, with a lighter look at survey design woven in throughout.",
+      "description": "Building AI Agents for DevOps Engineers focuses on building intelligent agents for people working toward a DevOps Engineer (AI Specialization) role, through hands-on exercises and short review checkpoints. It also introduces prompt engineering, enough to apply alongside building intelligent agents in real DevOps Engineer (AI Specialization) work. By the end, you'll be able to explain your approach to building intelligent agents and show how prompt engineering supports it.",
       "learning_outcomes": [
-        "Applying usability testing to a real UX Researcher scenario",
-        "Practicing usability testing through guided exercises",
-        "Getting a working introduction to survey design",
+        "Applying building intelligent agents to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing building intelligent agents through guided exercises",
+        "Getting a working introduction to prompt engineering",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -44,62 +44,62 @@
       "rules_matched": "Rule A (teaches) · Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:usability_testing",
-          "skill_name": "usability testing",
+          "skill_id": "skill:building_intelligent_agents",
+          "skill_name": "building intelligent agents",
           "teaches_confidence": 0.9,
           "band": "strong"
         },
         {
-          "skill_id": "skill:survey_design",
-          "skill_name": "survey design",
+          "skill_id": "skill:prompt_engineering",
+          "skill_name": "prompt engineering",
           "teaches_confidence": 0.55,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches usability testing, which comes up often in UX Researcher job ads.",
+        "summary": "Teaches building intelligent agents, which comes up often in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Usability testing comes up often in UX Researcher job ads, and it's the main topic of this course. Survey design comes up sometimes in those ads, and the course covers some of it.",
+          "panel_prose": "Building intelligent agents comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course. Prompt engineering comes up sometimes in those ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: usability testing is mentioned often.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: building intelligent agents is mentioned often.",
               "report_ids": [
                 "P2-C1-main-requires"
               ]
             },
             {
-              "text": "From UX Researcher job ads: survey design is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: prompt engineering is mentioned sometimes.",
               "report_ids": [
                 "P2-C1-secondary-requires"
               ]
             },
             {
-              "text": "From the course description: usability testing is the main topic; survey design is covered in part.",
+              "text": "From the course description: building intelligent agents is the main topic; prompt engineering is covered in part.",
               "report_ids": [
                 "P2-C1-main-teaches",
                 "P2-C1-secondary-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches usability testing, which comes up often in UX Researcher job ads."
+          "card_reason": "Teaches building intelligent agents, which comes up often in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:usability_testing",
+              "id": "skill:building_intelligent_agents",
               "kind": "skill",
-              "label": "Usability testing",
+              "label": "Building intelligent agents",
               "caption": "Skill employers want"
             },
             {
-              "id": "skill:survey_design",
+              "id": "skill:prompt_engineering",
               "kind": "skill",
-              "label": "Survey design",
+              "label": "Prompt engineering",
               "caption": "Skill employers want"
             },
             {
@@ -112,14 +112,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:usability_testing",
+              "to": "skill:building_intelligent_agents",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-main-requires"
             },
             {
-              "from": "skill:usability_testing",
+              "from": "skill:building_intelligent_agents",
               "to": "course:p2_c1_selected",
               "strength": "strong",
               "label": "main topic",
@@ -128,14 +128,14 @@
             },
             {
               "from": "role",
-              "to": "skill:survey_design",
+              "to": "skill:prompt_engineering",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-secondary-requires"
             },
             {
-              "from": "skill:survey_design",
+              "from": "skill:prompt_engineering",
               "to": "course:p2_c1_selected",
               "strength": "weaker",
               "label": "covered in part",
@@ -150,7 +150,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Usability testing → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Building intelligent agents → This course"
         },
         "C": {
           "rules_matched": [
@@ -159,17 +159,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "usability testing",
+              "skill": "building intelligent agents",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "usability testing",
-                  "source_text": "Comes up often in UX Researcher job ads",
+                  "value": "building intelligent agents",
+                  "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C1-main-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "usability testing",
+                  "value": "building intelligent agents",
                   "source_text": "From the course description",
                   "report_id": "P2-C1-main-teaches"
                 }
@@ -181,17 +181,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "survey design",
+              "skill": "prompt engineering",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "survey design",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "prompt engineering",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C1-secondary-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "survey design",
+                  "value": "prompt engineering",
                   "source_text": "From the course description",
                   "report_id": "P2-C1-secondary-teaches"
                 }
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p2_c1_other_a",
-      "title": "Research Synthesis in Practice",
+      "title": "Continuous Integration in Practice",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Research Synthesis in Practice goes beyond the basics of research synthesis, for people already working toward a UX Researcher role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in research synthesis and want to go further.",
+      "description": "Continuous Integration in Practice goes beyond the basics of continuous integration, for people already working toward a DevOps Engineer (AI Specialization) role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in continuous integration and want to go further.",
       "learning_outcomes": [
-        "Applying research synthesis to a real UX Researcher scenario",
-        "Practicing research synthesis through guided exercises",
-        "Building a short research synthesis exercise from scratch",
+        "Applying continuous integration to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing continuous integration through guided exercises",
+        "Building a short continuous integration exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,43 +229,43 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:research_synthesis",
-          "skill_name": "research synthesis",
+          "skill_id": "skill:continuous_integration",
+          "skill_name": "continuous integration",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches research synthesis, which comes up often in UX Researcher job ads.",
+        "summary": "Teaches continuous integration, which comes up often in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Research synthesis comes up often in UX Researcher job ads, and it's the main topic of this course.",
+          "panel_prose": "Continuous integration comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: research synthesis is mentioned often.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: continuous integration is mentioned often.",
               "report_ids": [
                 "P2-C1-c1_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: research synthesis is main topic.",
+              "text": "From the course description: continuous integration is main topic.",
               "report_ids": [
                 "P2-C1-c1_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches research synthesis, which comes up often in UX Researcher job ads."
+          "card_reason": "Teaches continuous integration, which comes up often in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:research_synthesis",
+              "id": "skill:continuous_integration",
               "kind": "skill",
-              "label": "Research synthesis",
+              "label": "Continuous integration",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:research_synthesis",
+              "to": "skill:continuous_integration",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-c1_other_a-requires"
             },
             {
-              "from": "skill:research_synthesis",
+              "from": "skill:continuous_integration",
               "to": "course:p2_c1_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Research synthesis → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Continuous integration → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "research synthesis",
+              "skill": "continuous integration",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "research synthesis",
-                  "source_text": "Comes up often in UX Researcher job ads",
+                  "value": "continuous integration",
+                  "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C1-c1_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "research synthesis",
+                  "value": "continuous integration",
                   "source_text": "From the course description",
                   "report_id": "P2-C1-c1_other_a-teaches"
                 }
@@ -333,15 +333,15 @@
     },
     {
       "id": "course:p2_c1_other_b",
-      "title": "Data Visualization Fundamentals",
+      "title": "Infrastructure As Code Fundamentals",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Data Visualization Fundamentals is a short introduction to data visualization for people moving toward a UX Researcher role. You'll walk through the essential vocabulary and a few guided exercises that show data visualization in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if data visualization is new to you.",
+      "description": "Infrastructure As Code Fundamentals is a short introduction to infrastructure as code for people moving toward a DevOps Engineer (AI Specialization) role. You'll walk through the essential vocabulary and a few guided exercises that show infrastructure as code in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if infrastructure as code is new to you.",
       "learning_outcomes": [
-        "Applying data visualization to a real UX Researcher scenario",
-        "Practicing data visualization through guided exercises",
-        "Building a short data visualization exercise from scratch",
+        "Applying infrastructure as code to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing infrastructure as code through guided exercises",
+        "Building a short infrastructure as code exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -356,43 +356,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:data_visualization",
-          "skill_name": "data visualization",
+          "skill_id": "skill:infrastructure_as_code",
+          "skill_name": "infrastructure as code",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches data visualization, which comes up sometimes in UX Researcher job ads.",
+        "summary": "Teaches infrastructure as code, which comes up sometimes in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Data visualization comes up sometimes in UX Researcher job ads, and the course covers some of it.",
+          "panel_prose": "Infrastructure as code comes up sometimes in DevOps Engineer (AI Specialization) job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: data visualization is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: infrastructure as code is mentioned sometimes.",
               "report_ids": [
                 "P2-C1-c1_other_b-requires"
               ]
             },
             {
-              "text": "From the course description: data visualization is covered in part.",
+              "text": "From the course description: infrastructure as code is covered in part.",
               "report_ids": [
                 "P2-C1-c1_other_b-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches data visualization, which comes up sometimes in UX Researcher job ads."
+          "card_reason": "Teaches infrastructure as code, which comes up sometimes in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:data_visualization",
+              "id": "skill:infrastructure_as_code",
               "kind": "skill",
-              "label": "Data visualization",
+              "label": "Infrastructure as code",
               "caption": "Skill employers want"
             },
             {
@@ -404,14 +404,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:data_visualization",
+              "to": "skill:infrastructure_as_code",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-c1_other_b-requires"
             },
             {
-              "from": "skill:data_visualization",
+              "from": "skill:infrastructure_as_code",
               "to": "course:p2_c1_other_b",
               "strength": "weaker",
               "label": "covered in part",
@@ -426,7 +426,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Data visualization → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Infrastructure as code → This course"
         },
         "C": {
           "rules_matched": [
@@ -435,17 +435,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "data visualization",
+              "skill": "infrastructure as code",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "data visualization",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "infrastructure as code",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C1-c1_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "data visualization",
+                  "value": "infrastructure as code",
                   "source_text": "From the course description",
                   "report_id": "P2-C1-c1_other_b-teaches"
                 }
@@ -460,15 +460,15 @@
     },
     {
       "id": "course:p2_c1_other_c",
-      "title": "Accessibility Testing: A Short Overview",
+      "title": "Observability and Monitoring: A Short Overview",
       "level": "Beginner",
       "duration_min": 40,
       "updated": "2025-09",
-      "description": "Accessibility Testing: A Short Overview is a short introduction to accessibility testing for people moving toward a UX Researcher role. You'll walk through the essential vocabulary and a few guided exercises that show accessibility testing in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if accessibility testing is new to you.",
+      "description": "Observability and Monitoring: A Short Overview is a short introduction to observability and monitoring for people moving toward a DevOps Engineer (AI Specialization) role. You'll walk through the essential vocabulary and a few guided exercises that show observability and monitoring in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if observability and monitoring is new to you.",
       "learning_outcomes": [
-        "Applying accessibility testing to a real UX Researcher scenario",
-        "Practicing accessibility testing through guided exercises",
-        "Building a short accessibility testing exercise from scratch",
+        "Applying observability and monitoring to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing observability and monitoring through guided exercises",
+        "Building a short observability and monitoring exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -483,43 +483,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:accessibility_testing",
-          "skill_name": "accessibility testing",
+          "skill_id": "skill:observability_and_monitoring",
+          "skill_name": "observability and monitoring",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches accessibility testing, which comes up sometimes in UX Researcher job ads.",
+        "summary": "Teaches observability and monitoring, which comes up sometimes in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Accessibility testing comes up sometimes in UX Researcher job ads, and the course covers some of it.",
+          "panel_prose": "Observability and monitoring comes up sometimes in DevOps Engineer (AI Specialization) job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: accessibility testing is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: observability and monitoring is mentioned sometimes.",
               "report_ids": [
                 "P2-C1-c1_other_c-requires"
               ]
             },
             {
-              "text": "From the course description: accessibility testing is covered in part.",
+              "text": "From the course description: observability and monitoring is covered in part.",
               "report_ids": [
                 "P2-C1-c1_other_c-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches accessibility testing, which comes up sometimes in UX Researcher job ads."
+          "card_reason": "Teaches observability and monitoring, which comes up sometimes in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:accessibility_testing",
+              "id": "skill:observability_and_monitoring",
               "kind": "skill",
-              "label": "Accessibility testing",
+              "label": "Observability and monitoring",
               "caption": "Skill employers want"
             },
             {
@@ -531,14 +531,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:accessibility_testing",
+              "to": "skill:observability_and_monitoring",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-c1_other_c-requires"
             },
             {
-              "from": "skill:accessibility_testing",
+              "from": "skill:observability_and_monitoring",
               "to": "course:p2_c1_other_c",
               "strength": "weaker",
               "label": "covered in part",
@@ -553,7 +553,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Accessibility testing → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Observability and monitoring → This course"
         },
         "C": {
           "rules_matched": [
@@ -562,17 +562,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "accessibility testing",
+              "skill": "observability and monitoring",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "accessibility testing",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "observability and monitoring",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C1-c1_other_c-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "accessibility testing",
+                  "value": "observability and monitoring",
                   "source_text": "From the course description",
                   "report_id": "P2-C1-c1_other_c-teaches"
                 }
@@ -590,78 +590,78 @@
   "course_score": 1.0225,
   "paths": [
     {
-      "skill_id": "skill:usability_testing",
-      "skill_name": "usability testing",
+      "skill_id": "skill:building_intelligent_agents",
+      "skill_name": "building intelligent agents",
       "which": "main",
       "requires_confidence": 0.8,
       "teaches_confidence": 0.9,
       "requires_report_id": "P2-C1-main-requires",
       "teaches_report_id": "P2-C1-main-teaches",
       "evidence_span": {
-        "text": "usability testing",
-        "start": 75,
-        "end": 92
+        "text": "building intelligent agents",
+        "start": 51,
+        "end": 78
       }
     },
     {
-      "skill_id": "skill:survey_design",
-      "skill_name": "survey design",
+      "skill_id": "skill:prompt_engineering",
+      "skill_name": "prompt engineering",
       "which": "secondary",
       "requires_confidence": 0.55,
       "teaches_confidence": 0.55,
       "requires_report_id": "P2-C1-secondary-requires",
       "teaches_report_id": "P2-C1-secondary-teaches",
       "evidence_span": {
-        "text": "survey design",
-        "start": 158,
-        "end": 171
+        "text": "prompt engineering",
+        "start": 225,
+        "end": 243
       }
     }
   ],
   "explanation": {
-    "summary": "Teaches usability testing, which comes up often in UX Researcher job ads.",
+    "summary": "Teaches building intelligent agents, which comes up often in DevOps Engineer (AI Specialization) job ads.",
     "A": {
-      "panel_prose": "Usability testing comes up often in UX Researcher job ads, and it's the main topic of this course. Survey design comes up sometimes in those ads, and the course covers some of it.",
+      "panel_prose": "Building intelligent agents comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course. Prompt engineering comes up sometimes in those ads, and the course covers some of it.",
       "detail_bullets": [
         {
-          "text": "From UX Researcher job ads: usability testing is mentioned often.",
+          "text": "From DevOps Engineer (AI Specialization) job ads: building intelligent agents is mentioned often.",
           "report_ids": [
             "P2-C1-main-requires"
           ]
         },
         {
-          "text": "From UX Researcher job ads: survey design is mentioned sometimes.",
+          "text": "From DevOps Engineer (AI Specialization) job ads: prompt engineering is mentioned sometimes.",
           "report_ids": [
             "P2-C1-secondary-requires"
           ]
         },
         {
-          "text": "From the course description: usability testing is the main topic; survey design is covered in part.",
+          "text": "From the course description: building intelligent agents is the main topic; prompt engineering is covered in part.",
           "report_ids": [
             "P2-C1-main-teaches",
             "P2-C1-secondary-teaches"
           ]
         }
       ],
-      "card_reason": "Teaches usability testing, which comes up often in UX Researcher job ads."
+      "card_reason": "Teaches building intelligent agents, which comes up often in DevOps Engineer (AI Specialization) job ads."
     },
     "B": {
       "nodes": [
         {
           "id": "role",
           "kind": "role",
-          "label": "UX Researcher"
+          "label": "DevOps Engineer (AI Specialization)"
         },
         {
-          "id": "skill:usability_testing",
+          "id": "skill:building_intelligent_agents",
           "kind": "skill",
-          "label": "Usability testing",
+          "label": "Building intelligent agents",
           "caption": "Skill employers want"
         },
         {
-          "id": "skill:survey_design",
+          "id": "skill:prompt_engineering",
           "kind": "skill",
-          "label": "Survey design",
+          "label": "Prompt engineering",
           "caption": "Skill employers want"
         },
         {
@@ -674,14 +674,14 @@
       "edges": [
         {
           "from": "role",
-          "to": "skill:usability_testing",
+          "to": "skill:building_intelligent_agents",
           "strength": "strong",
           "label": "often asked for",
-          "source_label": "From UX Researcher job ads",
+          "source_label": "From DevOps Engineer (AI Specialization) job ads",
           "report_id": "P2-C1-main-requires"
         },
         {
-          "from": "skill:usability_testing",
+          "from": "skill:building_intelligent_agents",
           "to": "course:p2_c1_selected",
           "strength": "strong",
           "label": "main topic",
@@ -690,14 +690,14 @@
         },
         {
           "from": "role",
-          "to": "skill:survey_design",
+          "to": "skill:prompt_engineering",
           "strength": "weaker",
           "label": "sometimes asked for",
-          "source_label": "From UX Researcher job ads",
+          "source_label": "From DevOps Engineer (AI Specialization) job ads",
           "report_id": "P2-C1-secondary-requires"
         },
         {
-          "from": "skill:survey_design",
+          "from": "skill:prompt_engineering",
           "to": "course:p2_c1_selected",
           "strength": "weaker",
           "label": "covered in part",
@@ -712,7 +712,7 @@
         "Skill employers want",
         "Recommended course"
       ],
-      "card_path": "UX Researcher → Usability testing → This course"
+      "card_path": "DevOps Engineer (AI Specialization) → Building intelligent agents → This course"
     },
     "C": {
       "rules_matched": [
@@ -721,17 +721,17 @@
           "ui_label": "Rule A",
           "name": "Courses that teach a skill your role needs",
           "strength": "Strong match",
-          "skill": "usability testing",
+          "skill": "building intelligent agents",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "usability testing",
-              "source_text": "Comes up often in UX Researcher job ads",
+              "value": "building intelligent agents",
+              "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-main-requires"
             },
             {
               "label": "Main topic of this course:",
-              "value": "usability testing",
+              "value": "building intelligent agents",
               "source_text": "From the course description",
               "report_id": "P2-C1-main-teaches"
             }
@@ -743,17 +743,17 @@
           "ui_label": "Rule B",
           "name": "Courses that cover part of a skill your role needs",
           "strength": "Weaker match",
-          "skill": "survey design",
+          "skill": "prompt engineering",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "survey design",
-              "source_text": "Comes up sometimes in UX Researcher job ads",
+              "value": "prompt engineering",
+              "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C1-secondary-requires"
             },
             {
               "label": "Partly covered in this course:",
-              "value": "survey design",
+              "value": "prompt engineering",
               "source_text": "From the course description",
               "report_id": "P2-C1-secondary-teaches"
             }
@@ -768,15 +768,15 @@
   "alternates": [
     {
       "id": "course:p2_c1_alt_a",
-      "title": "Usability Testing Essentials",
+      "title": "Building Intelligent Agents Essentials",
       "level": "Beginner",
       "duration_min": 50,
       "updated": "2025-08",
-      "description": "Usability Testing Essentials walks you through the basics of usability testing, built for people new to UX Researcher work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of usability testing, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Building Intelligent Agents Essentials is a short introduction to building intelligent agents for people moving toward a DevOps Engineer (AI Specialization) role. You'll walk through the essential vocabulary and a few guided exercises that show building intelligent agents in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if building intelligent agents is new to you.",
       "learning_outcomes": [
-        "Applying usability testing to a real UX Researcher scenario",
-        "Practicing usability testing through guided exercises",
-        "Building a short usability testing exercise from scratch",
+        "Applying building intelligent agents to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing building intelligent agents through guided exercises",
+        "Building a short building intelligent agents exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -791,8 +791,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:usability_testing",
-          "skill_name": "usability testing",
+          "skill_id": "skill:building_intelligent_agents",
+          "skill_name": "building intelligent agents",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
@@ -800,15 +800,15 @@
     },
     {
       "id": "course:p2_c1_alt_b",
-      "title": "Advanced Usability Testing Techniques",
+      "title": "Advanced Building Intelligent Agents Techniques",
       "level": "Advanced",
       "duration_min": 160,
       "updated": "2025-07",
-      "description": "Advanced Usability Testing Techniques goes beyond the basics of usability testing, for people already working toward a UX Researcher role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in usability testing and want to go further.",
+      "description": "Advanced Building Intelligent Agents Techniques is a focused course on building intelligent agents for people already working toward a DevOps Engineer (AI Specialization) role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying building intelligent agents on your own.",
       "learning_outcomes": [
-        "Applying usability testing to a real UX Researcher scenario",
-        "Practicing usability testing through guided exercises",
-        "Building a short usability testing exercise from scratch",
+        "Applying building intelligent agents to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing building intelligent agents through guided exercises",
+        "Building a short building intelligent agents exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -823,8 +823,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:usability_testing",
-          "skill_name": "usability testing",
+          "skill_id": "skill:building_intelligent_agents",
+          "skill_name": "building intelligent agents",
           "teaches_confidence": 0.25,
           "band": "unused"
         }

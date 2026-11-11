@@ -1,41 +1,44 @@
-# Target role per participant, confirmed in mockups/SYNTHETIC_DATA_SPEC.md §3.
-# role_title is the exact string shown in the prototype UI and used inside
-# every wording template ("<role_title> job ads", "<role_title>s need...").
-# context_note is NOT shown to participants -- it's the spec's "context to
-# reflect" column, kept here only for traceability into scripts/roles_data.py.
+# Target role per participant. role_title is the exact string shown in the
+# prototype UI and used inside every wording template ("<role_title> job
+# ads", "<role_title>s need..."). context_note is NOT shown to participants
+# -- kept here only for traceability into scripts/roles_data.py.
 #
-# P3's spec §3 role column is literally "Product Designer (front-end skills)",
-# to distinguish it from P7's plain "Product Designer". Shown on-screen as
-# just "Product Designer" (same as P7) -- rendering the parenthetical into
-# generated sentences ("Product Designer (front-end skills) job ads often...")
-# would read as broken, not informative, to a participant. The front-end
-# distinction lives in context_note and in which skills roles_data.py
-# authored for job:product_designer_frontend instead.
+# P1-P5 are real recruited participants, sourced from their prescreening
+# questionnaire (mockups/prescreening.csv). role_title is each person's
+# stated ASPIRATIONAL role (Q9: "what role are you working towards"), not
+# their current job title (Q6) -- the study recommends courses toward a goal
+# role, so that's the one shown as "the role you picked". See roles_data.py's
+# module docstring for how each role's skills were derived from Q13/Q14.
+#
+# P6-P9 are reserved placeholder slots for 4 more participants not yet
+# recruited -- their fictional profiles are unchanged from the original
+# synthetic build, kept only so config/order.yaml's confirmed 9-slot Latin
+# square stays balanced until those 4 are added.
 
 P1:
-  role_title: Consultant
-  job_id: "job:consultant"
-  context_note: "Assertive, confident stakeholder communication. Avoid generic project-management or relationship-management results."
+  role_title: Consulting Director
+  job_id: "job:consulting_director"
+  context_note: "Currently a Consulting Technical Manager (ERP software, 8+ yrs); growing into AI-enabled consulting, executive leadership, strategic oversight. Avoid generic project-management-only content."
 
 P2:
-  role_title: UX Researcher
-  job_id: "job:ux_researcher"
-  context_note: "Research methods, focus groups, usability testing."
+  role_title: "DevOps Engineer (AI Specialization)"
+  job_id: "job:devops_engineer_ai"
+  context_note: "Currently a DevOps Engineer (IT/electrical signal analysis, 8+ yrs; programming/scripting, AWS, CI/CD); growing into building AI agents, LLM integration, AI infrastructure design."
 
 P3:
-  role_title: Product Designer
-  job_id: "job:product_designer_frontend"
-  context_note: "Product Designer (front-end skills): design plus hands-on front-end skills (e.g. React) and some data/database literacy."
+  role_title: Senior Marketing Manager
+  job_id: "job:senior_marketing_manager"
+  context_note: "Currently a Marketing Analytics Manager (hospitality, 8+ yrs; data analysis, customer profiling, presentation); growing into marketing business acumen, strategic thinking, systems thinking."
 
 P4:
-  role_title: Communications Specialist
-  job_id: "job:communications_specialist"
-  context_note: "Practical content skills (video editing, social content), intermediate or advanced level. No management courses."
+  role_title: LLM Engineer
+  job_id: "job:llm_engineer"
+  context_note: "Currently an Engineering Manager (IT/software, 8+ yrs; people/project management, technical systems acumen); growing into LLMOps, prompt engineering, fine-tuning -- a management-to-IC technical transition."
 
 P5:
-  role_title: Architectural Visualiser
-  job_id: "job:architectural_visualiser"
-  context_note: "Rendering and visualisation, with project management as an adjacent skill. No data science."
+  role_title: Executive Director
+  job_id: "job:executive_director_nonprofit"
+  context_note: "Currently a Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
 
 P6:
   role_title: HR Manager

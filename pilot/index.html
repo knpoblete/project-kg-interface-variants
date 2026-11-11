@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../prototype/styles.css">
 <link rel="stylesheet" href="pilot.css">
 <script src="../prototype/data.js"></script>
+<script src="roster.js"></script>
 </head>
 <body>
 <div class="page">
@@ -27,10 +28,16 @@
       the bottom of each screen.</p>
     </div>
 
-    <div class="intro-card">
+    <div id="picker-card" class="intro-card" hidden>
+      <p class="simple-note" style="font-style:normal;margin:0 0 4px">The questionnaire you filled in earlier was anonymous, so please pick your own CURRENT role below to start your session.</p>
+      <div id="role-picker" class="role-picker"></div>
+    </div>
+
+    <div id="confirm-card" class="intro-card" hidden>
       <div id="role-line" class="role-line">Loading role…</div>
       <div>
         <a id="begin-link" class="btn-primary" style="display:inline-flex;align-items:center;text-decoration:none" href="app.html?step=warmup">Begin pilot session</a>
+        <a href="index.html" style="margin-left:12px">Not you? Pick again</a>
       </div>
     </div>
   </main>
@@ -39,13 +46,33 @@
 <script src="../prototype/render.js"></script>
 <script>
 async function init() {
-  const participantId = new URLSearchParams(location.search).get("participant") || "D0";
+  const participantId = new URLSearchParams(location.search).get("participant");
+
+  if (!participantId) {
+    document.getElementById("picker-card").hidden = false;
+    const picker = document.getElementById("role-picker");
+    picker.innerHTML = PARTICIPANT_ROSTER.map(
+      (p) => `
+      <button type="button" class="role-picker-option" data-participant="${p.id}">
+        <span class="role-picker-title">${escapeHtml(p.currentRole)}</span>
+        <span class="role-picker-industry">${escapeHtml(p.industry)}</span>
+      </button>`
+    ).join("");
+    picker.querySelectorAll("[data-participant]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        location.href = `index.html?participant=${encodeURIComponent(btn.dataset.participant)}`;
+      });
+    });
+    return;
+  }
+
+  document.getElementById("confirm-card").hidden = false;
   document.getElementById("begin-link").href = `app.html?step=warmup&participant=${encodeURIComponent(participantId)}`;
 
   const roleLine = document.getElementById("role-line");
   try {
     const sets = await fetchContentSets(participantId);
-    roleLine.innerHTML = `Participant <b>${escapeHtml(participantId)}</b> -- target role for this session: <b>${escapeHtml(sets[0].role.title)}</b>. All course and job-ad data is synthetic.`;
+    roleLine.innerHTML = `Target role for this session: <b>${escapeHtml(sets[0].role.title)}</b>. All course and job-ad data is synthetic.`;
   } catch (err) {
     roleLine.textContent = `Couldn't load the pilot's role data: ${err.message || err}. Make sure data/synthetic/ has been generated and you're viewing this over http://, not file://.`;
   }

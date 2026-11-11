@@ -4,32 +4,32 @@
   "position": 3,
   "variant": "A",
   "role": {
-    "job_id": "job:ux_researcher",
-    "title": "UX Researcher",
-    "sector": "Research",
-    "role_basis": "ESCO 'user researcher' occupation group / O*NET-adjacent UX Researcher profile",
-    "context_note": "Research methods, focus groups, usability testing."
+    "job_id": "job:devops_engineer_ai",
+    "title": "DevOps Engineer (AI Specialization)",
+    "sector": "Software Engineering",
+    "role_basis": "O*NET 15-1252.00 Software Developers, extended with an AI/MLOps specialization skill set (DevOps Engineer profile)",
+    "context_note": "Currently a DevOps Engineer (IT/electrical signal analysis, 8+ yrs; programming/scripting, AWS, CI/CD); growing into building AI agents, LLM integration, AI infrastructure design."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
-    "sort_line": "Best fit first, based on the skills employers ask for in UX Researcher job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in DevOps Engineer (AI Specialization) job ads.",
     "based_on_chips": [
-      "UX Researcher job ads",
+      "DevOps Engineer (AI Specialization) job ads",
       "Course description"
     ]
   },
   "courses": [
     {
       "id": "course:p2_c3_selected",
-      "title": "Moderating Focus Groups",
+      "title": "AI Infrastructure Design for Engineering Teams",
       "level": "Intermediate",
       "duration_min": 110,
       "updated": "2026-01",
-      "description": "Moderating Focus Groups focuses on focus group moderation for people working toward a UX Researcher role, through hands-on exercises and short review checkpoints. It also introduces interview technique, enough to apply alongside focus group moderation in real UX Researcher work. By the end, you'll be able to explain your approach to focus group moderation and show how interview technique supports it.",
+      "description": "AI Infrastructure Design for Engineering Teams takes you from the basics of machine learning infrastructure design to applying it on a realistic DevOps Engineer (AI Specialization) scenario, through short lessons and hands-on practice. Along the way, you'll also get a practical introduction to model operations pipelines, enough to use it alongside machine learning infrastructure design day to day. Expect a practical course, not a lecture-heavy one.",
       "learning_outcomes": [
-        "Applying focus group moderation to a real UX Researcher scenario",
-        "Practicing focus group moderation through guided exercises",
-        "Getting a working introduction to interview technique",
+        "Applying machine learning infrastructure design to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing machine learning infrastructure design through guided exercises",
+        "Getting a working introduction to model operations pipelines",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -44,62 +44,62 @@
       "rules_matched": "Rule A (teaches) · Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:focus_group_moderation",
-          "skill_name": "focus group moderation",
+          "skill_id": "skill:machine_learning_infrastructure_design",
+          "skill_name": "machine learning infrastructure design",
           "teaches_confidence": 0.88,
           "band": "strong"
         },
         {
-          "skill_id": "skill:interview_technique",
-          "skill_name": "interview technique",
+          "skill_id": "skill:model_operations_pipelines",
+          "skill_name": "model operations pipelines",
           "teaches_confidence": 0.53,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches focus group moderation, which comes up often in UX Researcher job ads.",
+        "summary": "Teaches machine learning infrastructure design, which comes up often in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Focus group moderation comes up often in UX Researcher job ads, and it's the main topic of this course. Interview technique comes up sometimes in those ads, and the course covers some of it.",
+          "panel_prose": "Machine learning infrastructure design comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course. Model operations pipelines comes up sometimes in those ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: focus group moderation is mentioned often.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: machine learning infrastructure design is mentioned often.",
               "report_ids": [
                 "P2-C3-main-requires"
               ]
             },
             {
-              "text": "From UX Researcher job ads: interview technique is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: model operations pipelines is mentioned sometimes.",
               "report_ids": [
                 "P2-C3-secondary-requires"
               ]
             },
             {
-              "text": "From the course description: focus group moderation is the main topic; interview technique is covered in part.",
+              "text": "From the course description: machine learning infrastructure design is the main topic; model operations pipelines is covered in part.",
               "report_ids": [
                 "P2-C3-main-teaches",
                 "P2-C3-secondary-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches focus group moderation, which comes up often in UX Researcher job ads."
+          "card_reason": "Teaches machine learning infrastructure design, which comes up often in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:focus_group_moderation",
+              "id": "skill:machine_learning_infrastructure_design",
               "kind": "skill",
-              "label": "Focus group moderation",
+              "label": "Machine learning infrastructure design",
               "caption": "Skill employers want"
             },
             {
-              "id": "skill:interview_technique",
+              "id": "skill:model_operations_pipelines",
               "kind": "skill",
-              "label": "Interview technique",
+              "label": "Model operations pipelines",
               "caption": "Skill employers want"
             },
             {
@@ -112,14 +112,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:focus_group_moderation",
+              "to": "skill:machine_learning_infrastructure_design",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-main-requires"
             },
             {
-              "from": "skill:focus_group_moderation",
+              "from": "skill:machine_learning_infrastructure_design",
               "to": "course:p2_c3_selected",
               "strength": "strong",
               "label": "main topic",
@@ -128,14 +128,14 @@
             },
             {
               "from": "role",
-              "to": "skill:interview_technique",
+              "to": "skill:model_operations_pipelines",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-secondary-requires"
             },
             {
-              "from": "skill:interview_technique",
+              "from": "skill:model_operations_pipelines",
               "to": "course:p2_c3_selected",
               "strength": "weaker",
               "label": "covered in part",
@@ -150,7 +150,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Focus group moderation → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Machine learning infrastructure design → This course"
         },
         "C": {
           "rules_matched": [
@@ -159,17 +159,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "focus group moderation",
+              "skill": "machine learning infrastructure design",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "focus group moderation",
-                  "source_text": "Comes up often in UX Researcher job ads",
+                  "value": "machine learning infrastructure design",
+                  "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C3-main-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "focus group moderation",
+                  "value": "machine learning infrastructure design",
                   "source_text": "From the course description",
                   "report_id": "P2-C3-main-teaches"
                 }
@@ -181,17 +181,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "interview technique",
+              "skill": "model operations pipelines",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "interview technique",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "model operations pipelines",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C3-secondary-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "interview technique",
+                  "value": "model operations pipelines",
                   "source_text": "From the course description",
                   "report_id": "P2-C3-secondary-teaches"
                 }
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p2_c3_other_a",
-      "title": "Research Synthesis for Practitioners",
+      "title": "Continuous Integration for Practitioners",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Research Synthesis for Practitioners goes beyond the basics of research synthesis, for people already working toward a UX Researcher role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in research synthesis and want to go further.",
+      "description": "Continuous Integration for Practitioners goes beyond the basics of continuous integration, for people already working toward a DevOps Engineer (AI Specialization) role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in continuous integration and want to go further.",
       "learning_outcomes": [
-        "Applying research synthesis to a real UX Researcher scenario",
-        "Practicing research synthesis through guided exercises",
-        "Building a short research synthesis exercise from scratch",
+        "Applying continuous integration to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing continuous integration through guided exercises",
+        "Building a short continuous integration exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,43 +229,43 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:research_synthesis",
-          "skill_name": "research synthesis",
+          "skill_id": "skill:continuous_integration",
+          "skill_name": "continuous integration",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches research synthesis, which comes up often in UX Researcher job ads.",
+        "summary": "Teaches continuous integration, which comes up often in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Research synthesis comes up often in UX Researcher job ads, and it's the main topic of this course.",
+          "panel_prose": "Continuous integration comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: research synthesis is mentioned often.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: continuous integration is mentioned often.",
               "report_ids": [
                 "P2-C3-c3_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: research synthesis is main topic.",
+              "text": "From the course description: continuous integration is main topic.",
               "report_ids": [
                 "P2-C3-c3_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches research synthesis, which comes up often in UX Researcher job ads."
+          "card_reason": "Teaches continuous integration, which comes up often in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:research_synthesis",
+              "id": "skill:continuous_integration",
               "kind": "skill",
-              "label": "Research synthesis",
+              "label": "Continuous integration",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:research_synthesis",
+              "to": "skill:continuous_integration",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-c3_other_a-requires"
             },
             {
-              "from": "skill:research_synthesis",
+              "from": "skill:continuous_integration",
               "to": "course:p2_c3_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Research synthesis → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Continuous integration → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "research synthesis",
+              "skill": "continuous integration",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "research synthesis",
-                  "source_text": "Comes up often in UX Researcher job ads",
+                  "value": "continuous integration",
+                  "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C3-c3_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "research synthesis",
+                  "value": "continuous integration",
                   "source_text": "From the course description",
                   "report_id": "P2-C3-c3_other_a-teaches"
                 }
@@ -333,15 +333,15 @@
     },
     {
       "id": "course:p2_c3_other_b",
-      "title": "Data Visualization Basics",
+      "title": "Infrastructure As Code Basics",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Data Visualization Basics walks you through the basics of data visualization, built for people new to UX Researcher work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of data visualization, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Infrastructure As Code Basics walks you through the basics of infrastructure as code, built for people new to DevOps Engineer (AI Specialization) work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of infrastructure as code, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying data visualization to a real UX Researcher scenario",
-        "Practicing data visualization through guided exercises",
-        "Building a short data visualization exercise from scratch",
+        "Applying infrastructure as code to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing infrastructure as code through guided exercises",
+        "Building a short infrastructure as code exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -356,43 +356,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:data_visualization",
-          "skill_name": "data visualization",
+          "skill_id": "skill:infrastructure_as_code",
+          "skill_name": "infrastructure as code",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches data visualization, which comes up sometimes in UX Researcher job ads.",
+        "summary": "Teaches infrastructure as code, which comes up sometimes in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Data visualization comes up sometimes in UX Researcher job ads, and the course covers some of it.",
+          "panel_prose": "Infrastructure as code comes up sometimes in DevOps Engineer (AI Specialization) job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: data visualization is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: infrastructure as code is mentioned sometimes.",
               "report_ids": [
                 "P2-C3-c3_other_b-requires"
               ]
             },
             {
-              "text": "From the course description: data visualization is covered in part.",
+              "text": "From the course description: infrastructure as code is covered in part.",
               "report_ids": [
                 "P2-C3-c3_other_b-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches data visualization, which comes up sometimes in UX Researcher job ads."
+          "card_reason": "Teaches infrastructure as code, which comes up sometimes in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:data_visualization",
+              "id": "skill:infrastructure_as_code",
               "kind": "skill",
-              "label": "Data visualization",
+              "label": "Infrastructure as code",
               "caption": "Skill employers want"
             },
             {
@@ -404,14 +404,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:data_visualization",
+              "to": "skill:infrastructure_as_code",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-c3_other_b-requires"
             },
             {
-              "from": "skill:data_visualization",
+              "from": "skill:infrastructure_as_code",
               "to": "course:p2_c3_other_b",
               "strength": "weaker",
               "label": "covered in part",
@@ -426,7 +426,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Data visualization → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Infrastructure as code → This course"
         },
         "C": {
           "rules_matched": [
@@ -435,17 +435,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "data visualization",
+              "skill": "infrastructure as code",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "data visualization",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "infrastructure as code",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C3-c3_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "data visualization",
+                  "value": "infrastructure as code",
                   "source_text": "From the course description",
                   "report_id": "P2-C3-c3_other_b-teaches"
                 }
@@ -460,15 +460,15 @@
     },
     {
       "id": "course:p2_c3_other_c",
-      "title": "Accessibility Testing in Brief",
+      "title": "Observability and Monitoring in Brief",
       "level": "Beginner",
       "duration_min": 40,
       "updated": "2025-09",
-      "description": "Accessibility Testing in Brief walks you through the basics of accessibility testing, built for people new to UX Researcher work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of accessibility testing, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Observability and Monitoring in Brief walks you through the basics of observability and monitoring, built for people new to DevOps Engineer (AI Specialization) work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of observability and monitoring, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying accessibility testing to a real UX Researcher scenario",
-        "Practicing accessibility testing through guided exercises",
-        "Building a short accessibility testing exercise from scratch",
+        "Applying observability and monitoring to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing observability and monitoring through guided exercises",
+        "Building a short observability and monitoring exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -483,43 +483,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:accessibility_testing",
-          "skill_name": "accessibility testing",
+          "skill_id": "skill:observability_and_monitoring",
+          "skill_name": "observability and monitoring",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches accessibility testing, which comes up sometimes in UX Researcher job ads.",
+        "summary": "Teaches observability and monitoring, which comes up sometimes in DevOps Engineer (AI Specialization) job ads.",
         "A": {
-          "panel_prose": "Accessibility testing comes up sometimes in UX Researcher job ads, and the course covers some of it.",
+          "panel_prose": "Observability and monitoring comes up sometimes in DevOps Engineer (AI Specialization) job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From UX Researcher job ads: accessibility testing is mentioned sometimes.",
+              "text": "From DevOps Engineer (AI Specialization) job ads: observability and monitoring is mentioned sometimes.",
               "report_ids": [
                 "P2-C3-c3_other_c-requires"
               ]
             },
             {
-              "text": "From the course description: accessibility testing is covered in part.",
+              "text": "From the course description: observability and monitoring is covered in part.",
               "report_ids": [
                 "P2-C3-c3_other_c-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches accessibility testing, which comes up sometimes in UX Researcher job ads."
+          "card_reason": "Teaches observability and monitoring, which comes up sometimes in DevOps Engineer (AI Specialization) job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "UX Researcher"
+              "label": "DevOps Engineer (AI Specialization)"
             },
             {
-              "id": "skill:accessibility_testing",
+              "id": "skill:observability_and_monitoring",
               "kind": "skill",
-              "label": "Accessibility testing",
+              "label": "Observability and monitoring",
               "caption": "Skill employers want"
             },
             {
@@ -531,14 +531,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:accessibility_testing",
+              "to": "skill:observability_and_monitoring",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From UX Researcher job ads",
+              "source_label": "From DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-c3_other_c-requires"
             },
             {
-              "from": "skill:accessibility_testing",
+              "from": "skill:observability_and_monitoring",
               "to": "course:p2_c3_other_c",
               "strength": "weaker",
               "label": "covered in part",
@@ -553,7 +553,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "UX Researcher → Accessibility testing → This course"
+          "card_path": "DevOps Engineer (AI Specialization) → Observability and monitoring → This course"
         },
         "C": {
           "rules_matched": [
@@ -562,17 +562,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "accessibility testing",
+              "skill": "observability and monitoring",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "accessibility testing",
-                  "source_text": "Comes up sometimes in UX Researcher job ads",
+                  "value": "observability and monitoring",
+                  "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
                   "report_id": "P2-C3-c3_other_c-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "accessibility testing",
+                  "value": "observability and monitoring",
                   "source_text": "From the course description",
                   "report_id": "P2-C3-c3_other_c-teaches"
                 }
@@ -590,78 +590,78 @@
   "course_score": 0.9849,
   "paths": [
     {
-      "skill_id": "skill:focus_group_moderation",
-      "skill_name": "focus group moderation",
+      "skill_id": "skill:machine_learning_infrastructure_design",
+      "skill_name": "machine learning infrastructure design",
       "which": "main",
       "requires_confidence": 0.8,
       "teaches_confidence": 0.88,
       "requires_report_id": "P2-C3-main-requires",
       "teaches_report_id": "P2-C3-main-teaches",
       "evidence_span": {
-        "text": "focus group moderation",
-        "start": 35,
-        "end": 57
+        "text": "machine learning infrastructure design",
+        "start": 76,
+        "end": 114
       }
     },
     {
-      "skill_id": "skill:interview_technique",
-      "skill_name": "interview technique",
+      "skill_id": "skill:model_operations_pipelines",
+      "skill_name": "model operations pipelines",
       "which": "secondary",
       "requires_confidence": 0.53,
       "teaches_confidence": 0.53,
       "requires_report_id": "P2-C3-secondary-requires",
       "teaches_report_id": "P2-C3-secondary-teaches",
       "evidence_span": {
-        "text": "interview technique",
-        "start": 182,
-        "end": 201
+        "text": "model operations pipelines",
+        "start": 295,
+        "end": 321
       }
     }
   ],
   "explanation": {
-    "summary": "Teaches focus group moderation, which comes up often in UX Researcher job ads.",
+    "summary": "Teaches machine learning infrastructure design, which comes up often in DevOps Engineer (AI Specialization) job ads.",
     "A": {
-      "panel_prose": "Focus group moderation comes up often in UX Researcher job ads, and it's the main topic of this course. Interview technique comes up sometimes in those ads, and the course covers some of it.",
+      "panel_prose": "Machine learning infrastructure design comes up often in DevOps Engineer (AI Specialization) job ads, and it's the main topic of this course. Model operations pipelines comes up sometimes in those ads, and the course covers some of it.",
       "detail_bullets": [
         {
-          "text": "From UX Researcher job ads: focus group moderation is mentioned often.",
+          "text": "From DevOps Engineer (AI Specialization) job ads: machine learning infrastructure design is mentioned often.",
           "report_ids": [
             "P2-C3-main-requires"
           ]
         },
         {
-          "text": "From UX Researcher job ads: interview technique is mentioned sometimes.",
+          "text": "From DevOps Engineer (AI Specialization) job ads: model operations pipelines is mentioned sometimes.",
           "report_ids": [
             "P2-C3-secondary-requires"
           ]
         },
         {
-          "text": "From the course description: focus group moderation is the main topic; interview technique is covered in part.",
+          "text": "From the course description: machine learning infrastructure design is the main topic; model operations pipelines is covered in part.",
           "report_ids": [
             "P2-C3-main-teaches",
             "P2-C3-secondary-teaches"
           ]
         }
       ],
-      "card_reason": "Teaches focus group moderation, which comes up often in UX Researcher job ads."
+      "card_reason": "Teaches machine learning infrastructure design, which comes up often in DevOps Engineer (AI Specialization) job ads."
     },
     "B": {
       "nodes": [
         {
           "id": "role",
           "kind": "role",
-          "label": "UX Researcher"
+          "label": "DevOps Engineer (AI Specialization)"
         },
         {
-          "id": "skill:focus_group_moderation",
+          "id": "skill:machine_learning_infrastructure_design",
           "kind": "skill",
-          "label": "Focus group moderation",
+          "label": "Machine learning infrastructure design",
           "caption": "Skill employers want"
         },
         {
-          "id": "skill:interview_technique",
+          "id": "skill:model_operations_pipelines",
           "kind": "skill",
-          "label": "Interview technique",
+          "label": "Model operations pipelines",
           "caption": "Skill employers want"
         },
         {
@@ -674,14 +674,14 @@
       "edges": [
         {
           "from": "role",
-          "to": "skill:focus_group_moderation",
+          "to": "skill:machine_learning_infrastructure_design",
           "strength": "strong",
           "label": "often asked for",
-          "source_label": "From UX Researcher job ads",
+          "source_label": "From DevOps Engineer (AI Specialization) job ads",
           "report_id": "P2-C3-main-requires"
         },
         {
-          "from": "skill:focus_group_moderation",
+          "from": "skill:machine_learning_infrastructure_design",
           "to": "course:p2_c3_selected",
           "strength": "strong",
           "label": "main topic",
@@ -690,14 +690,14 @@
         },
         {
           "from": "role",
-          "to": "skill:interview_technique",
+          "to": "skill:model_operations_pipelines",
           "strength": "weaker",
           "label": "sometimes asked for",
-          "source_label": "From UX Researcher job ads",
+          "source_label": "From DevOps Engineer (AI Specialization) job ads",
           "report_id": "P2-C3-secondary-requires"
         },
         {
-          "from": "skill:interview_technique",
+          "from": "skill:model_operations_pipelines",
           "to": "course:p2_c3_selected",
           "strength": "weaker",
           "label": "covered in part",
@@ -712,7 +712,7 @@
         "Skill employers want",
         "Recommended course"
       ],
-      "card_path": "UX Researcher → Focus group moderation → This course"
+      "card_path": "DevOps Engineer (AI Specialization) → Machine learning infrastructure design → This course"
     },
     "C": {
       "rules_matched": [
@@ -721,17 +721,17 @@
           "ui_label": "Rule A",
           "name": "Courses that teach a skill your role needs",
           "strength": "Strong match",
-          "skill": "focus group moderation",
+          "skill": "machine learning infrastructure design",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "focus group moderation",
-              "source_text": "Comes up often in UX Researcher job ads",
+              "value": "machine learning infrastructure design",
+              "source_text": "Comes up often in DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-main-requires"
             },
             {
               "label": "Main topic of this course:",
-              "value": "focus group moderation",
+              "value": "machine learning infrastructure design",
               "source_text": "From the course description",
               "report_id": "P2-C3-main-teaches"
             }
@@ -743,17 +743,17 @@
           "ui_label": "Rule B",
           "name": "Courses that cover part of a skill your role needs",
           "strength": "Weaker match",
-          "skill": "interview technique",
+          "skill": "model operations pipelines",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "interview technique",
-              "source_text": "Comes up sometimes in UX Researcher job ads",
+              "value": "model operations pipelines",
+              "source_text": "Comes up sometimes in DevOps Engineer (AI Specialization) job ads",
               "report_id": "P2-C3-secondary-requires"
             },
             {
               "label": "Partly covered in this course:",
-              "value": "interview technique",
+              "value": "model operations pipelines",
               "source_text": "From the course description",
               "report_id": "P2-C3-secondary-teaches"
             }
@@ -768,15 +768,15 @@
   "alternates": [
     {
       "id": "course:p2_c3_alt_a",
-      "title": "Focus Group Moderation Essentials",
+      "title": "Machine Learning Infrastructure Design Essentials",
       "level": "Beginner",
       "duration_min": 50,
       "updated": "2025-08",
-      "description": "Focus Group Moderation Essentials is a short introduction to focus group moderation for people moving toward a UX Researcher role. You'll walk through the essential vocabulary and a few guided exercises that show focus group moderation in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if focus group moderation is new to you.",
+      "description": "Machine Learning Infrastructure Design Essentials walks you through the basics of machine learning infrastructure design, built for people new to DevOps Engineer (AI Specialization) work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of machine learning infrastructure design, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying focus group moderation to a real UX Researcher scenario",
-        "Practicing focus group moderation through guided exercises",
-        "Building a short focus group moderation exercise from scratch",
+        "Applying machine learning infrastructure design to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing machine learning infrastructure design through guided exercises",
+        "Building a short machine learning infrastructure design exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -791,8 +791,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:focus_group_moderation",
-          "skill_name": "focus group moderation",
+          "skill_id": "skill:machine_learning_infrastructure_design",
+          "skill_name": "machine learning infrastructure design",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
@@ -800,15 +800,15 @@
     },
     {
       "id": "course:p2_c3_alt_b",
-      "title": "Advanced Focus Group Moderation Techniques",
+      "title": "Advanced Machine Learning Infrastructure Design Techniques",
       "level": "Advanced",
       "duration_min": 160,
       "updated": "2025-07",
-      "description": "Advanced Focus Group Moderation Techniques is a focused course on focus group moderation for people already working toward a UX Researcher role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying focus group moderation on your own.",
+      "description": "Advanced Machine Learning Infrastructure Design Techniques goes beyond the basics of machine learning infrastructure design, for people already working toward a DevOps Engineer (AI Specialization) role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in machine learning infrastructure design and want to go further.",
       "learning_outcomes": [
-        "Applying focus group moderation to a real UX Researcher scenario",
-        "Practicing focus group moderation through guided exercises",
-        "Building a short focus group moderation exercise from scratch",
+        "Applying machine learning infrastructure design to a real DevOps Engineer (AI Specialization) scenario",
+        "Practicing machine learning infrastructure design through guided exercises",
+        "Building a short machine learning infrastructure design exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -823,8 +823,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:focus_group_moderation",
-          "skill_name": "focus group moderation",
+          "skill_id": "skill:machine_learning_infrastructure_design",
+          "skill_name": "machine learning infrastructure design",
           "teaches_confidence": 0.25,
           "band": "unused"
         }

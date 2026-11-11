@@ -20,6 +20,17 @@
 .intro-card .role-line { font-size: 15px; color: var(--text-muted); }
 .intro-card .role-line b { color: var(--text); }
 
+/* Self-identification picker (start screen, no ?participant= yet) */
+.role-picker { display: flex; flex-direction: column; gap: 10px; }
+.role-picker-option {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  text-align: left; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-md);
+  background: var(--surface); cursor: pointer; font: inherit;
+}
+.role-picker-option:hover { border-color: var(--accent); background: #F7F9FE; }
+.role-picker-title { font-weight: 600; color: var(--text); }
+.role-picker-industry { font-size: 13px; color: var(--text-muted); }
+
 .end-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
   padding: 32px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start;

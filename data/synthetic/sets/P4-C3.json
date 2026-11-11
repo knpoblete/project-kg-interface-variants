@@ -4,32 +4,32 @@
   "position": 3,
   "variant": "C",
   "role": {
-    "job_id": "job:communications_specialist",
-    "title": "Communications Specialist",
-    "sector": "Media & Communications",
-    "role_basis": "O*NET 27-3031.00 Public Relations Specialists / ESCO 'communication officer'",
-    "context_note": "Practical content skills (video editing, social content), intermediate or advanced level. No management courses."
+    "job_id": "job:llm_engineer",
+    "title": "LLM Engineer",
+    "sector": "Artificial Intelligence Engineering",
+    "role_basis": "O*NET 15-1221.00 Computer and Information Research Scientists, extended with a production LLM-engineering specialization (LLM Engineer profile)",
+    "context_note": "Currently an Engineering Manager (IT/software, 8+ yrs; people/project management, technical systems acumen); growing into LLMOps, prompt engineering, fine-tuning -- a management-to-IC technical transition."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
-    "sort_line": "Best fit first, based on the skills employers ask for in Communications Specialist job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in LLM Engineer job ads.",
     "based_on_chips": [
-      "Communications Specialist job ads",
+      "LLM Engineer job ads",
       "Course description"
     ]
   },
   "courses": [
     {
       "id": "course:p4_c3_selected",
-      "title": "Brand Messaging That Resonates",
+      "title": "Fine-Tuning and Model Adaptation for AI Teams",
       "level": "Intermediate",
       "duration_min": 110,
       "updated": "2026-01",
-      "description": "By the end of Brand Messaging That Resonates, you'll be able to apply brand messaging confidently in Communications Specialist work, with a working sense of where analytics for content fits alongside it. The course moves from core brand messaging technique through a few applied exercises, with a lighter look at analytics for content woven in throughout.",
+      "description": "Fine-Tuning and Model Adaptation for AI Teams focuses on fine-tuning and model adaptation for people working toward a LLM Engineer role, through hands-on exercises and short review checkpoints. It also introduces people and project management, enough to apply alongside fine-tuning and model adaptation in real LLM Engineer work. By the end, you'll be able to explain your approach to fine-tuning and model adaptation and show how people and project management supports it.",
       "learning_outcomes": [
-        "Applying brand messaging to a real Communications Specialist scenario",
-        "Practicing brand messaging through guided exercises",
-        "Getting a working introduction to analytics for content",
+        "Applying fine-tuning and model adaptation to a real LLM Engineer scenario",
+        "Practicing fine-tuning and model adaptation through guided exercises",
+        "Getting a working introduction to people and project management",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -44,62 +44,62 @@
       "rules_matched": "Rule A (teaches) · Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:brand_messaging",
-          "skill_name": "brand messaging",
+          "skill_id": "skill:fine_tuning_and_model_adaptation",
+          "skill_name": "fine-tuning and model adaptation",
           "teaches_confidence": 0.88,
           "band": "strong"
         },
         {
-          "skill_id": "skill:analytics_for_content",
-          "skill_name": "analytics for content",
+          "skill_id": "skill:people_and_project_management",
+          "skill_name": "people and project management",
           "teaches_confidence": 0.53,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches brand messaging, which comes up often in Communications Specialist job ads.",
+        "summary": "Teaches fine-tuning and model adaptation, which comes up often in LLM Engineer job ads.",
         "A": {
-          "panel_prose": "Brand messaging comes up often in Communications Specialist job ads, and it's the main topic of this course. Analytics for content comes up sometimes in those ads, and the course covers some of it.",
+          "panel_prose": "Fine-tuning and model adaptation comes up often in LLM Engineer job ads, and it's the main topic of this course. People and project management comes up sometimes in those ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Communications Specialist job ads: brand messaging is mentioned often.",
+              "text": "From LLM Engineer job ads: fine-tuning and model adaptation is mentioned often.",
               "report_ids": [
                 "P4-C3-main-requires"
               ]
             },
             {
-              "text": "From Communications Specialist job ads: analytics for content is mentioned sometimes.",
+              "text": "From LLM Engineer job ads: people and project management is mentioned sometimes.",
               "report_ids": [
                 "P4-C3-secondary-requires"
               ]
             },
             {
-              "text": "From the course description: brand messaging is the main topic; analytics for content is covered in part.",
+              "text": "From the course description: fine-tuning and model adaptation is the main topic; people and project management is covered in part.",
               "report_ids": [
                 "P4-C3-main-teaches",
                 "P4-C3-secondary-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches brand messaging, which comes up often in Communications Specialist job ads."
+          "card_reason": "Teaches fine-tuning and model adaptation, which comes up often in LLM Engineer job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Communications Specialist"
+              "label": "LLM Engineer"
             },
             {
-              "id": "skill:brand_messaging",
+              "id": "skill:fine_tuning_and_model_adaptation",
               "kind": "skill",
-              "label": "Brand messaging",
+              "label": "Fine-tuning and model adaptation",
               "caption": "Skill employers want"
             },
             {
-              "id": "skill:analytics_for_content",
+              "id": "skill:people_and_project_management",
               "kind": "skill",
-              "label": "Analytics for content",
+              "label": "People and project management",
               "caption": "Skill employers want"
             },
             {
@@ -112,14 +112,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:brand_messaging",
+              "to": "skill:fine_tuning_and_model_adaptation",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From Communications Specialist job ads",
+              "source_label": "From LLM Engineer job ads",
               "report_id": "P4-C3-main-requires"
             },
             {
-              "from": "skill:brand_messaging",
+              "from": "skill:fine_tuning_and_model_adaptation",
               "to": "course:p4_c3_selected",
               "strength": "strong",
               "label": "main topic",
@@ -128,14 +128,14 @@
             },
             {
               "from": "role",
-              "to": "skill:analytics_for_content",
+              "to": "skill:people_and_project_management",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Communications Specialist job ads",
+              "source_label": "From LLM Engineer job ads",
               "report_id": "P4-C3-secondary-requires"
             },
             {
-              "from": "skill:analytics_for_content",
+              "from": "skill:people_and_project_management",
               "to": "course:p4_c3_selected",
               "strength": "weaker",
               "label": "covered in part",
@@ -150,7 +150,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Communications Specialist → Brand messaging → This course"
+          "card_path": "LLM Engineer → Fine-tuning and model adaptation → This course"
         },
         "C": {
           "rules_matched": [
@@ -159,17 +159,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "brand messaging",
+              "skill": "fine-tuning and model adaptation",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "brand messaging",
-                  "source_text": "Comes up often in Communications Specialist job ads",
+                  "value": "fine-tuning and model adaptation",
+                  "source_text": "Comes up often in LLM Engineer job ads",
                   "report_id": "P4-C3-main-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "brand messaging",
+                  "value": "fine-tuning and model adaptation",
                   "source_text": "From the course description",
                   "report_id": "P4-C3-main-teaches"
                 }
@@ -181,17 +181,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "analytics for content",
+              "skill": "people and project management",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "analytics for content",
-                  "source_text": "Comes up sometimes in Communications Specialist job ads",
+                  "value": "people and project management",
+                  "source_text": "Comes up sometimes in LLM Engineer job ads",
                   "report_id": "P4-C3-secondary-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "analytics for content",
+                  "value": "people and project management",
                   "source_text": "From the course description",
                   "report_id": "P4-C3-secondary-teaches"
                 }
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p4_c3_other_a",
-      "title": "Crisis Communication for Practitioners",
+      "title": "Model Deployment Pipelines for Practitioners",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Crisis Communication for Practitioners goes beyond the basics of crisis communication, for people already working toward a Communications Specialist role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in crisis communication and want to go further.",
+      "description": "Model Deployment Pipelines for Practitioners goes beyond the basics of model deployment pipelines, for people already working toward a LLM Engineer role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in model deployment pipelines and want to go further.",
       "learning_outcomes": [
-        "Applying crisis communication to a real Communications Specialist scenario",
-        "Practicing crisis communication through guided exercises",
-        "Building a short crisis communication exercise from scratch",
+        "Applying model deployment pipelines to a real LLM Engineer scenario",
+        "Practicing model deployment pipelines through guided exercises",
+        "Building a short model deployment pipelines exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,43 +229,43 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:crisis_communication",
-          "skill_name": "crisis communication",
+          "skill_id": "skill:model_deployment_pipelines",
+          "skill_name": "model deployment pipelines",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches crisis communication, which comes up often in Communications Specialist job ads.",
+        "summary": "Teaches model deployment pipelines, which comes up often in LLM Engineer job ads.",
         "A": {
-          "panel_prose": "Crisis communication comes up often in Communications Specialist job ads, and it's the main topic of this course.",
+          "panel_prose": "Model deployment pipelines comes up often in LLM Engineer job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From Communications Specialist job ads: crisis communication is mentioned often.",
+              "text": "From LLM Engineer job ads: model deployment pipelines is mentioned often.",
               "report_ids": [
                 "P4-C3-c3_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: crisis communication is main topic.",
+              "text": "From the course description: model deployment pipelines is main topic.",
               "report_ids": [
                 "P4-C3-c3_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches crisis communication, which comes up often in Communications Specialist job ads."
+          "card_reason": "Teaches model deployment pipelines, which comes up often in LLM Engineer job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Communications Specialist"
+              "label": "LLM Engineer"
             },
             {
-              "id": "skill:crisis_communication",
+              "id": "skill:model_deployment_pipelines",
               "kind": "skill",
-              "label": "Crisis communication",
+              "label": "Model deployment pipelines",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:crisis_communication",
+              "to": "skill:model_deployment_pipelines",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From Communications Specialist job ads",
+              "source_label": "From LLM Engineer job ads",
               "report_id": "P4-C3-c3_other_a-requires"
             },
             {
-              "from": "skill:crisis_communication",
+              "from": "skill:model_deployment_pipelines",
               "to": "course:p4_c3_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Communications Specialist → Crisis communication → This course"
+          "card_path": "LLM Engineer → Model deployment pipelines → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "crisis communication",
+              "skill": "model deployment pipelines",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "crisis communication",
-                  "source_text": "Comes up often in Communications Specialist job ads",
+                  "value": "model deployment pipelines",
+                  "source_text": "Comes up often in LLM Engineer job ads",
                   "report_id": "P4-C3-c3_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "crisis communication",
+                  "value": "model deployment pipelines",
                   "source_text": "From the course description",
                   "report_id": "P4-C3-c3_other_a-teaches"
                 }
@@ -333,15 +333,15 @@
     },
     {
       "id": "course:p4_c3_other_b",
-      "title": "Podcast Production Basics",
+      "title": "Product Requirements Gathering Basics",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Podcast Production Basics is a short introduction to podcast production for people moving toward a Communications Specialist role. You'll walk through the essential vocabulary and a few guided exercises that show podcast production in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if podcast production is new to you.",
+      "description": "Product Requirements Gathering Basics walks you through the basics of product requirements gathering, built for people new to LLM Engineer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of product requirements gathering, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying podcast production to a real Communications Specialist scenario",
-        "Practicing podcast production through guided exercises",
-        "Building a short podcast production exercise from scratch",
+        "Applying product requirements gathering to a real LLM Engineer scenario",
+        "Practicing product requirements gathering through guided exercises",
+        "Building a short product requirements gathering exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -356,43 +356,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:podcast_production",
-          "skill_name": "podcast production",
+          "skill_id": "skill:product_requirements_gathering",
+          "skill_name": "product requirements gathering",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches podcast production, which comes up sometimes in Communications Specialist job ads.",
+        "summary": "Teaches product requirements gathering, which comes up sometimes in LLM Engineer job ads.",
         "A": {
-          "panel_prose": "Podcast production comes up sometimes in Communications Specialist job ads, and the course covers some of it.",
+          "panel_prose": "Product requirements gathering comes up sometimes in LLM Engineer job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Communications Specialist job ads: podcast production is mentioned sometimes.",
+              "text": "From LLM Engineer job ads: product requirements gathering is mentioned sometimes.",
               "report_ids": [
                 "P4-C3-c3_other_b-requires"
               ]
             },
             {
-              "text": "From the course description: podcast production is covered in part.",
+              "text": "From the course description: product requirements gathering is covered in part.",
               "report_ids": [
                 "P4-C3-c3_other_b-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches podcast production, which comes up sometimes in Communications Specialist job ads."
+          "card_reason": "Teaches product requirements gathering, which comes up sometimes in LLM Engineer job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Communications Specialist"
+              "label": "LLM Engineer"
             },
             {
-              "id": "skill:podcast_production",
+              "id": "skill:product_requirements_gathering",
               "kind": "skill",
-              "label": "Podcast production",
+              "label": "Product requirements gathering",
               "caption": "Skill employers want"
             },
             {
@@ -404,14 +404,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:podcast_production",
+              "to": "skill:product_requirements_gathering",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Communications Specialist job ads",
+              "source_label": "From LLM Engineer job ads",
               "report_id": "P4-C3-c3_other_b-requires"
             },
             {
-              "from": "skill:podcast_production",
+              "from": "skill:product_requirements_gathering",
               "to": "course:p4_c3_other_b",
               "strength": "weaker",
               "label": "covered in part",
@@ -426,7 +426,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Communications Specialist → Podcast production → This course"
+          "card_path": "LLM Engineer → Product requirements gathering → This course"
         },
         "C": {
           "rules_matched": [
@@ -435,17 +435,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "podcast production",
+              "skill": "product requirements gathering",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "podcast production",
-                  "source_text": "Comes up sometimes in Communications Specialist job ads",
+                  "value": "product requirements gathering",
+                  "source_text": "Comes up sometimes in LLM Engineer job ads",
                   "report_id": "P4-C3-c3_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "podcast production",
+                  "value": "product requirements gathering",
                   "source_text": "From the course description",
                   "report_id": "P4-C3-c3_other_b-teaches"
                 }
@@ -460,15 +460,15 @@
     },
     {
       "id": "course:p4_c3_other_c",
-      "title": "Internal Communications in Brief",
+      "title": "Evaluation Metrics for Language Models in Brief",
       "level": "Beginner",
       "duration_min": 40,
       "updated": "2025-09",
-      "description": "Internal Communications in Brief walks you through the basics of internal communications, built for people new to Communications Specialist work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of internal communications, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Evaluation Metrics for Language Models in Brief walks you through the basics of evaluation metrics for language models, built for people new to LLM Engineer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of evaluation metrics for language models, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying internal communications to a real Communications Specialist scenario",
-        "Practicing internal communications through guided exercises",
-        "Building a short internal communications exercise from scratch",
+        "Applying evaluation metrics for language models to a real LLM Engineer scenario",
+        "Practicing evaluation metrics for language models through guided exercises",
+        "Building a short evaluation metrics for language models exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -483,43 +483,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:internal_communications",
-          "skill_name": "internal communications",
+          "skill_id": "skill:evaluation_metrics_for_language_models",
+          "skill_name": "evaluation metrics for language models",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches internal communications, which comes up sometimes in Communications Specialist job ads.",
+        "summary": "Teaches evaluation metrics for language models, which comes up sometimes in LLM Engineer job ads.",
         "A": {
-          "panel_prose": "Internal communications comes up sometimes in Communications Specialist job ads, and the course covers some of it.",
+          "panel_prose": "Evaluation metrics for language models comes up sometimes in LLM Engineer job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Communications Specialist job ads: internal communications is mentioned sometimes.",
+              "text": "From LLM Engineer job ads: evaluation metrics for language models is mentioned sometimes.",
               "report_ids": [
                 "P4-C3-c3_other_c-requires"
               ]
             },
             {
-              "text": "From the course description: internal communications is covered in part.",
+              "text": "From the course description: evaluation metrics for language models is covered in part.",
               "report_ids": [
                 "P4-C3-c3_other_c-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches internal communications, which comes up sometimes in Communications Specialist job ads."
+          "card_reason": "Teaches evaluation metrics for language models, which comes up sometimes in LLM Engineer job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Communications Specialist"
+              "label": "LLM Engineer"
             },
             {
-              "id": "skill:internal_communications",
+              "id": "skill:evaluation_metrics_for_language_models",
               "kind": "skill",
-              "label": "Internal communications",
+              "label": "Evaluation metrics for language models",
               "caption": "Skill employers want"
             },
             {
@@ -531,14 +531,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:internal_communications",
+              "to": "skill:evaluation_metrics_for_language_models",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Communications Specialist job ads",
+              "source_label": "From LLM Engineer job ads",
               "report_id": "P4-C3-c3_other_c-requires"
             },
             {
-              "from": "skill:internal_communications",
+              "from": "skill:evaluation_metrics_for_language_models",
               "to": "course:p4_c3_other_c",
               "strength": "weaker",
               "label": "covered in part",
@@ -553,7 +553,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Communications Specialist → Internal communications → This course"
+          "card_path": "LLM Engineer → Evaluation metrics for language models → This course"
         },
         "C": {
           "rules_matched": [
@@ -562,17 +562,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "internal communications",
+              "skill": "evaluation metrics for language models",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "internal communications",
-                  "source_text": "Comes up sometimes in Communications Specialist job ads",
+                  "value": "evaluation metrics for language models",
+                  "source_text": "Comes up sometimes in LLM Engineer job ads",
                   "report_id": "P4-C3-c3_other_c-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "internal communications",
+                  "value": "evaluation metrics for language models",
                   "source_text": "From the course description",
                   "report_id": "P4-C3-c3_other_c-teaches"
                 }
@@ -590,78 +590,78 @@
   "course_score": 0.9849,
   "paths": [
     {
-      "skill_id": "skill:brand_messaging",
-      "skill_name": "brand messaging",
+      "skill_id": "skill:fine_tuning_and_model_adaptation",
+      "skill_name": "fine-tuning and model adaptation",
       "which": "main",
       "requires_confidence": 0.8,
       "teaches_confidence": 0.88,
       "requires_report_id": "P4-C3-main-requires",
       "teaches_report_id": "P4-C3-main-teaches",
       "evidence_span": {
-        "text": "brand messaging",
-        "start": 70,
-        "end": 85
+        "text": "fine-tuning and model adaptation",
+        "start": 57,
+        "end": 89
       }
     },
     {
-      "skill_id": "skill:analytics_for_content",
-      "skill_name": "analytics for content",
+      "skill_id": "skill:people_and_project_management",
+      "skill_name": "people and project management",
       "which": "secondary",
       "requires_confidence": 0.53,
       "teaches_confidence": 0.53,
       "requires_report_id": "P4-C3-secondary-requires",
       "teaches_report_id": "P4-C3-secondary-teaches",
       "evidence_span": {
-        "text": "analytics for content",
-        "start": 163,
-        "end": 184
+        "text": "people and project management",
+        "start": 213,
+        "end": 242
       }
     }
   ],
   "explanation": {
-    "summary": "Teaches brand messaging, which comes up often in Communications Specialist job ads.",
+    "summary": "Teaches fine-tuning and model adaptation, which comes up often in LLM Engineer job ads.",
     "A": {
-      "panel_prose": "Brand messaging comes up often in Communications Specialist job ads, and it's the main topic of this course. Analytics for content comes up sometimes in those ads, and the course covers some of it.",
+      "panel_prose": "Fine-tuning and model adaptation comes up often in LLM Engineer job ads, and it's the main topic of this course. People and project management comes up sometimes in those ads, and the course covers some of it.",
       "detail_bullets": [
         {
-          "text": "From Communications Specialist job ads: brand messaging is mentioned often.",
+          "text": "From LLM Engineer job ads: fine-tuning and model adaptation is mentioned often.",
           "report_ids": [
             "P4-C3-main-requires"
           ]
         },
         {
-          "text": "From Communications Specialist job ads: analytics for content is mentioned sometimes.",
+          "text": "From LLM Engineer job ads: people and project management is mentioned sometimes.",
           "report_ids": [
             "P4-C3-secondary-requires"
           ]
         },
         {
-          "text": "From the course description: brand messaging is the main topic; analytics for content is covered in part.",
+          "text": "From the course description: fine-tuning and model adaptation is the main topic; people and project management is covered in part.",
           "report_ids": [
             "P4-C3-main-teaches",
             "P4-C3-secondary-teaches"
           ]
         }
       ],
-      "card_reason": "Teaches brand messaging, which comes up often in Communications Specialist job ads."
+      "card_reason": "Teaches fine-tuning and model adaptation, which comes up often in LLM Engineer job ads."
     },
     "B": {
       "nodes": [
         {
           "id": "role",
           "kind": "role",
-          "label": "Communications Specialist"
+          "label": "LLM Engineer"
         },
         {
-          "id": "skill:brand_messaging",
+          "id": "skill:fine_tuning_and_model_adaptation",
           "kind": "skill",
-          "label": "Brand messaging",
+          "label": "Fine-tuning and model adaptation",
           "caption": "Skill employers want"
         },
         {
-          "id": "skill:analytics_for_content",
+          "id": "skill:people_and_project_management",
           "kind": "skill",
-          "label": "Analytics for content",
+          "label": "People and project management",
           "caption": "Skill employers want"
         },
         {
@@ -674,14 +674,14 @@
       "edges": [
         {
           "from": "role",
-          "to": "skill:brand_messaging",
+          "to": "skill:fine_tuning_and_model_adaptation",
           "strength": "strong",
           "label": "often asked for",
-          "source_label": "From Communications Specialist job ads",
+          "source_label": "From LLM Engineer job ads",
           "report_id": "P4-C3-main-requires"
         },
         {
-          "from": "skill:brand_messaging",
+          "from": "skill:fine_tuning_and_model_adaptation",
           "to": "course:p4_c3_selected",
           "strength": "strong",
           "label": "main topic",
@@ -690,14 +690,14 @@
         },
         {
           "from": "role",
-          "to": "skill:analytics_for_content",
+          "to": "skill:people_and_project_management",
           "strength": "weaker",
           "label": "sometimes asked for",
-          "source_label": "From Communications Specialist job ads",
+          "source_label": "From LLM Engineer job ads",
           "report_id": "P4-C3-secondary-requires"
         },
         {
-          "from": "skill:analytics_for_content",
+          "from": "skill:people_and_project_management",
           "to": "course:p4_c3_selected",
           "strength": "weaker",
           "label": "covered in part",
@@ -712,7 +712,7 @@
         "Skill employers want",
         "Recommended course"
       ],
-      "card_path": "Communications Specialist → Brand messaging → This course"
+      "card_path": "LLM Engineer → Fine-tuning and model adaptation → This course"
     },
     "C": {
       "rules_matched": [
@@ -721,17 +721,17 @@
           "ui_label": "Rule A",
           "name": "Courses that teach a skill your role needs",
           "strength": "Strong match",
-          "skill": "brand messaging",
+          "skill": "fine-tuning and model adaptation",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "brand messaging",
-              "source_text": "Comes up often in Communications Specialist job ads",
+              "value": "fine-tuning and model adaptation",
+              "source_text": "Comes up often in LLM Engineer job ads",
               "report_id": "P4-C3-main-requires"
             },
             {
               "label": "Main topic of this course:",
-              "value": "brand messaging",
+              "value": "fine-tuning and model adaptation",
               "source_text": "From the course description",
               "report_id": "P4-C3-main-teaches"
             }
@@ -743,17 +743,17 @@
           "ui_label": "Rule B",
           "name": "Courses that cover part of a skill your role needs",
           "strength": "Weaker match",
-          "skill": "analytics for content",
+          "skill": "people and project management",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "analytics for content",
-              "source_text": "Comes up sometimes in Communications Specialist job ads",
+              "value": "people and project management",
+              "source_text": "Comes up sometimes in LLM Engineer job ads",
               "report_id": "P4-C3-secondary-requires"
             },
             {
               "label": "Partly covered in this course:",
-              "value": "analytics for content",
+              "value": "people and project management",
               "source_text": "From the course description",
               "report_id": "P4-C3-secondary-teaches"
             }
@@ -768,15 +768,15 @@
   "alternates": [
     {
       "id": "course:p4_c3_alt_a",
-      "title": "Brand Messaging Essentials",
+      "title": "Fine-Tuning and Model Adaptation Essentials",
       "level": "Beginner",
       "duration_min": 50,
       "updated": "2025-08",
-      "description": "Brand Messaging Essentials is a short introduction to brand messaging for people moving toward a Communications Specialist role. You'll walk through the essential vocabulary and a few guided exercises that show brand messaging in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if brand messaging is new to you.",
+      "description": "Fine-Tuning and Model Adaptation Essentials is a short introduction to fine-tuning and model adaptation for people moving toward a LLM Engineer role. You'll walk through the essential vocabulary and a few guided exercises that show fine-tuning and model adaptation in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if fine-tuning and model adaptation is new to you.",
       "learning_outcomes": [
-        "Applying brand messaging to a real Communications Specialist scenario",
-        "Practicing brand messaging through guided exercises",
-        "Building a short brand messaging exercise from scratch",
+        "Applying fine-tuning and model adaptation to a real LLM Engineer scenario",
+        "Practicing fine-tuning and model adaptation through guided exercises",
+        "Building a short fine-tuning and model adaptation exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -791,8 +791,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:brand_messaging",
-          "skill_name": "brand messaging",
+          "skill_id": "skill:fine_tuning_and_model_adaptation",
+          "skill_name": "fine-tuning and model adaptation",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
@@ -800,15 +800,15 @@
     },
     {
       "id": "course:p4_c3_alt_b",
-      "title": "Advanced Brand Messaging Techniques",
+      "title": "Advanced Fine-Tuning and Model Adaptation Techniques",
       "level": "Advanced",
       "duration_min": 160,
       "updated": "2025-07",
-      "description": "Advanced Brand Messaging Techniques is a focused course on brand messaging for people already working toward a Communications Specialist role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying brand messaging on your own.",
+      "description": "Advanced Fine-Tuning and Model Adaptation Techniques is a focused course on fine-tuning and model adaptation for people already working toward a LLM Engineer role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying fine-tuning and model adaptation on your own.",
       "learning_outcomes": [
-        "Applying brand messaging to a real Communications Specialist scenario",
-        "Practicing brand messaging through guided exercises",
-        "Building a short brand messaging exercise from scratch",
+        "Applying fine-tuning and model adaptation to a real LLM Engineer scenario",
+        "Practicing fine-tuning and model adaptation through guided exercises",
+        "Building a short fine-tuning and model adaptation exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -823,8 +823,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:brand_messaging",
-          "skill_name": "brand messaging",
+          "skill_id": "skill:fine_tuning_and_model_adaptation",
+          "skill_name": "fine-tuning and model adaptation",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
