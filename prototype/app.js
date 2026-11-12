@@ -21,6 +21,7 @@ const state = {
   // content set. Pure admin preview -- never gated, never logged anywhere.
   previewAsParticipant: false,
   previewingSurvey: false,
+  previewingRecap: false,
   surveyAnswers: {},
 };
 
@@ -52,6 +53,7 @@ async function loadParticipant(pid) {
   state.saved = false;
   state.expanded = false;
   state.previewingSurvey = false;
+  state.previewingRecap = false;
   state.surveyAnswers = {};
 
   if (pid === "W0") {
@@ -76,6 +78,7 @@ function applyCurrentContentSet() {
   state.notForMe = false;
   state.saved = false;
   state.previewingSurvey = false;
+  state.previewingRecap = false;
   state.surveyAnswers = {};
 }
 
@@ -105,12 +108,22 @@ function wireStaticControls() {
 
   document.getElementById("ctl-preview").addEventListener("change", (e) => {
     state.previewAsParticipant = e.target.checked;
-    if (!state.previewAsParticipant) state.previewingSurvey = false;
+    if (!state.previewAsParticipant) {
+      state.previewingSurvey = false;
+      state.previewingRecap = false;
+    }
     render();
   });
 
   document.getElementById("ctl-preview-survey").addEventListener("click", () => {
     state.previewingSurvey = !state.previewingSurvey;
+    if (state.previewingSurvey) state.previewingRecap = false;
+    render();
+  });
+
+  document.getElementById("ctl-preview-recap").addEventListener("click", () => {
+    state.previewingRecap = !state.previewingRecap;
+    if (state.previewingRecap) state.previewingSurvey = false;
     render();
   });
 }
@@ -140,6 +153,7 @@ function render() {
   const csWrap = document.getElementById("ctl-cs-wrap");
   const csCtl = document.getElementById("ctl-cs");
   const previewSurveyBtn = document.getElementById("ctl-preview-survey");
+  const previewRecapBtn = document.getElementById("ctl-preview-recap");
 
   if (state.mode === "warmup") {
     document.getElementById("role-title").textContent = "Warm-up (no role)";
@@ -147,6 +161,7 @@ function render() {
     variantWrap.hidden = true;
     csWrap.hidden = true;
     previewSurveyBtn.hidden = true;
+    previewRecapBtn.hidden = true;
     content.innerHTML = renderW0ListColumn(state.w0, uiState()) + renderW0DetailColumn(state.w0, uiState());
     wireContentEvents(content, handleSelectCourse, handleAction);
     return;
@@ -176,11 +191,19 @@ function render() {
 
   previewSurveyBtn.hidden = !state.previewAsParticipant;
   previewSurveyBtn.textContent = state.previewingSurvey ? "Back to course view" : "Preview questionnaire";
+  previewRecapBtn.hidden = !state.previewAsParticipant;
+  previewRecapBtn.textContent = state.previewingRecap ? "Back to course view" : "Preview end-of-session recap";
 
   if (state.previewingSurvey) {
     content.className = "";
     content.innerHTML = renderSurveyPage(cs.variant, state.surveyAnswers);
     wireSurveyEvents(content, state.surveyAnswers, () => {});
+    return;
+  }
+
+  if (state.previewingRecap) {
+    content.className = "";
+    content.innerHTML = renderRecapPage(state.contentSets);
     return;
   }
 

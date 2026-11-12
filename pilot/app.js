@@ -206,7 +206,8 @@ function render() {
           <button type="button" class="btn-primary" id="download-btn">Download questionnaire responses (JSON)</button>
           <a href="index.html" class="btn-secondary" style="display:inline-flex;align-items:center;text-decoration:none">Restart pilot</a>
         </div>
-      </section>`;
+      </section>
+      ${renderRecapPage(state.contentSets)}`;
     nav.innerHTML = "";
     document.getElementById("download-btn").addEventListener("click", downloadResponses);
     return;

@@ -53,3 +53,23 @@
 .survey-likert-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .survey-likert-option { display: flex; align-items: center; gap: 6px; font-size: 13.5px; cursor: pointer; }
 .survey-likert-text { color: var(--text-muted); }
+
+/* End-of-session recap: all 3 rounds the participant saw, one per format,
+   side by side for a quick glance back (static -- no report/expand/decision
+   buttons, those already happened during the real rounds). */
+.recap-page { margin-top: 24px; }
+.recap-heading { font-size: 18px; margin: 0 0 4px; }
+.recap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+@media (max-width: 900px) { .recap-grid { grid-template-columns: 1fr; } }
+.recap-panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0;
+}
+.recap-panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.recap-round { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }
+.recap-format { font-size: 12px; font-weight: 600; color: var(--accent-soft-text); background: var(--accent-soft-bg); padding: 2px 8px; border-radius: var(--radius-pill); }
+.recap-course-title { font-size: 15px; margin: 0; }
+.recap-summary { font-size: 13.5px; color: var(--text-muted); margin: 0; }
+.recap-body { font-size: 14px; }
+.recap-body .diagram-canvas, .recap-body .diagram-canvas-single { max-width: 100%; }
+.recap-body .rule-card { padding: 12px 14px; }

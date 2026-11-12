@@ -650,6 +650,62 @@ function wireSurveyEvents(content, answers, onChange) {
 }
 
 // ---------------------------------------------------------------------------
+// End-of-session recap: one page showing all three rounds the participant
+// actually experienced -- since each round used a different format, showing
+// all three together covers every variant once, as a quick glance back.
+// Deliberately static: no expand/collapse, no Report a mistake, no Start
+// course/Save/Not for me -- those decisions and interactions already
+// happened during the real rounds, this is a read-only look back.
+// ---------------------------------------------------------------------------
+
+function recapVariantLabel(variant) {
+  if (variant === "A") return "Natural language";
+  if (variant === "B") return "Graph";
+  return "Rule-based";
+}
+
+function renderRecapBody(contentSet, course, variant) {
+  const ui = { expanded: false };
+  if (variant === "A") {
+    return `<p class="why-headline">${boldKnownPhrases(course.explanation.A.panel_prose)}</p>`;
+  }
+  if (variant === "B") {
+    return course.explanation.B.nodes.length === 4
+      ? renderGraphDiagram(contentSet, course, ui)
+      : renderGraphDiagramSingle(contentSet, course, ui);
+  }
+  const c = course.explanation.C;
+  return `
+    <div class="c-summary-row"><span class="c-summary">${escapeHtml(c.header)}</span></div>
+    ${c.rules_matched.map((rule) => renderRuleCard(rule, ui)).join("")}`;
+}
+
+function renderRecapPanel(contentSet, roundNum) {
+  const course = findCourse(contentSet.courses, contentSet.selectedCourseId);
+  return `
+    <div class="recap-panel">
+      <div class="recap-panel-head">
+        <span class="recap-round">Round ${roundNum}</span>
+        <span class="recap-format">${escapeHtml(recapVariantLabel(contentSet.variant))}</span>
+      </div>
+      <h3 class="recap-course-title">${escapeHtml(course.title)}</h3>
+      <p class="recap-summary">${escapeHtml(course.explanation.summary)}</p>
+      <div class="recap-body">${renderRecapBody(contentSet, course, contentSet.variant)}</div>
+    </div>`;
+}
+
+function renderRecapPage(contentSets) {
+  return `
+    <section class="recap-page">
+      <h2 class="recap-heading">A quick look back at all three rounds</h2>
+      <p class="simple-note" style="font-style:normal">Each round used a different explanation style. Here they are side by side.</p>
+      <div class="recap-grid">
+        ${contentSets.map((cs, i) => renderRecapPanel(cs, i + 1)).join("")}
+      </div>
+    </section>`;
+}
+
+// ---------------------------------------------------------------------------
 // Event wiring (delegated, re-attached on every render since content is rebuilt)
 // ---------------------------------------------------------------------------
 
