@@ -1,4 +1,4 @@
-// Appends pilot-session events to a Google Sheet, which is the durable
+// Appends session events to a Google Sheet, which is the durable
 // record -- Render's filesystem is ephemeral across restarts/redeploys, so
 // nothing here depends on local disk. Locally, point
 // GOOGLE_SERVICE_ACCOUNT_KEY_FILE at the downloaded service-account JSON; on

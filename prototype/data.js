@@ -1,4 +1,4 @@
-// Shared data access for the test prototype and the pilot build. Reads the
+// Shared data access for the test prototype and the real session build. Reads the
 // generated JSON in data/synthetic/ directly -- nothing here is hardcoded
 // content, it's all produced by scripts/generate.py. Must be served over
 // http:// (not file://) so fetch() can load local JSON; see README.md.
@@ -7,7 +7,7 @@
 // separate, independent file (sets/<ID>-C<n>.json) -- no course repeats
 // across a participant's three rounds (spec §5.4). D0 used to be exempt and
 // kept one combined file with a single shared 4-course list reused across
-// all three rounds; that was removed since a real pilot session can't reuse
+// all three rounds; that was removed since a real session can't reuse
 // the same courses round to round without confounding the comparison.
 
 const PARTICIPANT_IDS = ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "D0"];

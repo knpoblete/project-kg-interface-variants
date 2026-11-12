@@ -1,5 +1,8 @@
-// Pilot-session wiring. Mirrors the actual session protocol in "Session 2
-// Comparative Study.docx": a warm-up round (W0, no explanations), then three
+// Comparative-evaluation session wiring (lives in pilot/ for historical
+// reasons -- this is the real Session 2 comparative evaluation, not a pilot
+// test; "pilot" only survives as this folder/file name, never as on-screen
+// text). Mirrors the actual session protocol in "Session 2 Comparative
+// Study.docx": a warm-up round (W0, no explanations), then three
 // content-set rounds in strict forward sequence, each shown in the
 // participant's actually-assigned variant (content_set.variant -- same
 // fetchContentSets() data path as the test prototype, so it already resolves
@@ -151,7 +154,7 @@ function downloadResponses() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `${PARTICIPANT_ID}-pilot-survey-responses.json`;
+  a.download = `${PARTICIPANT_ID}-survey-responses.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -179,7 +182,7 @@ function render() {
     phase === "warmup"
       ? "Warm-up"
       : phase === "done"
-        ? "Pilot complete"
+        ? "Session complete"
         : phase === "task"
           ? `Round ${round} of ${totalRounds()} — Task`
           : `Round ${round} of ${totalRounds()} — Questionnaire`;
@@ -195,16 +198,16 @@ function render() {
   const nav = document.getElementById("pilot-nav");
 
   if (phase === "done") {
-    document.getElementById("role-title").textContent = "Pilot complete";
+    document.getElementById("role-title").textContent = "Session complete";
     document.getElementById("role-bar-msg").textContent = "";
     content.className = "";
     content.innerHTML = `
       <section class="end-card">
-        <h2 style="margin:0">That's the end of this pilot session</h2>
+        <h2 style="margin:0">That's the end of this session</h2>
         <p class="simple-note" style="font-style:normal">The warm-up, all three rounds, and their questionnaires have been completed.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
           <button type="button" class="btn-primary" id="download-btn">Download questionnaire responses (JSON)</button>
-          <a href="index.html" class="btn-secondary" style="display:inline-flex;align-items:center;text-decoration:none">Restart pilot</a>
+          <a href="index.html" class="btn-secondary" style="display:inline-flex;align-items:center;text-decoration:none">Restart session</a>
         </div>
       </section>
       ${renderRecapPage(state.contentSets)}`;

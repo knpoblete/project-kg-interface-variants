@@ -2,7 +2,7 @@
   "name": "jobed-pilot",
   "version": "1.0.0",
   "private": true,
-  "description": "Pilot-demo server for the Session 2 explanation-format study: serves the static prototype/pilot frontend and logs Save/Not-for-me decisions and NASA-TLX/transparency survey answers to a Google Sheet.",
+  "description": "Server for the Session 2 explanation-format comparative evaluation: serves the static prototype/pilot frontend and logs Save/Not-for-me decisions and NASA-TLX/transparency survey answers to a Google Sheet.",
   "scripts": {
     "start": "node server/index.js"
   },

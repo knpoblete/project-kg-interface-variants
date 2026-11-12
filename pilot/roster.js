@@ -1,4 +1,4 @@
-// Self-identification roster for the pilot start screen. The prescreening
+// Self-identification roster for the session start screen. The prescreening
 // questionnaire (mockups/prescreening.csv) was anonymous, so there's no way
 // to know in advance which real participant is P1-P5 -- instead, the
 // participant picks their own CURRENT role (Q6 in the questionnaire) from

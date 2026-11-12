@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Pilot session — start</title>
+<title>Session — start</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../prototype/styles.css">
 <link rel="stylesheet" href="pilot.css">
@@ -19,8 +19,8 @@
 
   <main class="picker">
     <div class="picker-head">
-      <span class="step">Pilot session</span>
-      <h1>Course recommendations — explanation pilot</h1>
+      <span class="step">Session</span>
+      <h1>Course recommendations — explanation session</h1>
       <p>You'll start with a short warm-up (spreadsheet basics, no explanations), then see three rounds, one
       per explanation style (natural language, graph, rule-based). Each round shows a recommended course and
       asks you to look at why it was suggested, then ends when you click Save or Not for me. A short
@@ -36,7 +36,7 @@
     <div id="confirm-card" class="intro-card" hidden>
       <div id="role-line" class="role-line">Loading role…</div>
       <div>
-        <a id="begin-link" class="btn-primary" style="display:inline-flex;align-items:center;text-decoration:none" href="app.html?step=warmup">Begin pilot session</a>
+        <a id="begin-link" class="btn-primary" style="display:inline-flex;align-items:center;text-decoration:none" href="app.html?step=warmup">Begin session</a>
         <a href="index.html" style="margin-left:12px">Not you? Pick again</a>
       </div>
     </div>
@@ -74,7 +74,7 @@ async function init() {
     const sets = await fetchContentSets(participantId);
     roleLine.innerHTML = `Target role for this session: <b>${escapeHtml(sets[0].role.title)}</b>. All course and job-ad data is synthetic.`;
   } catch (err) {
-    roleLine.textContent = `Couldn't load the pilot's role data: ${err.message || err}. Make sure data/synthetic/ has been generated and you're viewing this over http://, not file://.`;
+    roleLine.textContent = `Couldn't load the role data: ${err.message || err}. Make sure data/synthetic/ has been generated and you're viewing this over http://, not file://.`;
   }
 }
 init();

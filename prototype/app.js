@@ -17,8 +17,9 @@ const state = {
   saved: false,
   showDebug: false,
   // "Preview as participant would see it": hides Start course (matching
-  // pilot) and reveals a button to preview the survey page for the current
-  // content set. Pure admin preview -- never gated, never logged anywhere.
+  // the real session build) and reveals a button to preview the survey page
+  // for the current content set. Pure admin preview -- never gated, never
+  // logged anywhere.
   previewAsParticipant: false,
   previewingSurvey: false,
   previewingRecap: false,

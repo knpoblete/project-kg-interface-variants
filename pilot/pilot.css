@@ -1,6 +1,6 @@
-/* Supplement to prototype/styles.css for the pilot-demo build: a clean progress
-   indicator instead of the test prototype's dashed dev bar, plus the start/end
-   screens. */
+/* Supplement to prototype/styles.css for the real session build: a clean
+   progress indicator instead of the test prototype's dashed dev bar, plus
+   the start/end screens. */
 
 .progress-bar {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;

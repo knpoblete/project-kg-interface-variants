@@ -1,5 +1,7 @@
 // Shared rendering logic for the test prototype (prototype/app.js) and the
-// pilot-demo build (pilot/app.js). Pure functions: nothing here reads a global
+// real session build (pilot/app.js -- this is the actual Session 2
+// comparative evaluation, not a pilot test; the folder name predates that).
+// Pure functions: nothing here reads a global
 // `state` -- every function that needs UI state takes an explicit `ui` object,
 // so the two apps can each own their own state shape without this file
 // drifting between them. Load this script before either app's own app.js.
@@ -545,8 +547,8 @@ function renderW0DetailColumn(w0, ui) {
 }
 
 // ---------------------------------------------------------------------------
-// Survey page (NASA-TLX + transparency), shown after each round in the pilot
-// build in place of the comparative-study docx's Qualtrics step. Shared here
+// Survey page (NASA-TLX + transparency), shown after each round in the
+// session build in place of the comparative-study docx's Qualtrics step. Shared here
 // (not duplicated into pilot/app.js) so the prototype's "preview as
 // participant" mode can show the exact same page a real participant sees.
 // Callers own the `answers` object (id -> number) and re-render around this;
