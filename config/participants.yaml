@@ -3,17 +3,20 @@
 # ads", "<role_title>s need..."). context_note is NOT shown to participants
 # -- kept here only for traceability into scripts/roles_data.py.
 #
-# P1-P5 are real recruited participants, sourced from their prescreening
+# P1-P6 are real recruited participants, sourced from their prescreening
 # questionnaire (mockups/prescreening.csv). role_title is each person's
 # stated ASPIRATIONAL role (Q9: "what role are you working towards"), not
 # their current job title (Q6) -- the study recommends courses toward a goal
 # role, so that's the one shown as "the role you picked". See roles_data.py's
 # module docstring for how each role's skills were derived from Q13/Q14.
+# Once a real recruit's data is generated it's frozen -- re-running the
+# generator must never change an already-generated participant's content;
+# only new recruits get added, into the next free P<n> slot.
 #
-# P6-P9 are reserved placeholder slots for 4 more participants not yet
+# P7-P9 are reserved placeholder slots for 3 more participants not yet
 # recruited -- their fictional profiles are unchanged from the original
 # synthetic build, kept only so config/order.yaml's confirmed 9-slot Latin
-# square stays balanced until those 4 are added.
+# square stays balanced until those 3 are added.
 
 P1:
   role_title: Consulting Director
@@ -41,9 +44,9 @@ P5:
   context_note: "Currently a Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
 
 P6:
-  role_title: HR Manager
-  job_id: "job:hr_manager"
-  context_note: "Human resource management and recruitment."
+  role_title: Senior Finance Manager
+  job_id: "job:senior_finance_manager"
+  context_note: "Currently a Group Controller/Consultant (real estate and accounting services, 8+ yrs; financial statement analysis, regulatory compliance, forecasting/budgeting); growing into strategic planning, risk management, organizational development."
 
 P7:
   role_title: Product Designer

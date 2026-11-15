@@ -323,6 +323,7 @@ def main() -> None:
     all_courses = []
     all_triples = []
     role_basis_rows = []
+    recommended_courses_rows = []
 
     for pid in participant_ids:
         cfg = participants_cfg[pid]
@@ -349,6 +350,19 @@ def main() -> None:
         for set_payload in set_payloads:
             fname = f"{pid}-{set_payload['content_set']}.json"
             (out_dir / "sets" / fname).write_text(json.dumps(set_payload, indent=2, ensure_ascii=False) + "\n")
+            for position, course in enumerate(set_payload["courses"], start=1):
+                recommended_courses_rows.append(
+                    {
+                        "participant_id": pid,
+                        "role_title": role_title,
+                        "content_set": set_payload["content_set"],
+                        "variant": set_payload["variant"],
+                        "position": position,
+                        "course_id": course["id"],
+                        "course_title": course["title"],
+                        "is_selected": course["id"] == set_payload["selected_course_id"],
+                    }
+                )
         for gt in ground_truths:
             fname = f"{pid}-{gt['content_set']}.json"
             (out_dir / "ground_truth" / fname).write_text(json.dumps(gt, indent=2, ensure_ascii=False) + "\n")
@@ -383,6 +397,14 @@ def main() -> None:
 
     if role_basis_rows:
         (out_dir / "README.md").write_text(build_readme(args.seed, role_basis_rows))
+
+    if recommended_courses_rows:
+        with (out_dir / "recommended_courses.csv").open("w", newline="") as f:
+            fieldnames = ["participant_id", "role_title", "content_set", "variant", "position", "course_id", "course_title", "is_selected"]
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            for row in recommended_courses_rows:
+                writer.writerow(row)
 
     print(f"Generated synthetic data for {len(participant_ids)} participant(s) -> {out_dir}")
 

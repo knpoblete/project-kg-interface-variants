@@ -4,32 +4,32 @@
   "position": 2,
   "variant": "A",
   "role": {
-    "job_id": "job:hr_manager",
-    "title": "HR Manager",
-    "sector": "Human Resources",
-    "role_basis": "O*NET 11-3121.00 Human Resources Managers / ESCO 'human resources manager'",
-    "context_note": "Human resource management and recruitment."
+    "job_id": "job:senior_finance_manager",
+    "title": "Senior Finance Manager",
+    "sector": "Finance",
+    "role_basis": "O*NET 11-3031.00 Financial Managers / ESCO 'finance manager' occupation (controller-to-senior-finance-manager profile)",
+    "context_note": "Currently a Group Controller/Consultant (real estate and accounting services, 8+ yrs; financial statement analysis, regulatory compliance, forecasting/budgeting); growing into strategic planning, risk management, organizational development."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
-    "sort_line": "Best fit first, based on the skills employers ask for in HR Manager job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Senior Finance Manager job ads.",
     "based_on_chips": [
-      "HR Manager job ads",
+      "Senior Finance Manager job ads",
       "Course description"
     ]
   },
   "courses": [
     {
       "id": "course:p6_c2_selected",
-      "title": "Performance Management for HR Leaders",
+      "title": "Risk Management for Senior Finance Roles",
       "level": "Intermediate",
       "duration_min": 130,
       "updated": "2026-03",
-      "description": "Performance Management for HR Leaders takes you from the basics of performance management to applying it on a realistic HR Manager scenario, through short lessons and hands-on practice. Along the way, you'll also get a practical introduction to compensation and benefits, enough to use it alongside performance management day to day. Expect a practical course, not a lecture-heavy one.",
+      "description": "Risk Management for Senior Finance Roles focuses on risk management for people working toward a Senior Finance Manager role, through hands-on exercises and short review checkpoints. It also introduces regulatory compliance, enough to apply alongside risk management in real Senior Finance Manager work. By the end, you'll be able to explain your approach to risk management and show how regulatory compliance supports it.",
       "learning_outcomes": [
-        "Applying performance management to a real HR Manager scenario",
-        "Practicing performance management through guided exercises",
-        "Getting a working introduction to compensation and benefits",
+        "Applying risk management to a real Senior Finance Manager scenario",
+        "Practicing risk management through guided exercises",
+        "Getting a working introduction to regulatory compliance",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -44,62 +44,62 @@
       "rules_matched": "Rule A (teaches) · Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:performance_management",
-          "skill_name": "performance management",
+          "skill_id": "skill:risk_management",
+          "skill_name": "risk management",
           "teaches_confidence": 0.89,
           "band": "strong"
         },
         {
-          "skill_id": "skill:compensation_and_benefits",
-          "skill_name": "compensation and benefits",
+          "skill_id": "skill:regulatory_compliance",
+          "skill_name": "regulatory compliance",
           "teaches_confidence": 0.54,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches performance management, which comes up often in HR Manager job ads.",
+        "summary": "Teaches risk management, which comes up often in Senior Finance Manager job ads.",
         "A": {
-          "panel_prose": "Performance management comes up often in HR Manager job ads, and it's the main topic of this course. Compensation and benefits comes up sometimes in those ads, and the course covers some of it.",
+          "panel_prose": "Risk management comes up often in Senior Finance Manager job ads, and it's the main topic of this course. Regulatory compliance comes up sometimes in those ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From HR Manager job ads: performance management is mentioned often.",
+              "text": "From Senior Finance Manager job ads: risk management is mentioned often.",
               "report_ids": [
                 "P6-C2-main-requires"
               ]
             },
             {
-              "text": "From HR Manager job ads: compensation and benefits is mentioned sometimes.",
+              "text": "From Senior Finance Manager job ads: regulatory compliance is mentioned sometimes.",
               "report_ids": [
                 "P6-C2-secondary-requires"
               ]
             },
             {
-              "text": "From the course description: performance management is the main topic; compensation and benefits is covered in part.",
+              "text": "From the course description: risk management is the main topic; regulatory compliance is covered in part.",
               "report_ids": [
                 "P6-C2-main-teaches",
                 "P6-C2-secondary-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches performance management, which comes up often in HR Manager job ads."
+          "card_reason": "Teaches risk management, which comes up often in Senior Finance Manager job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "HR Manager"
+              "label": "Senior Finance Manager"
             },
             {
-              "id": "skill:performance_management",
+              "id": "skill:risk_management",
               "kind": "skill",
-              "label": "Performance management",
+              "label": "Risk management",
               "caption": "Skill employers want"
             },
             {
-              "id": "skill:compensation_and_benefits",
+              "id": "skill:regulatory_compliance",
               "kind": "skill",
-              "label": "Compensation and benefits",
+              "label": "Regulatory compliance",
               "caption": "Skill employers want"
             },
             {
@@ -112,14 +112,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:performance_management",
+              "to": "skill:risk_management",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From HR Manager job ads",
+              "source_label": "From Senior Finance Manager job ads",
               "report_id": "P6-C2-main-requires"
             },
             {
-              "from": "skill:performance_management",
+              "from": "skill:risk_management",
               "to": "course:p6_c2_selected",
               "strength": "strong",
               "label": "main topic",
@@ -128,14 +128,14 @@
             },
             {
               "from": "role",
-              "to": "skill:compensation_and_benefits",
+              "to": "skill:regulatory_compliance",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From HR Manager job ads",
+              "source_label": "From Senior Finance Manager job ads",
               "report_id": "P6-C2-secondary-requires"
             },
             {
-              "from": "skill:compensation_and_benefits",
+              "from": "skill:regulatory_compliance",
               "to": "course:p6_c2_selected",
               "strength": "weaker",
               "label": "covered in part",
@@ -150,7 +150,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "HR Manager → Performance management → This course"
+          "card_path": "Senior Finance Manager → Risk management → This course"
         },
         "C": {
           "rules_matched": [
@@ -159,17 +159,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "performance management",
+              "skill": "risk management",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "performance management",
-                  "source_text": "Comes up often in HR Manager job ads",
+                  "value": "risk management",
+                  "source_text": "Comes up often in Senior Finance Manager job ads",
                   "report_id": "P6-C2-main-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "performance management",
+                  "value": "risk management",
                   "source_text": "From the course description",
                   "report_id": "P6-C2-main-teaches"
                 }
@@ -181,17 +181,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "compensation and benefits",
+              "skill": "regulatory compliance",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "compensation and benefits",
-                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "value": "regulatory compliance",
+                  "source_text": "Comes up sometimes in Senior Finance Manager job ads",
                   "report_id": "P6-C2-secondary-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "compensation and benefits",
+                  "value": "regulatory compliance",
                   "source_text": "From the course description",
                   "report_id": "P6-C2-secondary-teaches"
                 }
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p6_c2_other_a",
-      "title": "Applying Diversity and Inclusion Practices",
+      "title": "Applying Financial Reporting Standards",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Applying Diversity and Inclusion Practices is a focused course on diversity and inclusion practices for people already working toward a HR Manager role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying diversity and inclusion practices on your own.",
+      "description": "Applying Financial Reporting Standards goes beyond the basics of financial reporting standards, for people already working toward a Senior Finance Manager role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in financial reporting standards and want to go further.",
       "learning_outcomes": [
-        "Applying diversity and inclusion practices to a real HR Manager scenario",
-        "Practicing diversity and inclusion practices through guided exercises",
-        "Building a short diversity and inclusion practices exercise from scratch",
+        "Applying financial reporting standards to a real Senior Finance Manager scenario",
+        "Practicing financial reporting standards through guided exercises",
+        "Building a short financial reporting standards exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,43 +229,43 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:diversity_and_inclusion_practices",
-          "skill_name": "diversity and inclusion practices",
+          "skill_id": "skill:financial_reporting_standards",
+          "skill_name": "financial reporting standards",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches diversity and inclusion practices, which comes up often in HR Manager job ads.",
+        "summary": "Teaches financial reporting standards, which comes up often in Senior Finance Manager job ads.",
         "A": {
-          "panel_prose": "Diversity and inclusion practices comes up often in HR Manager job ads, and it's the main topic of this course.",
+          "panel_prose": "Financial reporting standards comes up often in Senior Finance Manager job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From HR Manager job ads: diversity and inclusion practices is mentioned often.",
+              "text": "From Senior Finance Manager job ads: financial reporting standards is mentioned often.",
               "report_ids": [
                 "P6-C2-c2_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: diversity and inclusion practices is main topic.",
+              "text": "From the course description: financial reporting standards is main topic.",
               "report_ids": [
                 "P6-C2-c2_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches diversity and inclusion practices, which comes up often in HR Manager job ads."
+          "card_reason": "Teaches financial reporting standards, which comes up often in Senior Finance Manager job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "HR Manager"
+              "label": "Senior Finance Manager"
             },
             {
-              "id": "skill:diversity_and_inclusion_practices",
+              "id": "skill:financial_reporting_standards",
               "kind": "skill",
-              "label": "Diversity and inclusion practices",
+              "label": "Financial reporting standards",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:diversity_and_inclusion_practices",
+              "to": "skill:financial_reporting_standards",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From HR Manager job ads",
+              "source_label": "From Senior Finance Manager job ads",
               "report_id": "P6-C2-c2_other_a-requires"
             },
             {
-              "from": "skill:diversity_and_inclusion_practices",
+              "from": "skill:financial_reporting_standards",
               "to": "course:p6_c2_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "HR Manager → Diversity and inclusion practices → This course"
+          "card_path": "Senior Finance Manager → Financial reporting standards → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "diversity and inclusion practices",
+              "skill": "financial reporting standards",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "diversity and inclusion practices",
-                  "source_text": "Comes up often in HR Manager job ads",
+                  "value": "financial reporting standards",
+                  "source_text": "Comes up often in Senior Finance Manager job ads",
                   "report_id": "P6-C2-c2_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "diversity and inclusion practices",
+                  "value": "financial reporting standards",
                   "source_text": "From the course description",
                   "report_id": "P6-C2-c2_other_a-teaches"
                 }
@@ -333,15 +333,15 @@
     },
     {
       "id": "course:p6_c2_other_b",
-      "title": "Getting Started with HR Analytics",
+      "title": "Getting Started with Cost Management",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Getting Started with HR Analytics walks you through the basics of hr analytics, built for people new to HR Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of hr analytics, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Getting Started with Cost Management walks you through the basics of cost management, built for people new to Senior Finance Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of cost management, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying hr analytics to a real HR Manager scenario",
-        "Practicing hr analytics through guided exercises",
-        "Building a short hr analytics exercise from scratch",
+        "Applying cost management to a real Senior Finance Manager scenario",
+        "Practicing cost management through guided exercises",
+        "Building a short cost management exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -356,43 +356,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:hr_analytics",
-          "skill_name": "hr analytics",
+          "skill_id": "skill:cost_management",
+          "skill_name": "cost management",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches hr analytics, which comes up sometimes in HR Manager job ads.",
+        "summary": "Teaches cost management, which comes up sometimes in Senior Finance Manager job ads.",
         "A": {
-          "panel_prose": "Hr analytics comes up sometimes in HR Manager job ads, and the course covers some of it.",
+          "panel_prose": "Cost management comes up sometimes in Senior Finance Manager job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From HR Manager job ads: hr analytics is mentioned sometimes.",
+              "text": "From Senior Finance Manager job ads: cost management is mentioned sometimes.",
               "report_ids": [
                 "P6-C2-c2_other_b-requires"
               ]
             },
             {
-              "text": "From the course description: hr analytics is covered in part.",
+              "text": "From the course description: cost management is covered in part.",
               "report_ids": [
                 "P6-C2-c2_other_b-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches hr analytics, which comes up sometimes in HR Manager job ads."
+          "card_reason": "Teaches cost management, which comes up sometimes in Senior Finance Manager job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "HR Manager"
+              "label": "Senior Finance Manager"
             },
             {
-              "id": "skill:hr_analytics",
+              "id": "skill:cost_management",
               "kind": "skill",
-              "label": "Hr analytics",
+              "label": "Cost management",
               "caption": "Skill employers want"
             },
             {
@@ -404,14 +404,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:hr_analytics",
+              "to": "skill:cost_management",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From HR Manager job ads",
+              "source_label": "From Senior Finance Manager job ads",
               "report_id": "P6-C2-c2_other_b-requires"
             },
             {
-              "from": "skill:hr_analytics",
+              "from": "skill:cost_management",
               "to": "course:p6_c2_other_b",
               "strength": "weaker",
               "label": "covered in part",
@@ -426,7 +426,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "HR Manager → Hr analytics → This course"
+          "card_path": "Senior Finance Manager → Cost management → This course"
         },
         "C": {
           "rules_matched": [
@@ -435,17 +435,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "hr analytics",
+              "skill": "cost management",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "hr analytics",
-                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "value": "cost management",
+                  "source_text": "Comes up sometimes in Senior Finance Manager job ads",
                   "report_id": "P6-C2-c2_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "hr analytics",
+                  "value": "cost management",
                   "source_text": "From the course description",
                   "report_id": "P6-C2-c2_other_b-teaches"
                 }
@@ -460,15 +460,15 @@
     },
     {
       "id": "course:p6_c2_other_c",
-      "title": "A Short Guide to Employee Engagement Surveys",
+      "title": "A Short Guide to Internal Controls",
       "level": "Beginner",
       "duration_min": 40,
       "updated": "2025-09",
-      "description": "A Short Guide to Employee Engagement Surveys is a short introduction to employee engagement surveys for people moving toward a HR Manager role. You'll walk through the essential vocabulary and a few guided exercises that show employee engagement surveys in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if employee engagement surveys is new to you.",
+      "description": "A Short Guide to Internal Controls walks you through the basics of internal controls, built for people new to Senior Finance Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of internal controls, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying employee engagement surveys to a real HR Manager scenario",
-        "Practicing employee engagement surveys through guided exercises",
-        "Building a short employee engagement surveys exercise from scratch",
+        "Applying internal controls to a real Senior Finance Manager scenario",
+        "Practicing internal controls through guided exercises",
+        "Building a short internal controls exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -483,43 +483,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:employee_engagement_surveys",
-          "skill_name": "employee engagement surveys",
+          "skill_id": "skill:internal_controls",
+          "skill_name": "internal controls",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches employee engagement surveys, which comes up sometimes in HR Manager job ads.",
+        "summary": "Teaches internal controls, which comes up sometimes in Senior Finance Manager job ads.",
         "A": {
-          "panel_prose": "Employee engagement surveys comes up sometimes in HR Manager job ads, and the course covers some of it.",
+          "panel_prose": "Internal controls comes up sometimes in Senior Finance Manager job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From HR Manager job ads: employee engagement surveys is mentioned sometimes.",
+              "text": "From Senior Finance Manager job ads: internal controls is mentioned sometimes.",
               "report_ids": [
                 "P6-C2-c2_other_c-requires"
               ]
             },
             {
-              "text": "From the course description: employee engagement surveys is covered in part.",
+              "text": "From the course description: internal controls is covered in part.",
               "report_ids": [
                 "P6-C2-c2_other_c-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches employee engagement surveys, which comes up sometimes in HR Manager job ads."
+          "card_reason": "Teaches internal controls, which comes up sometimes in Senior Finance Manager job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "HR Manager"
+              "label": "Senior Finance Manager"
             },
             {
-              "id": "skill:employee_engagement_surveys",
+              "id": "skill:internal_controls",
               "kind": "skill",
-              "label": "Employee engagement surveys",
+              "label": "Internal controls",
               "caption": "Skill employers want"
             },
             {
@@ -531,14 +531,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:employee_engagement_surveys",
+              "to": "skill:internal_controls",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From HR Manager job ads",
+              "source_label": "From Senior Finance Manager job ads",
               "report_id": "P6-C2-c2_other_c-requires"
             },
             {
-              "from": "skill:employee_engagement_surveys",
+              "from": "skill:internal_controls",
               "to": "course:p6_c2_other_c",
               "strength": "weaker",
               "label": "covered in part",
@@ -553,7 +553,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "HR Manager → Employee engagement surveys → This course"
+          "card_path": "Senior Finance Manager → Internal controls → This course"
         },
         "C": {
           "rules_matched": [
@@ -562,17 +562,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "employee engagement surveys",
+              "skill": "internal controls",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "employee engagement surveys",
-                  "source_text": "Comes up sometimes in HR Manager job ads",
+                  "value": "internal controls",
+                  "source_text": "Comes up sometimes in Senior Finance Manager job ads",
                   "report_id": "P6-C2-c2_other_c-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "employee engagement surveys",
+                  "value": "internal controls",
                   "source_text": "From the course description",
                   "report_id": "P6-C2-c2_other_c-teaches"
                 }
@@ -590,78 +590,78 @@
   "course_score": 1.0036,
   "paths": [
     {
-      "skill_id": "skill:performance_management",
-      "skill_name": "performance management",
+      "skill_id": "skill:risk_management",
+      "skill_name": "risk management",
       "which": "main",
       "requires_confidence": 0.8,
       "teaches_confidence": 0.89,
       "requires_report_id": "P6-C2-main-requires",
       "teaches_report_id": "P6-C2-main-teaches",
       "evidence_span": {
-        "text": "performance management",
-        "start": 67,
-        "end": 89
+        "text": "risk management",
+        "start": 52,
+        "end": 67
       }
     },
     {
-      "skill_id": "skill:compensation_and_benefits",
-      "skill_name": "compensation and benefits",
+      "skill_id": "skill:regulatory_compliance",
+      "skill_name": "regulatory compliance",
       "which": "secondary",
       "requires_confidence": 0.54,
       "teaches_confidence": 0.54,
       "requires_report_id": "P6-C2-secondary-requires",
       "teaches_report_id": "P6-C2-secondary-teaches",
       "evidence_span": {
-        "text": "compensation and benefits",
-        "start": 245,
-        "end": 270
+        "text": "regulatory compliance",
+        "start": 201,
+        "end": 222
       }
     }
   ],
   "explanation": {
-    "summary": "Teaches performance management, which comes up often in HR Manager job ads.",
+    "summary": "Teaches risk management, which comes up often in Senior Finance Manager job ads.",
     "A": {
-      "panel_prose": "Performance management comes up often in HR Manager job ads, and it's the main topic of this course. Compensation and benefits comes up sometimes in those ads, and the course covers some of it.",
+      "panel_prose": "Risk management comes up often in Senior Finance Manager job ads, and it's the main topic of this course. Regulatory compliance comes up sometimes in those ads, and the course covers some of it.",
       "detail_bullets": [
         {
-          "text": "From HR Manager job ads: performance management is mentioned often.",
+          "text": "From Senior Finance Manager job ads: risk management is mentioned often.",
           "report_ids": [
             "P6-C2-main-requires"
           ]
         },
         {
-          "text": "From HR Manager job ads: compensation and benefits is mentioned sometimes.",
+          "text": "From Senior Finance Manager job ads: regulatory compliance is mentioned sometimes.",
           "report_ids": [
             "P6-C2-secondary-requires"
           ]
         },
         {
-          "text": "From the course description: performance management is the main topic; compensation and benefits is covered in part.",
+          "text": "From the course description: risk management is the main topic; regulatory compliance is covered in part.",
           "report_ids": [
             "P6-C2-main-teaches",
             "P6-C2-secondary-teaches"
           ]
         }
       ],
-      "card_reason": "Teaches performance management, which comes up often in HR Manager job ads."
+      "card_reason": "Teaches risk management, which comes up often in Senior Finance Manager job ads."
     },
     "B": {
       "nodes": [
         {
           "id": "role",
           "kind": "role",
-          "label": "HR Manager"
+          "label": "Senior Finance Manager"
         },
         {
-          "id": "skill:performance_management",
+          "id": "skill:risk_management",
           "kind": "skill",
-          "label": "Performance management",
+          "label": "Risk management",
           "caption": "Skill employers want"
         },
         {
-          "id": "skill:compensation_and_benefits",
+          "id": "skill:regulatory_compliance",
           "kind": "skill",
-          "label": "Compensation and benefits",
+          "label": "Regulatory compliance",
           "caption": "Skill employers want"
         },
         {
@@ -674,14 +674,14 @@
       "edges": [
         {
           "from": "role",
-          "to": "skill:performance_management",
+          "to": "skill:risk_management",
           "strength": "strong",
           "label": "often asked for",
-          "source_label": "From HR Manager job ads",
+          "source_label": "From Senior Finance Manager job ads",
           "report_id": "P6-C2-main-requires"
         },
         {
-          "from": "skill:performance_management",
+          "from": "skill:risk_management",
           "to": "course:p6_c2_selected",
           "strength": "strong",
           "label": "main topic",
@@ -690,14 +690,14 @@
         },
         {
           "from": "role",
-          "to": "skill:compensation_and_benefits",
+          "to": "skill:regulatory_compliance",
           "strength": "weaker",
           "label": "sometimes asked for",
-          "source_label": "From HR Manager job ads",
+          "source_label": "From Senior Finance Manager job ads",
           "report_id": "P6-C2-secondary-requires"
         },
         {
-          "from": "skill:compensation_and_benefits",
+          "from": "skill:regulatory_compliance",
           "to": "course:p6_c2_selected",
           "strength": "weaker",
           "label": "covered in part",
@@ -712,7 +712,7 @@
         "Skill employers want",
         "Recommended course"
       ],
-      "card_path": "HR Manager → Performance management → This course"
+      "card_path": "Senior Finance Manager → Risk management → This course"
     },
     "C": {
       "rules_matched": [
@@ -721,17 +721,17 @@
           "ui_label": "Rule A",
           "name": "Courses that teach a skill your role needs",
           "strength": "Strong match",
-          "skill": "performance management",
+          "skill": "risk management",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "performance management",
-              "source_text": "Comes up often in HR Manager job ads",
+              "value": "risk management",
+              "source_text": "Comes up often in Senior Finance Manager job ads",
               "report_id": "P6-C2-main-requires"
             },
             {
               "label": "Main topic of this course:",
-              "value": "performance management",
+              "value": "risk management",
               "source_text": "From the course description",
               "report_id": "P6-C2-main-teaches"
             }
@@ -743,17 +743,17 @@
           "ui_label": "Rule B",
           "name": "Courses that cover part of a skill your role needs",
           "strength": "Weaker match",
-          "skill": "compensation and benefits",
+          "skill": "regulatory compliance",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "compensation and benefits",
-              "source_text": "Comes up sometimes in HR Manager job ads",
+              "value": "regulatory compliance",
+              "source_text": "Comes up sometimes in Senior Finance Manager job ads",
               "report_id": "P6-C2-secondary-requires"
             },
             {
               "label": "Partly covered in this course:",
-              "value": "compensation and benefits",
+              "value": "regulatory compliance",
               "source_text": "From the course description",
               "report_id": "P6-C2-secondary-teaches"
             }
@@ -768,15 +768,15 @@
   "alternates": [
     {
       "id": "course:p6_c2_alt_a",
-      "title": "Performance Management Essentials",
+      "title": "Risk Management Essentials",
       "level": "Beginner",
       "duration_min": 50,
       "updated": "2025-08",
-      "description": "Performance Management Essentials is a short introduction to performance management for people moving toward a HR Manager role. You'll walk through the essential vocabulary and a few guided exercises that show performance management in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if performance management is new to you.",
+      "description": "Risk Management Essentials walks you through the basics of risk management, built for people new to Senior Finance Manager work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of risk management, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying performance management to a real HR Manager scenario",
-        "Practicing performance management through guided exercises",
-        "Building a short performance management exercise from scratch",
+        "Applying risk management to a real Senior Finance Manager scenario",
+        "Practicing risk management through guided exercises",
+        "Building a short risk management exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -791,8 +791,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:performance_management",
-          "skill_name": "performance management",
+          "skill_id": "skill:risk_management",
+          "skill_name": "risk management",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
@@ -800,15 +800,15 @@
     },
     {
       "id": "course:p6_c2_alt_b",
-      "title": "Advanced Performance Management Techniques",
+      "title": "Advanced Risk Management Techniques",
       "level": "Advanced",
       "duration_min": 160,
       "updated": "2025-07",
-      "description": "Advanced Performance Management Techniques is a focused course on performance management for people already working toward a HR Manager role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying performance management on your own.",
+      "description": "Advanced Risk Management Techniques goes beyond the basics of risk management, for people already working toward a Senior Finance Manager role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in risk management and want to go further.",
       "learning_outcomes": [
-        "Applying performance management to a real HR Manager scenario",
-        "Practicing performance management through guided exercises",
-        "Building a short performance management exercise from scratch",
+        "Applying risk management to a real Senior Finance Manager scenario",
+        "Practicing risk management through guided exercises",
+        "Building a short risk management exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -823,8 +823,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:performance_management",
-          "skill_name": "performance management",
+          "skill_id": "skill:risk_management",
+          "skill_name": "risk management",
           "teaches_confidence": 0.25,
           "band": "unused"
         }

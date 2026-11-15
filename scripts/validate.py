@@ -588,6 +588,44 @@ def check_order(out_dir: Path) -> tuple[bool, list[str]]:
 
 
 # ---------------------------------------------------------------------------
+# Beyond spec: recommended_courses.csv (generate.py's human-inspectable
+# export) independently confirms, straight from the CSV a reviewer would
+# actually open, that no participant's recommended list repeats a course
+# across their variants/content sets -- a second, CSV-sourced path to the
+# same guarantee check_content_sets already checks from the JSON.
+# ---------------------------------------------------------------------------
+
+
+def check_recommended_courses_csv(out_dir: Path) -> tuple[bool, list[str]]:
+    errors = []
+    path = out_dir / "recommended_courses.csv"
+    if not path.exists():
+        return False, [f"{path.relative_to(out_dir)}: missing"]
+    with path.open(newline="") as f:
+        rows = list(csv.DictReader(f))
+    if not rows:
+        return False, [f"{path.relative_to(out_dir)}: no rows"]
+
+    by_participant: dict[str, list[dict]] = {}
+    for row in rows:
+        by_participant.setdefault(row["participant_id"], []).append(row)
+
+    for pid in ALL_IDS:
+        pid_rows = by_participant.get(pid)
+        if not pid_rows:
+            errors.append(f"{pid}: missing from recommended_courses.csv")
+            continue
+        course_ids = [r["course_id"] for r in pid_rows]
+        if len(course_ids) != len(set(course_ids)):
+            dupes = sorted({c for c in course_ids if course_ids.count(c) > 1})
+            errors.append(f"{pid}: recommended_courses.csv shows a repeated course across variants: {dupes}")
+        variants_seen = {r["variant"] for r in pid_rows}
+        if variants_seen != {"A", "B", "C"}:
+            errors.append(f"{pid}: recommended_courses.csv variants {sorted(variants_seen)} != {{A, B, C}}")
+    return not errors, errors
+
+
+# ---------------------------------------------------------------------------
 # §12.11 determinism
 # ---------------------------------------------------------------------------
 
@@ -641,6 +679,7 @@ def main() -> None:
         ("wording", lambda: check_wording(out_dir)),
         ("blocklist", lambda: check_blocklist(out_dir)),
         ("order", lambda: check_order(out_dir)),
+        ("recommended_courses_csv", lambda: check_recommended_courses_csv(out_dir)),
     ]
     if not args.skip_determinism:
         checks.append(("determinism", lambda: check_determinism(out_dir, args.seed, args.participants)))

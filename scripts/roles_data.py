@@ -32,7 +32,7 @@ screenshot. D0 now goes through the exact same per-content-set-independent
 template as P1-P9 (its NEW_ROLE_CONTENT entry below), just with its original
 skill/course names reused where the mapping lined up.
 
-P1-P5 are real recruited participants (mockups/prescreening.csv): role_title
+P1-P6 are real recruited participants (mockups/prescreening.csv): role_title
 is each person's stated ASPIRATIONAL role (Q9, "what role are you working
 towards"), and main1-3 skills are drawn from Q14 ("skills you'd like to
 develop for your next role"), cleaned into skill-name form where the raw
@@ -42,10 +42,13 @@ Mastery" -> "marketing business acumen"); gaps where a respondent only named
 role. secondary1-3 mostly reuse Q13 ("skills you already have"), reflecting
 each person's real starting point. strongfiller/weakfiller/unused are
 invented filler, same as every other role, never shown as a main/secondary
-reason. P6-P9 remain the original fictional placeholder profiles, reserved
-for 4 more participants not yet recruited -- kept as-is (not deleted) so the
-existing confirmed Latin square in config/order.yaml (needs all 9 slots to
-stay balanced) doesn't have to be redesigned twice.
+reason. Every new real participant's data is additive and frozen once
+generated: earlier IDs' NEW_ROLE_CONTENT entries are never edited again once
+a real recruit occupies that slot, only appended to (the next new recruit
+takes the next P<n> slot). P7-P9 remain the original fictional placeholder
+profiles, reserved for 3 more participants not yet recruited -- kept as-is
+(not deleted) so the existing confirmed Latin square in config/order.yaml
+(needs all 9 slots to stay balanced) doesn't have to be redesigned twice.
 
 W0 (warm-up) has no job/skills/triples at all -- just a flat course catalog
 for a no-explanation browsing task (spec §9).
@@ -406,26 +409,26 @@ NEW_ROLE_CONTENT = {
         ],
     },
     "P6": {
-        "sector": "Human Resources",
-        "role_basis": "O*NET 11-3121.00 Human Resources Managers / ESCO 'human resources manager'",
+        "sector": "Finance",
+        "role_basis": "O*NET 11-3031.00 Financial Managers / ESCO 'finance manager' occupation (controller-to-senior-finance-manager profile)",
         "skills": {
-            "main1": "recruitment and selection",
-            "main2": "performance management",
-            "main3": "employee relations",
-            "secondary1": "hr policy design",
-            "secondary2": "compensation and benefits",
-            "secondary3": "onboarding design",
-            "strongfiller1": "diversity and inclusion practices",
-            "strongfiller2": "workforce planning",
-            "weakfiller1": "hr analytics",
-            "weakfiller2": "employee engagement surveys",
-            "unused1": "payroll basics",
-            "unused2": "labor law fundamentals",
+            "main1": "strategic planning",
+            "main2": "risk management",
+            "main3": "organizational development",
+            "secondary1": "financial statement analysis",
+            "secondary2": "regulatory compliance",
+            "secondary3": "forecasting and budgeting",
+            "strongfiller1": "financial reporting standards",
+            "strongfiller2": "finance business partnering",
+            "weakfiller1": "cost management",
+            "weakfiller2": "internal controls",
+            "unused1": "tax compliance basics",
+            "unused2": "treasury operations basics",
         },
         "selected_titles": [
-            "Recruitment and Selection Best Practices",
-            "Performance Management for HR Leaders",
-            "Employee Relations in Practice",
+            "Strategic Planning for Finance Leaders",
+            "Risk Management for Senior Finance Roles",
+            "Organizational Development for Finance Managers",
         ],
     },
     "P7": {
