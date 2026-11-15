@@ -1,0 +1,121 @@
+participant_id,role_title,content_set,variant,position,course_id,course_title,is_selected
+P1,Consulting Director,C1,A,1,course:p1_c1_selected,Practical AI for Consulting Teams,True
+P1,Consulting Director,C1,A,2,course:p1_c1_other_a,Client Relationship Management in Practice,False
+P1,Consulting Director,C1,A,3,course:p1_c1_other_b,Commercial Awareness Fundamentals,False
+P1,Consulting Director,C1,A,4,course:p1_c1_other_c,Cross-Functional Collaboration: A Short Overview,False
+P1,Consulting Director,C2,B,1,course:p1_c2_selected,Executive Leadership for Senior Consultants,True
+P1,Consulting Director,C2,B,2,course:p1_c2_other_a,Applying Client Relationship Management,False
+P1,Consulting Director,C2,B,3,course:p1_c2_other_b,Getting Started with Commercial Awareness,False
+P1,Consulting Director,C2,B,4,course:p1_c2_other_c,A Short Guide to Cross-Functional Collaboration,False
+P1,Consulting Director,C3,C,1,course:p1_c3_selected,Strategic Oversight for Consulting Directors,True
+P1,Consulting Director,C3,C,2,course:p1_c3_other_a,Client Relationship Management for Practitioners,False
+P1,Consulting Director,C3,C,3,course:p1_c3_other_b,Commercial Awareness Basics,False
+P1,Consulting Director,C3,C,4,course:p1_c3_other_c,Cross-Functional Collaboration in Brief,False
+P2,DevOps Engineer (AI Specialization),C1,B,1,course:p2_c1_selected,Building AI Agents for DevOps Engineers,True
+P2,DevOps Engineer (AI Specialization),C1,B,2,course:p2_c1_other_a,Continuous Integration in Practice,False
+P2,DevOps Engineer (AI Specialization),C1,B,3,course:p2_c1_other_b,Infrastructure As Code Fundamentals,False
+P2,DevOps Engineer (AI Specialization),C1,B,4,course:p2_c1_other_c,Observability and Monitoring: A Short Overview,False
+P2,DevOps Engineer (AI Specialization),C2,C,1,course:p2_c2_selected,LLM Integration in Practice,True
+P2,DevOps Engineer (AI Specialization),C2,C,2,course:p2_c2_other_a,Applying Continuous Integration,False
+P2,DevOps Engineer (AI Specialization),C2,C,3,course:p2_c2_other_b,Getting Started with Infrastructure As Code,False
+P2,DevOps Engineer (AI Specialization),C2,C,4,course:p2_c2_other_c,A Short Guide to Observability and Monitoring,False
+P2,DevOps Engineer (AI Specialization),C3,A,1,course:p2_c3_selected,AI Infrastructure Design for Engineering Teams,True
+P2,DevOps Engineer (AI Specialization),C3,A,2,course:p2_c3_other_a,Continuous Integration for Practitioners,False
+P2,DevOps Engineer (AI Specialization),C3,A,3,course:p2_c3_other_b,Infrastructure As Code Basics,False
+P2,DevOps Engineer (AI Specialization),C3,A,4,course:p2_c3_other_c,Observability and Monitoring in Brief,False
+P3,Senior Marketing Manager,C1,C,1,course:p3_c1_selected,Marketing Business Acumen for Senior Managers,True
+P3,Senior Marketing Manager,C1,C,2,course:p3_c1_other_a,Brand Strategy in Practice,False
+P3,Senior Marketing Manager,C1,C,3,course:p3_c1_other_b,Marketing Analytics Reporting Fundamentals,False
+P3,Senior Marketing Manager,C1,C,4,course:p3_c1_other_c,Cross-Channel Campaign Planning: A Short Overview,False
+P3,Senior Marketing Manager,C2,A,1,course:p3_c2_selected,Strategic Thinking for Marketing Leaders,True
+P3,Senior Marketing Manager,C2,A,2,course:p3_c2_other_a,Applying Brand Strategy,False
+P3,Senior Marketing Manager,C2,A,3,course:p3_c2_other_b,Getting Started with Marketing Analytics Reporting,False
+P3,Senior Marketing Manager,C2,A,4,course:p3_c2_other_c,A Short Guide to Cross-Channel Campaign Planning,False
+P3,Senior Marketing Manager,C3,B,1,course:p3_c3_selected,Systems Thinking for Marketing Managers,True
+P3,Senior Marketing Manager,C3,B,2,course:p3_c3_other_a,Brand Strategy for Practitioners,False
+P3,Senior Marketing Manager,C3,B,3,course:p3_c3_other_b,Marketing Analytics Reporting Basics,False
+P3,Senior Marketing Manager,C3,B,4,course:p3_c3_other_c,Cross-Channel Campaign Planning in Brief,False
+P4,LLM Engineer,C1,A,1,course:p4_c1_selected,LLMOps Fundamentals for Engineering Managers,True
+P4,LLM Engineer,C1,A,2,course:p4_c1_other_a,Model Deployment Pipelines in Practice,False
+P4,LLM Engineer,C1,A,3,course:p4_c1_other_b,Product Requirements Gathering Fundamentals,False
+P4,LLM Engineer,C1,A,4,course:p4_c1_other_c,Evaluation Metrics for Language Models: A Short Overview,False
+P4,LLM Engineer,C2,B,1,course:p4_c2_selected,Prompt Engineering and Evaluation in Practice,True
+P4,LLM Engineer,C2,B,2,course:p4_c2_other_a,Applying Model Deployment Pipelines,False
+P4,LLM Engineer,C2,B,3,course:p4_c2_other_b,Getting Started with Product Requirements Gathering,False
+P4,LLM Engineer,C2,B,4,course:p4_c2_other_c,A Short Guide to Evaluation Metrics for Language Models,False
+P4,LLM Engineer,C3,C,1,course:p4_c3_selected,Fine-Tuning and Model Adaptation for AI Teams,True
+P4,LLM Engineer,C3,C,2,course:p4_c3_other_a,Model Deployment Pipelines for Practitioners,False
+P4,LLM Engineer,C3,C,3,course:p4_c3_other_b,Product Requirements Gathering Basics,False
+P4,LLM Engineer,C3,C,4,course:p4_c3_other_c,Evaluation Metrics for Language Models in Brief,False
+P5,Executive Director,C1,B,1,course:p5_c1_selected,Project Development for Nonprofit Leaders,True
+P5,Executive Director,C1,B,2,course:p5_c1_other_a,Fundraising and Grant Writing in Practice,False
+P5,Executive Director,C1,B,3,course:p5_c1_other_b,Budget Planning for Nonprofits Fundamentals,False
+P5,Executive Director,C1,B,4,course:p5_c1_other_c,Volunteer Program Management: A Short Overview,False
+P5,Executive Director,C2,C,1,course:p5_c2_selected,Monitoring and Evaluation in Practice,True
+P5,Executive Director,C2,C,2,course:p5_c2_other_a,Applying Fundraising and Grant Writing,False
+P5,Executive Director,C2,C,3,course:p5_c2_other_b,Getting Started with Budget Planning for Nonprofits,False
+P5,Executive Director,C2,C,4,course:p5_c2_other_c,A Short Guide to Volunteer Program Management,False
+P5,Executive Director,C3,A,1,course:p5_c3_selected,Stakeholder Management for Executive Directors,True
+P5,Executive Director,C3,A,2,course:p5_c3_other_a,Fundraising and Grant Writing for Practitioners,False
+P5,Executive Director,C3,A,3,course:p5_c3_other_b,Budget Planning for Nonprofits Basics,False
+P5,Executive Director,C3,A,4,course:p5_c3_other_c,Volunteer Program Management in Brief,False
+P6,Senior Finance Manager,C1,C,1,course:p6_c1_selected,Strategic Planning for Finance Leaders,True
+P6,Senior Finance Manager,C1,C,2,course:p6_c1_other_a,Financial Reporting Standards in Practice,False
+P6,Senior Finance Manager,C1,C,3,course:p6_c1_other_b,Cost Management Fundamentals,False
+P6,Senior Finance Manager,C1,C,4,course:p6_c1_other_c,Internal Controls: A Short Overview,False
+P6,Senior Finance Manager,C2,A,1,course:p6_c2_selected,Risk Management for Senior Finance Roles,True
+P6,Senior Finance Manager,C2,A,2,course:p6_c2_other_a,Applying Financial Reporting Standards,False
+P6,Senior Finance Manager,C2,A,3,course:p6_c2_other_b,Getting Started with Cost Management,False
+P6,Senior Finance Manager,C2,A,4,course:p6_c2_other_c,A Short Guide to Internal Controls,False
+P6,Senior Finance Manager,C3,B,1,course:p6_c3_selected,Organizational Development for Finance Managers,True
+P6,Senior Finance Manager,C3,B,2,course:p6_c3_other_a,Financial Reporting Standards for Practitioners,False
+P6,Senior Finance Manager,C3,B,3,course:p6_c3_other_b,Cost Management Basics,False
+P6,Senior Finance Manager,C3,B,4,course:p6_c3_other_c,Internal Controls in Brief,False
+P7,Product Designer,C1,A,1,course:p7_c1_selected,Product Design Strategy Foundations,True
+P7,Product Designer,C1,A,2,course:p7_c1_other_a,User Research in Practice,False
+P7,Product Designer,C1,A,3,course:p7_c1_other_b,Accessibility Auditing Fundamentals,False
+P7,Product Designer,C1,A,4,course:p7_c1_other_c,Packaging Design: A Short Overview,False
+P7,Product Designer,C2,B,1,course:p7_c2_selected,Interaction Design for Product Designers,True
+P7,Product Designer,C2,B,2,course:p7_c2_other_a,Applying User Research,False
+P7,Product Designer,C2,B,3,course:p7_c2_other_b,Getting Started with Accessibility Auditing,False
+P7,Product Designer,C2,B,4,course:p7_c2_other_c,A Short Guide to Packaging Design,False
+P7,Product Designer,C3,C,1,course:p7_c3_selected,Usability Testing for Product Teams,True
+P7,Product Designer,C3,C,2,course:p7_c3_other_a,User Research for Practitioners,False
+P7,Product Designer,C3,C,3,course:p7_c3_other_b,Accessibility Auditing Basics,False
+P7,Product Designer,C3,C,4,course:p7_c3_other_c,Packaging Design in Brief,False
+P8,Senior Software Engineer,C1,B,1,course:p8_c1_selected,System Design for Senior Engineers,True
+P8,Senior Software Engineer,C1,B,2,course:p8_c1_other_a,Technical Leadership in Practice,False
+P8,Senior Software Engineer,C1,B,3,course:p8_c1_other_b,Performance Tuning Fundamentals,False
+P8,Senior Software Engineer,C1,B,4,course:p8_c1_other_c,Incident Response: A Short Overview,False
+P8,Senior Software Engineer,C2,C,1,course:p8_c2_selected,Effective Code Review Practices,True
+P8,Senior Software Engineer,C2,C,2,course:p8_c2_other_a,Applying Technical Leadership,False
+P8,Senior Software Engineer,C2,C,3,course:p8_c2_other_b,Getting Started with Performance Tuning,False
+P8,Senior Software Engineer,C2,C,4,course:p8_c2_other_c,A Short Guide to Incident Response,False
+P8,Senior Software Engineer,C3,A,1,course:p8_c3_selected,Distributed Systems Fundamentals,True
+P8,Senior Software Engineer,C3,A,2,course:p8_c3_other_a,Technical Leadership for Practitioners,False
+P8,Senior Software Engineer,C3,A,3,course:p8_c3_other_b,Performance Tuning Basics,False
+P8,Senior Software Engineer,C3,A,4,course:p8_c3_other_c,Incident Response in Brief,False
+P9,Data Engineering Lead,C1,C,1,course:p9_c1_selected,Data Pipeline Architecture at Scale,True
+P9,Data Engineering Lead,C1,C,2,course:p9_c1_other_a,ETL Design in Practice,False
+P9,Data Engineering Lead,C1,C,3,course:p9_c1_other_b,Stakeholder Reporting Fundamentals,False
+P9,Data Engineering Lead,C1,C,4,course:p9_c1_other_c,Budget Tracking for Data Teams: A Short Overview,False
+P9,Data Engineering Lead,C2,A,1,course:p9_c2_selected,Change Management for Technical Teams,True
+P9,Data Engineering Lead,C2,A,2,course:p9_c2_other_a,Applying ETL Design,False
+P9,Data Engineering Lead,C2,A,3,course:p9_c2_other_b,Getting Started with Stakeholder Reporting,False
+P9,Data Engineering Lead,C2,A,4,course:p9_c2_other_c,A Short Guide to Budget Tracking for Data Teams,False
+P9,Data Engineering Lead,C3,B,1,course:p9_c3_selected,Coaching and Mentoring Engineering Leads,True
+P9,Data Engineering Lead,C3,B,2,course:p9_c3_other_a,ETL Design for Practitioners,False
+P9,Data Engineering Lead,C3,B,3,course:p9_c3_other_b,Stakeholder Reporting Basics,False
+P9,Data Engineering Lead,C3,B,4,course:p9_c3_other_c,Budget Tracking for Data Teams in Brief,False
+D0,UX Designer,C1,A,1,course:d0_c1_selected,Prototyping Interactive Interfaces in Figma,True
+D0,UX Designer,C1,A,2,course:d0_c1_other_a,Wireframing in Practice,False
+D0,UX Designer,C1,A,3,course:d0_c1_other_b,Design Systems Fundamentals,False
+D0,UX Designer,C1,A,4,course:d0_c1_other_c,Content Strategy: A Short Overview,False
+D0,UX Designer,C2,B,1,course:d0_c2_selected,Planning and Running Usability Studies,True
+D0,UX Designer,C2,B,2,course:d0_c2_other_a,Applying Wireframing,False
+D0,UX Designer,C2,B,3,course:d0_c2_other_b,Getting Started with Design Systems,False
+D0,UX Designer,C2,B,4,course:d0_c2_other_c,A Short Guide to Content Strategy,False
+D0,UX Designer,C3,C,1,course:d0_c3_selected,Information Architecture for Digital Products,True
+D0,UX Designer,C3,C,2,course:d0_c3_other_a,Wireframing for Practitioners,False
+D0,UX Designer,C3,C,3,course:d0_c3_other_b,Design Systems Basics,False
+D0,UX Designer,C3,C,4,course:d0_c3_other_c,Content Strategy in Brief,False
