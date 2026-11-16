@@ -32,21 +32,26 @@ screenshot. D0 now goes through the exact same per-content-set-independent
 template as P1-P9 (its NEW_ROLE_CONTENT entry below), just with its original
 skill/course names reused where the mapping lined up.
 
-P1-P6 are real recruited participants (mockups/prescreening.csv): role_title
+P1-P8 are real recruited participants (mockups/prescreening.csv): role_title
 is each person's stated ASPIRATIONAL role (Q9, "what role are you working
 towards"), and main1-3 skills are drawn from Q14 ("skills you'd like to
 develop for your next role"), cleaned into skill-name form where the raw
 answer was a phrase rather than a skill (e.g. "Marketing Business-knowledge
 Mastery" -> "marketing business acumen"); gaps where a respondent only named
 1-2 skills are filled with plausible adjacent skills for that aspirational
-role. secondary1-3 mostly reuse Q13 ("skills you already have"), reflecting
-each person's real starting point. strongfiller/weakfiller/unused are
+role, and where a respondent named MORE than 3 (P8 gave 4 for both Q13 and
+Q14), the extras become strongfiller/weakfiller instead of being discarded.
+secondary1-3 mostly reuse Q13 ("skills you already have"), reflecting each
+person's real starting point. A respondent with no usable Q9/Q14 answer
+(seen once, since corrected/removed in the questionnaire) is skipped
+entirely rather than guessed at -- ask before inventing an aspiration a
+respondent didn't actually state. strongfiller/weakfiller/unused are
 invented filler, same as every other role, never shown as a main/secondary
 reason. Every new real participant's data is additive and frozen once
 generated: earlier IDs' NEW_ROLE_CONTENT entries are never edited again once
 a real recruit occupies that slot, only appended to (the next new recruit
-takes the next P<n> slot). P7-P9 remain the original fictional placeholder
-profiles, reserved for 3 more participants not yet recruited -- kept as-is
+takes the next P<n> slot). P9 remains the original fictional placeholder
+profile, reserved for 1 more participant not yet recruited -- kept as-is
 (not deleted) so the existing confirmed Latin square in config/order.yaml
 (needs all 9 slots to stay balanced) doesn't have to be redesigned twice.
 
@@ -432,49 +437,49 @@ NEW_ROLE_CONTENT = {
         ],
     },
     "P7": {
-        "sector": "Design",
-        "role_basis": "ESCO 'product designer' occupation / O*NET 27-1021.00 Commercial and Industrial Designers (UX-leaning profile)",
+        "sector": "Product Management",
+        "role_basis": "ESCO 'product manager' occupation / O*NET 13-1161.00 Market Research Analysts and Marketing Specialists (product-strategy-leaning profile)",
         "skills": {
-            "main1": "product design strategy",
-            "main2": "interaction design",
-            "main3": "usability testing",
-            "secondary1": "visual design",
-            "secondary2": "design critique",
-            "secondary3": "cross-functional collaboration",
-            "strongfiller1": "user research",
-            "strongfiller2": "design systems",
-            "weakfiller1": "accessibility auditing",
-            "weakfiller2": "packaging design",
-            "unused1": "financial literacy for designers",
-            "unused2": "manufacturing basics",
+            "main1": "product management",
+            "main2": "communication",
+            "main3": "go-to-market strategy",
+            "secondary1": "data analysis",
+            "secondary2": "data storytelling",
+            "secondary3": "market research",
+            "strongfiller1": "roadmap planning",
+            "strongfiller2": "competitive analysis",
+            "weakfiller1": "stakeholder alignment",
+            "weakfiller2": "pricing strategy",
+            "unused1": "user interview facilitation",
+            "unused2": "experimentation basics",
         },
         "selected_titles": [
-            "Product Design Strategy Foundations",
-            "Interaction Design for Product Designers",
-            "Usability Testing for Product Teams",
+            "Product Management for Aspiring Strategists",
+            "Communication Skills for Product Leaders",
+            "Go-to-Market Strategy in Practice",
         ],
     },
     "P8": {
-        "sector": "Software Engineering",
-        "role_basis": "O*NET 15-1252.00 Software Developers (senior/lead profile)",
+        "sector": "Professional Services",
+        "role_basis": "O*NET 15-1211.00 Computer Systems Analysts / ESCO 'ICT application configurator' occupation (senior functional-consultant profile)",
         "skills": {
-            "main1": "system design",
-            "main2": "code review practices",
-            "main3": "distributed systems",
-            "secondary1": "mentoring engineers",
-            "secondary2": "ci/cd pipelines",
-            "secondary3": "cloud infrastructure",
-            "strongfiller1": "technical leadership",
-            "strongfiller2": "api design",
-            "weakfiller1": "performance tuning",
-            "weakfiller2": "incident response",
-            "unused1": "legacy mainframe maintenance",
-            "unused2": "manual qa testing",
+            "main1": "cross-functional expertise",
+            "main2": "solution design leadership",
+            "main3": "trusted advisory",
+            "secondary1": "software product knowledge",
+            "secondary2": "configuration troubleshooting",
+            "secondary3": "workshop facilitation",
+            "strongfiller1": "solution evaluation",
+            "strongfiller2": "mentoring junior consultants",
+            "weakfiller1": "requirements gathering",
+            "weakfiller2": "change management",
+            "unused1": "licensing and contract basics",
+            "unused2": "vendor relationship basics",
         },
         "selected_titles": [
-            "System Design for Senior Engineers",
-            "Effective Code Review Practices",
-            "Distributed Systems Fundamentals",
+            "Cross-Functional Expertise for Senior Consultants",
+            "Solution Design Leadership in Practice",
+            "Becoming a Trusted Advisor",
         ],
     },
     "P9": {

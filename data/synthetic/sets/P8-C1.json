@@ -4,32 +4,32 @@
   "position": 1,
   "variant": "B",
   "role": {
-    "job_id": "job:senior_software_engineer",
-    "title": "Senior Software Engineer",
-    "sector": "Software Engineering",
-    "role_basis": "O*NET 15-1252.00 Software Developers (senior/lead profile)",
-    "context_note": "Technical depth plus some leadership."
+    "job_id": "job:senior_functional_consultant",
+    "title": "Senior Functional Consultant",
+    "sector": "Professional Services",
+    "role_basis": "O*NET 15-1211.00 Computer Systems Analysts / ESCO 'ICT application configurator' occupation (senior functional-consultant profile)",
+    "context_note": "Currently a Functional Consultant Level 3 (software consultancy, 4-7 yrs; software/product knowledge, configuration troubleshooting, workshop facilitation, mentoring junior consultants); growing into cross-functional expertise, solution design leadership, trusted advisory, solution evaluation -- a level 3-to-4 progression within the same track. role_title cleaned from their literal Q9 answer \"Functional Consultant Level 4\" (an internal grade, not an external job-ad title) into a standard seniority label."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
-    "sort_line": "Best fit first, based on the skills employers ask for in Senior Software Engineer job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Senior Functional Consultant job ads.",
     "based_on_chips": [
-      "Senior Software Engineer job ads",
+      "Senior Functional Consultant job ads",
       "Course description"
     ]
   },
   "courses": [
     {
       "id": "course:p8_c1_selected",
-      "title": "System Design for Senior Engineers",
+      "title": "Cross-Functional Expertise for Senior Consultants",
       "level": "Intermediate",
       "duration_min": 125,
       "updated": "2026-02",
-      "description": "By the end of System Design for Senior Engineers, you'll be able to apply system design confidently in Senior Software Engineer work, with a working sense of where mentoring engineers fits alongside it. The course moves from core system design technique through a few applied exercises, with a lighter look at mentoring engineers woven in throughout.",
+      "description": "Cross-Functional Expertise for Senior Consultants focuses on cross-functional expertise for people working toward a Senior Functional Consultant role, through hands-on exercises and short review checkpoints. It also introduces software product knowledge, enough to apply alongside cross-functional expertise in real Senior Functional Consultant work. By the end, you'll be able to explain your approach to cross-functional expertise and show how software product knowledge supports it.",
       "learning_outcomes": [
-        "Applying system design to a real Senior Software Engineer scenario",
-        "Practicing system design through guided exercises",
-        "Getting a working introduction to mentoring engineers",
+        "Applying cross-functional expertise to a real Senior Functional Consultant scenario",
+        "Practicing cross-functional expertise through guided exercises",
+        "Getting a working introduction to software product knowledge",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -44,62 +44,62 @@
       "rules_matched": "Rule A (teaches) · Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:system_design",
-          "skill_name": "system design",
+          "skill_id": "skill:cross_functional_expertise",
+          "skill_name": "cross-functional expertise",
           "teaches_confidence": 0.9,
           "band": "strong"
         },
         {
-          "skill_id": "skill:mentoring_engineers",
-          "skill_name": "mentoring engineers",
+          "skill_id": "skill:software_product_knowledge",
+          "skill_name": "software product knowledge",
           "teaches_confidence": 0.55,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches system design, which comes up often in Senior Software Engineer job ads.",
+        "summary": "Teaches cross-functional expertise, which comes up often in Senior Functional Consultant job ads.",
         "A": {
-          "panel_prose": "System design comes up often in Senior Software Engineer job ads, and it's the main topic of this course. Mentoring engineers comes up sometimes in those ads, and the course covers some of it.",
+          "panel_prose": "Cross-functional expertise comes up often in Senior Functional Consultant job ads, and it's the main topic of this course. Software product knowledge comes up sometimes in those ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Senior Software Engineer job ads: system design is mentioned often.",
+              "text": "From Senior Functional Consultant job ads: cross-functional expertise is mentioned often.",
               "report_ids": [
                 "P8-C1-main-requires"
               ]
             },
             {
-              "text": "From Senior Software Engineer job ads: mentoring engineers is mentioned sometimes.",
+              "text": "From Senior Functional Consultant job ads: software product knowledge is mentioned sometimes.",
               "report_ids": [
                 "P8-C1-secondary-requires"
               ]
             },
             {
-              "text": "From the course description: system design is the main topic; mentoring engineers is covered in part.",
+              "text": "From the course description: cross-functional expertise is the main topic; software product knowledge is covered in part.",
               "report_ids": [
                 "P8-C1-main-teaches",
                 "P8-C1-secondary-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches system design, which comes up often in Senior Software Engineer job ads."
+          "card_reason": "Teaches cross-functional expertise, which comes up often in Senior Functional Consultant job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Senior Software Engineer"
+              "label": "Senior Functional Consultant"
             },
             {
-              "id": "skill:system_design",
+              "id": "skill:cross_functional_expertise",
               "kind": "skill",
-              "label": "System design",
+              "label": "Cross-functional expertise",
               "caption": "Skill employers want"
             },
             {
-              "id": "skill:mentoring_engineers",
+              "id": "skill:software_product_knowledge",
               "kind": "skill",
-              "label": "Mentoring engineers",
+              "label": "Software product knowledge",
               "caption": "Skill employers want"
             },
             {
@@ -112,14 +112,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:system_design",
+              "to": "skill:cross_functional_expertise",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From Senior Software Engineer job ads",
+              "source_label": "From Senior Functional Consultant job ads",
               "report_id": "P8-C1-main-requires"
             },
             {
-              "from": "skill:system_design",
+              "from": "skill:cross_functional_expertise",
               "to": "course:p8_c1_selected",
               "strength": "strong",
               "label": "main topic",
@@ -128,14 +128,14 @@
             },
             {
               "from": "role",
-              "to": "skill:mentoring_engineers",
+              "to": "skill:software_product_knowledge",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Senior Software Engineer job ads",
+              "source_label": "From Senior Functional Consultant job ads",
               "report_id": "P8-C1-secondary-requires"
             },
             {
-              "from": "skill:mentoring_engineers",
+              "from": "skill:software_product_knowledge",
               "to": "course:p8_c1_selected",
               "strength": "weaker",
               "label": "covered in part",
@@ -150,7 +150,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Senior Software Engineer → System design → This course"
+          "card_path": "Senior Functional Consultant → Cross-functional expertise → This course"
         },
         "C": {
           "rules_matched": [
@@ -159,17 +159,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "system design",
+              "skill": "cross-functional expertise",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "system design",
-                  "source_text": "Comes up often in Senior Software Engineer job ads",
+                  "value": "cross-functional expertise",
+                  "source_text": "Comes up often in Senior Functional Consultant job ads",
                   "report_id": "P8-C1-main-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "system design",
+                  "value": "cross-functional expertise",
                   "source_text": "From the course description",
                   "report_id": "P8-C1-main-teaches"
                 }
@@ -181,17 +181,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "mentoring engineers",
+              "skill": "software product knowledge",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "mentoring engineers",
-                  "source_text": "Comes up sometimes in Senior Software Engineer job ads",
+                  "value": "software product knowledge",
+                  "source_text": "Comes up sometimes in Senior Functional Consultant job ads",
                   "report_id": "P8-C1-secondary-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "mentoring engineers",
+                  "value": "software product knowledge",
                   "source_text": "From the course description",
                   "report_id": "P8-C1-secondary-teaches"
                 }
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p8_c1_other_a",
-      "title": "Technical Leadership in Practice",
+      "title": "Solution Evaluation in Practice",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Technical Leadership in Practice is a focused course on technical leadership for people already working toward a Senior Software Engineer role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying technical leadership on your own.",
+      "description": "Solution Evaluation in Practice goes beyond the basics of solution evaluation, for people already working toward a Senior Functional Consultant role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in solution evaluation and want to go further.",
       "learning_outcomes": [
-        "Applying technical leadership to a real Senior Software Engineer scenario",
-        "Practicing technical leadership through guided exercises",
-        "Building a short technical leadership exercise from scratch",
+        "Applying solution evaluation to a real Senior Functional Consultant scenario",
+        "Practicing solution evaluation through guided exercises",
+        "Building a short solution evaluation exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,43 +229,43 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:technical_leadership",
-          "skill_name": "technical leadership",
+          "skill_id": "skill:solution_evaluation",
+          "skill_name": "solution evaluation",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches technical leadership, which comes up often in Senior Software Engineer job ads.",
+        "summary": "Teaches solution evaluation, which comes up often in Senior Functional Consultant job ads.",
         "A": {
-          "panel_prose": "Technical leadership comes up often in Senior Software Engineer job ads, and it's the main topic of this course.",
+          "panel_prose": "Solution evaluation comes up often in Senior Functional Consultant job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From Senior Software Engineer job ads: technical leadership is mentioned often.",
+              "text": "From Senior Functional Consultant job ads: solution evaluation is mentioned often.",
               "report_ids": [
                 "P8-C1-c1_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: technical leadership is main topic.",
+              "text": "From the course description: solution evaluation is main topic.",
               "report_ids": [
                 "P8-C1-c1_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches technical leadership, which comes up often in Senior Software Engineer job ads."
+          "card_reason": "Teaches solution evaluation, which comes up often in Senior Functional Consultant job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Senior Software Engineer"
+              "label": "Senior Functional Consultant"
             },
             {
-              "id": "skill:technical_leadership",
+              "id": "skill:solution_evaluation",
               "kind": "skill",
-              "label": "Technical leadership",
+              "label": "Solution evaluation",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:technical_leadership",
+              "to": "skill:solution_evaluation",
               "strength": "strong",
               "label": "often asked for",
-              "source_label": "From Senior Software Engineer job ads",
+              "source_label": "From Senior Functional Consultant job ads",
               "report_id": "P8-C1-c1_other_a-requires"
             },
             {
-              "from": "skill:technical_leadership",
+              "from": "skill:solution_evaluation",
               "to": "course:p8_c1_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Senior Software Engineer → Technical leadership → This course"
+          "card_path": "Senior Functional Consultant → Solution evaluation → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "technical leadership",
+              "skill": "solution evaluation",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "technical leadership",
-                  "source_text": "Comes up often in Senior Software Engineer job ads",
+                  "value": "solution evaluation",
+                  "source_text": "Comes up often in Senior Functional Consultant job ads",
                   "report_id": "P8-C1-c1_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "technical leadership",
+                  "value": "solution evaluation",
                   "source_text": "From the course description",
                   "report_id": "P8-C1-c1_other_a-teaches"
                 }
@@ -333,15 +333,15 @@
     },
     {
       "id": "course:p8_c1_other_b",
-      "title": "Performance Tuning Fundamentals",
+      "title": "Requirements Gathering Fundamentals",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Performance Tuning Fundamentals walks you through the basics of performance tuning, built for people new to Senior Software Engineer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of performance tuning, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Requirements Gathering Fundamentals walks you through the basics of requirements gathering, built for people new to Senior Functional Consultant work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of requirements gathering, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying performance tuning to a real Senior Software Engineer scenario",
-        "Practicing performance tuning through guided exercises",
-        "Building a short performance tuning exercise from scratch",
+        "Applying requirements gathering to a real Senior Functional Consultant scenario",
+        "Practicing requirements gathering through guided exercises",
+        "Building a short requirements gathering exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -356,43 +356,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:performance_tuning",
-          "skill_name": "performance tuning",
+          "skill_id": "skill:requirements_gathering",
+          "skill_name": "requirements gathering",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches performance tuning, which comes up sometimes in Senior Software Engineer job ads.",
+        "summary": "Teaches requirements gathering, which comes up sometimes in Senior Functional Consultant job ads.",
         "A": {
-          "panel_prose": "Performance tuning comes up sometimes in Senior Software Engineer job ads, and the course covers some of it.",
+          "panel_prose": "Requirements gathering comes up sometimes in Senior Functional Consultant job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Senior Software Engineer job ads: performance tuning is mentioned sometimes.",
+              "text": "From Senior Functional Consultant job ads: requirements gathering is mentioned sometimes.",
               "report_ids": [
                 "P8-C1-c1_other_b-requires"
               ]
             },
             {
-              "text": "From the course description: performance tuning is covered in part.",
+              "text": "From the course description: requirements gathering is covered in part.",
               "report_ids": [
                 "P8-C1-c1_other_b-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches performance tuning, which comes up sometimes in Senior Software Engineer job ads."
+          "card_reason": "Teaches requirements gathering, which comes up sometimes in Senior Functional Consultant job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Senior Software Engineer"
+              "label": "Senior Functional Consultant"
             },
             {
-              "id": "skill:performance_tuning",
+              "id": "skill:requirements_gathering",
               "kind": "skill",
-              "label": "Performance tuning",
+              "label": "Requirements gathering",
               "caption": "Skill employers want"
             },
             {
@@ -404,14 +404,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:performance_tuning",
+              "to": "skill:requirements_gathering",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Senior Software Engineer job ads",
+              "source_label": "From Senior Functional Consultant job ads",
               "report_id": "P8-C1-c1_other_b-requires"
             },
             {
-              "from": "skill:performance_tuning",
+              "from": "skill:requirements_gathering",
               "to": "course:p8_c1_other_b",
               "strength": "weaker",
               "label": "covered in part",
@@ -426,7 +426,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Senior Software Engineer → Performance tuning → This course"
+          "card_path": "Senior Functional Consultant → Requirements gathering → This course"
         },
         "C": {
           "rules_matched": [
@@ -435,17 +435,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "performance tuning",
+              "skill": "requirements gathering",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "performance tuning",
-                  "source_text": "Comes up sometimes in Senior Software Engineer job ads",
+                  "value": "requirements gathering",
+                  "source_text": "Comes up sometimes in Senior Functional Consultant job ads",
                   "report_id": "P8-C1-c1_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "performance tuning",
+                  "value": "requirements gathering",
                   "source_text": "From the course description",
                   "report_id": "P8-C1-c1_other_b-teaches"
                 }
@@ -460,15 +460,15 @@
     },
     {
       "id": "course:p8_c1_other_c",
-      "title": "Incident Response: A Short Overview",
+      "title": "Change Management: A Short Overview",
       "level": "Beginner",
       "duration_min": 40,
       "updated": "2025-09",
-      "description": "Incident Response: A Short Overview walks you through the basics of incident response, built for people new to Senior Software Engineer work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of incident response, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Change Management: A Short Overview walks you through the basics of change management, built for people new to Senior Functional Consultant work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of change management, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
       "learning_outcomes": [
-        "Applying incident response to a real Senior Software Engineer scenario",
-        "Practicing incident response through guided exercises",
-        "Building a short incident response exercise from scratch",
+        "Applying change management to a real Senior Functional Consultant scenario",
+        "Practicing change management through guided exercises",
+        "Building a short change management exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -483,43 +483,43 @@
       "rules_matched": "Rule B (covers part)",
       "taught_skills": [
         {
-          "skill_id": "skill:incident_response",
-          "skill_name": "incident response",
+          "skill_id": "skill:change_management",
+          "skill_name": "change management",
           "teaches_confidence": 0.5,
           "band": "weak"
         }
       ],
       "explanation": {
-        "summary": "Teaches incident response, which comes up sometimes in Senior Software Engineer job ads.",
+        "summary": "Teaches change management, which comes up sometimes in Senior Functional Consultant job ads.",
         "A": {
-          "panel_prose": "Incident response comes up sometimes in Senior Software Engineer job ads, and the course covers some of it.",
+          "panel_prose": "Change management comes up sometimes in Senior Functional Consultant job ads, and the course covers some of it.",
           "detail_bullets": [
             {
-              "text": "From Senior Software Engineer job ads: incident response is mentioned sometimes.",
+              "text": "From Senior Functional Consultant job ads: change management is mentioned sometimes.",
               "report_ids": [
                 "P8-C1-c1_other_c-requires"
               ]
             },
             {
-              "text": "From the course description: incident response is covered in part.",
+              "text": "From the course description: change management is covered in part.",
               "report_ids": [
                 "P8-C1-c1_other_c-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches incident response, which comes up sometimes in Senior Software Engineer job ads."
+          "card_reason": "Teaches change management, which comes up sometimes in Senior Functional Consultant job ads."
         },
         "B": {
           "nodes": [
             {
               "id": "role",
               "kind": "role",
-              "label": "Senior Software Engineer"
+              "label": "Senior Functional Consultant"
             },
             {
-              "id": "skill:incident_response",
+              "id": "skill:change_management",
               "kind": "skill",
-              "label": "Incident response",
+              "label": "Change management",
               "caption": "Skill employers want"
             },
             {
@@ -531,14 +531,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:incident_response",
+              "to": "skill:change_management",
               "strength": "weaker",
               "label": "sometimes asked for",
-              "source_label": "From Senior Software Engineer job ads",
+              "source_label": "From Senior Functional Consultant job ads",
               "report_id": "P8-C1-c1_other_c-requires"
             },
             {
-              "from": "skill:incident_response",
+              "from": "skill:change_management",
               "to": "course:p8_c1_other_c",
               "strength": "weaker",
               "label": "covered in part",
@@ -553,7 +553,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Senior Software Engineer → Incident response → This course"
+          "card_path": "Senior Functional Consultant → Change management → This course"
         },
         "C": {
           "rules_matched": [
@@ -562,17 +562,17 @@
               "ui_label": "Rule B",
               "name": "Courses that cover part of a skill your role needs",
               "strength": "Weaker match",
-              "skill": "incident response",
+              "skill": "change management",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "incident response",
-                  "source_text": "Comes up sometimes in Senior Software Engineer job ads",
+                  "value": "change management",
+                  "source_text": "Comes up sometimes in Senior Functional Consultant job ads",
                   "report_id": "P8-C1-c1_other_c-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
-                  "value": "incident response",
+                  "value": "change management",
                   "source_text": "From the course description",
                   "report_id": "P8-C1-c1_other_c-teaches"
                 }
@@ -590,78 +590,78 @@
   "course_score": 1.0225,
   "paths": [
     {
-      "skill_id": "skill:system_design",
-      "skill_name": "system design",
+      "skill_id": "skill:cross_functional_expertise",
+      "skill_name": "cross-functional expertise",
       "which": "main",
       "requires_confidence": 0.8,
       "teaches_confidence": 0.9,
       "requires_report_id": "P8-C1-main-requires",
       "teaches_report_id": "P8-C1-main-teaches",
       "evidence_span": {
-        "text": "system design",
-        "start": 74,
+        "text": "cross-functional expertise",
+        "start": 61,
         "end": 87
       }
     },
     {
-      "skill_id": "skill:mentoring_engineers",
-      "skill_name": "mentoring engineers",
+      "skill_id": "skill:software_product_knowledge",
+      "skill_name": "software product knowledge",
       "which": "secondary",
       "requires_confidence": 0.55,
       "teaches_confidence": 0.55,
       "requires_report_id": "P8-C1-secondary-requires",
       "teaches_report_id": "P8-C1-secondary-teaches",
       "evidence_span": {
-        "text": "mentoring engineers",
-        "start": 164,
-        "end": 183
+        "text": "software product knowledge",
+        "start": 227,
+        "end": 253
       }
     }
   ],
   "explanation": {
-    "summary": "Teaches system design, which comes up often in Senior Software Engineer job ads.",
+    "summary": "Teaches cross-functional expertise, which comes up often in Senior Functional Consultant job ads.",
     "A": {
-      "panel_prose": "System design comes up often in Senior Software Engineer job ads, and it's the main topic of this course. Mentoring engineers comes up sometimes in those ads, and the course covers some of it.",
+      "panel_prose": "Cross-functional expertise comes up often in Senior Functional Consultant job ads, and it's the main topic of this course. Software product knowledge comes up sometimes in those ads, and the course covers some of it.",
       "detail_bullets": [
         {
-          "text": "From Senior Software Engineer job ads: system design is mentioned often.",
+          "text": "From Senior Functional Consultant job ads: cross-functional expertise is mentioned often.",
           "report_ids": [
             "P8-C1-main-requires"
           ]
         },
         {
-          "text": "From Senior Software Engineer job ads: mentoring engineers is mentioned sometimes.",
+          "text": "From Senior Functional Consultant job ads: software product knowledge is mentioned sometimes.",
           "report_ids": [
             "P8-C1-secondary-requires"
           ]
         },
         {
-          "text": "From the course description: system design is the main topic; mentoring engineers is covered in part.",
+          "text": "From the course description: cross-functional expertise is the main topic; software product knowledge is covered in part.",
           "report_ids": [
             "P8-C1-main-teaches",
             "P8-C1-secondary-teaches"
           ]
         }
       ],
-      "card_reason": "Teaches system design, which comes up often in Senior Software Engineer job ads."
+      "card_reason": "Teaches cross-functional expertise, which comes up often in Senior Functional Consultant job ads."
     },
     "B": {
       "nodes": [
         {
           "id": "role",
           "kind": "role",
-          "label": "Senior Software Engineer"
+          "label": "Senior Functional Consultant"
         },
         {
-          "id": "skill:system_design",
+          "id": "skill:cross_functional_expertise",
           "kind": "skill",
-          "label": "System design",
+          "label": "Cross-functional expertise",
           "caption": "Skill employers want"
         },
         {
-          "id": "skill:mentoring_engineers",
+          "id": "skill:software_product_knowledge",
           "kind": "skill",
-          "label": "Mentoring engineers",
+          "label": "Software product knowledge",
           "caption": "Skill employers want"
         },
         {
@@ -674,14 +674,14 @@
       "edges": [
         {
           "from": "role",
-          "to": "skill:system_design",
+          "to": "skill:cross_functional_expertise",
           "strength": "strong",
           "label": "often asked for",
-          "source_label": "From Senior Software Engineer job ads",
+          "source_label": "From Senior Functional Consultant job ads",
           "report_id": "P8-C1-main-requires"
         },
         {
-          "from": "skill:system_design",
+          "from": "skill:cross_functional_expertise",
           "to": "course:p8_c1_selected",
           "strength": "strong",
           "label": "main topic",
@@ -690,14 +690,14 @@
         },
         {
           "from": "role",
-          "to": "skill:mentoring_engineers",
+          "to": "skill:software_product_knowledge",
           "strength": "weaker",
           "label": "sometimes asked for",
-          "source_label": "From Senior Software Engineer job ads",
+          "source_label": "From Senior Functional Consultant job ads",
           "report_id": "P8-C1-secondary-requires"
         },
         {
-          "from": "skill:mentoring_engineers",
+          "from": "skill:software_product_knowledge",
           "to": "course:p8_c1_selected",
           "strength": "weaker",
           "label": "covered in part",
@@ -712,7 +712,7 @@
         "Skill employers want",
         "Recommended course"
       ],
-      "card_path": "Senior Software Engineer → System design → This course"
+      "card_path": "Senior Functional Consultant → Cross-functional expertise → This course"
     },
     "C": {
       "rules_matched": [
@@ -721,17 +721,17 @@
           "ui_label": "Rule A",
           "name": "Courses that teach a skill your role needs",
           "strength": "Strong match",
-          "skill": "system design",
+          "skill": "cross-functional expertise",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "system design",
-              "source_text": "Comes up often in Senior Software Engineer job ads",
+              "value": "cross-functional expertise",
+              "source_text": "Comes up often in Senior Functional Consultant job ads",
               "report_id": "P8-C1-main-requires"
             },
             {
               "label": "Main topic of this course:",
-              "value": "system design",
+              "value": "cross-functional expertise",
               "source_text": "From the course description",
               "report_id": "P8-C1-main-teaches"
             }
@@ -743,17 +743,17 @@
           "ui_label": "Rule B",
           "name": "Courses that cover part of a skill your role needs",
           "strength": "Weaker match",
-          "skill": "mentoring engineers",
+          "skill": "software product knowledge",
           "conditions": [
             {
               "label": "A skill your role needs:",
-              "value": "mentoring engineers",
-              "source_text": "Comes up sometimes in Senior Software Engineer job ads",
+              "value": "software product knowledge",
+              "source_text": "Comes up sometimes in Senior Functional Consultant job ads",
               "report_id": "P8-C1-secondary-requires"
             },
             {
               "label": "Partly covered in this course:",
-              "value": "mentoring engineers",
+              "value": "software product knowledge",
               "source_text": "From the course description",
               "report_id": "P8-C1-secondary-teaches"
             }
@@ -768,15 +768,15 @@
   "alternates": [
     {
       "id": "course:p8_c1_alt_a",
-      "title": "System Design Essentials",
+      "title": "Cross-Functional Expertise Essentials",
       "level": "Beginner",
       "duration_min": 50,
       "updated": "2025-08",
-      "description": "System Design Essentials is a short introduction to system design for people moving toward a Senior Software Engineer role. You'll walk through the essential vocabulary and a few guided exercises that show system design in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if system design is new to you.",
+      "description": "Cross-Functional Expertise Essentials is a short introduction to cross-functional expertise for people moving toward a Senior Functional Consultant role. You'll walk through the essential vocabulary and a few guided exercises that show cross-functional expertise in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if cross-functional expertise is new to you.",
       "learning_outcomes": [
-        "Applying system design to a real Senior Software Engineer scenario",
-        "Practicing system design through guided exercises",
-        "Building a short system design exercise from scratch",
+        "Applying cross-functional expertise to a real Senior Functional Consultant scenario",
+        "Practicing cross-functional expertise through guided exercises",
+        "Building a short cross-functional expertise exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -791,8 +791,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:system_design",
-          "skill_name": "system design",
+          "skill_id": "skill:cross_functional_expertise",
+          "skill_name": "cross-functional expertise",
           "teaches_confidence": 0.25,
           "band": "unused"
         }
@@ -800,15 +800,15 @@
     },
     {
       "id": "course:p8_c1_alt_b",
-      "title": "Advanced System Design Techniques",
+      "title": "Advanced Cross-Functional Expertise Techniques",
       "level": "Advanced",
       "duration_min": 160,
       "updated": "2025-07",
-      "description": "Advanced System Design Techniques is a focused course on system design for people already working toward a Senior Software Engineer role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying system design on your own.",
+      "description": "Advanced Cross-Functional Expertise Techniques is a focused course on cross-functional expertise for people already working toward a Senior Functional Consultant role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying cross-functional expertise on your own.",
       "learning_outcomes": [
-        "Applying system design to a real Senior Software Engineer scenario",
-        "Practicing system design through guided exercises",
-        "Building a short system design exercise from scratch",
+        "Applying cross-functional expertise to a real Senior Functional Consultant scenario",
+        "Practicing cross-functional expertise through guided exercises",
+        "Building a short cross-functional expertise exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -823,8 +823,8 @@
       "rules_matched": "",
       "taught_skills": [
         {
-          "skill_id": "skill:system_design",
-          "skill_name": "system design",
+          "skill_id": "skill:cross_functional_expertise",
+          "skill_name": "cross-functional expertise",
           "teaches_confidence": 0.25,
           "band": "unused"
         }

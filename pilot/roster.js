@@ -7,10 +7,10 @@
 // aspirational target role shown once the session starts (e.g. "Consulting
 // Technical Manager", not "Consulting Director") -- a participant recognizes
 // their own current job title far more reliably than an abstract goal-role
-// label. D0 (facilitator demo) and P7-P9 (not yet recruited) are
-// intentionally left out of this picker; D0 stays reachable only via an
-// explicit ?participant=D0 link. New recruits get appended here, never
-// inserted earlier -- this list only ever grows.
+// label. D0 (facilitator demo) and P9 (not yet recruited) are intentionally
+// left out of this picker; D0 stays reachable only via an explicit
+// ?participant=D0 link. New recruits get appended here, never inserted
+// earlier -- this list only ever grows.
 
 const PARTICIPANT_ROSTER = [
   { id: "P1", currentRole: "Consulting Technical Manager", industry: "ERP Software" },
@@ -19,4 +19,6 @@ const PARTICIPANT_ROSTER = [
   { id: "P4", currentRole: "Engineering Manager", industry: "IT and Software" },
   { id: "P5", currentRole: "Project Manager", industry: "Nonprofit" },
   { id: "P6", currentRole: "Group Controller/Consultant", industry: "Real Estate and Accounting Services" },
+  { id: "P7", currentRole: "Product Analyst", industry: "Fintech" },
+  { id: "P8", currentRole: "Functional Consultant Level 3", industry: "Software Consultancy" },
 ];

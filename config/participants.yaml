@@ -3,7 +3,7 @@
 # ads", "<role_title>s need..."). context_note is NOT shown to participants
 # -- kept here only for traceability into scripts/roles_data.py.
 #
-# P1-P6 are real recruited participants, sourced from their prescreening
+# P1-P8 are real recruited participants, sourced from their prescreening
 # questionnaire (mockups/prescreening.csv). role_title is each person's
 # stated ASPIRATIONAL role (Q9: "what role are you working towards"), not
 # their current job title (Q6) -- the study recommends courses toward a goal
@@ -11,12 +11,13 @@
 # module docstring for how each role's skills were derived from Q13/Q14.
 # Once a real recruit's data is generated it's frozen -- re-running the
 # generator must never change an already-generated participant's content;
-# only new recruits get added, into the next free P<n> slot.
+# only new recruits get added, into the next free P<n> slot. A respondent
+# with no usable Q9/Q14 answer is skipped until corrected, never guessed at.
 #
-# P7-P9 are reserved placeholder slots for 3 more participants not yet
-# recruited -- their fictional profiles are unchanged from the original
+# P9 is a reserved placeholder slot for 1 more participant not yet
+# recruited -- its fictional profile is unchanged from the original
 # synthetic build, kept only so config/order.yaml's confirmed 9-slot Latin
-# square stays balanced until those 3 are added.
+# square stays balanced until that last one is added.
 
 P1:
   role_title: Consulting Director
@@ -49,14 +50,14 @@ P6:
   context_note: "Currently a Group Controller/Consultant (real estate and accounting services, 8+ yrs; financial statement analysis, regulatory compliance, forecasting/budgeting); growing into strategic planning, risk management, organizational development."
 
 P7:
-  role_title: Product Designer
-  job_id: "job:product_designer"
-  context_note: "Product and UX design. No retail-oriented content."
+  role_title: Product Strategist
+  job_id: "job:product_strategist"
+  context_note: "Currently a Product Analyst (fintech, 8+ yrs; data analysis, data storytelling); growing into product management, communication, go-to-market strategy -- an analyst-to-strategist transition. role_title cleaned from their literal Q9 answer \"Product Strategy\" (a discipline, not a title) into a standard job title."
 
 P8:
-  role_title: Senior Software Engineer
-  job_id: "job:senior_software_engineer"
-  context_note: "Technical depth plus some leadership."
+  role_title: Senior Functional Consultant
+  job_id: "job:senior_functional_consultant"
+  context_note: "Currently a Functional Consultant Level 3 (software consultancy, 4-7 yrs; software/product knowledge, configuration troubleshooting, workshop facilitation, mentoring junior consultants); growing into cross-functional expertise, solution design leadership, trusted advisory, solution evaluation -- a level 3-to-4 progression within the same track. role_title cleaned from their literal Q9 answer \"Functional Consultant Level 4\" (an internal grade, not an external job-ad title) into a standard seniority label."
 
 P9:
   role_title: Data Engineering Lead

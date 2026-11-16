@@ -71,30 +71,30 @@ P6,Senior Finance Manager,C3,B,1,course:p6_c3_selected,Organizational Developmen
 P6,Senior Finance Manager,C3,B,2,course:p6_c3_other_a,Financial Reporting Standards for Practitioners,False
 P6,Senior Finance Manager,C3,B,3,course:p6_c3_other_b,Cost Management Basics,False
 P6,Senior Finance Manager,C3,B,4,course:p6_c3_other_c,Internal Controls in Brief,False
-P7,Product Designer,C1,A,1,course:p7_c1_selected,Product Design Strategy Foundations,True
-P7,Product Designer,C1,A,2,course:p7_c1_other_a,User Research in Practice,False
-P7,Product Designer,C1,A,3,course:p7_c1_other_b,Accessibility Auditing Fundamentals,False
-P7,Product Designer,C1,A,4,course:p7_c1_other_c,Packaging Design: A Short Overview,False
-P7,Product Designer,C2,B,1,course:p7_c2_selected,Interaction Design for Product Designers,True
-P7,Product Designer,C2,B,2,course:p7_c2_other_a,Applying User Research,False
-P7,Product Designer,C2,B,3,course:p7_c2_other_b,Getting Started with Accessibility Auditing,False
-P7,Product Designer,C2,B,4,course:p7_c2_other_c,A Short Guide to Packaging Design,False
-P7,Product Designer,C3,C,1,course:p7_c3_selected,Usability Testing for Product Teams,True
-P7,Product Designer,C3,C,2,course:p7_c3_other_a,User Research for Practitioners,False
-P7,Product Designer,C3,C,3,course:p7_c3_other_b,Accessibility Auditing Basics,False
-P7,Product Designer,C3,C,4,course:p7_c3_other_c,Packaging Design in Brief,False
-P8,Senior Software Engineer,C1,B,1,course:p8_c1_selected,System Design for Senior Engineers,True
-P8,Senior Software Engineer,C1,B,2,course:p8_c1_other_a,Technical Leadership in Practice,False
-P8,Senior Software Engineer,C1,B,3,course:p8_c1_other_b,Performance Tuning Fundamentals,False
-P8,Senior Software Engineer,C1,B,4,course:p8_c1_other_c,Incident Response: A Short Overview,False
-P8,Senior Software Engineer,C2,C,1,course:p8_c2_selected,Effective Code Review Practices,True
-P8,Senior Software Engineer,C2,C,2,course:p8_c2_other_a,Applying Technical Leadership,False
-P8,Senior Software Engineer,C2,C,3,course:p8_c2_other_b,Getting Started with Performance Tuning,False
-P8,Senior Software Engineer,C2,C,4,course:p8_c2_other_c,A Short Guide to Incident Response,False
-P8,Senior Software Engineer,C3,A,1,course:p8_c3_selected,Distributed Systems Fundamentals,True
-P8,Senior Software Engineer,C3,A,2,course:p8_c3_other_a,Technical Leadership for Practitioners,False
-P8,Senior Software Engineer,C3,A,3,course:p8_c3_other_b,Performance Tuning Basics,False
-P8,Senior Software Engineer,C3,A,4,course:p8_c3_other_c,Incident Response in Brief,False
+P7,Product Strategist,C1,A,1,course:p7_c1_selected,Product Management for Aspiring Strategists,True
+P7,Product Strategist,C1,A,2,course:p7_c1_other_a,Roadmap Planning in Practice,False
+P7,Product Strategist,C1,A,3,course:p7_c1_other_b,Stakeholder Alignment Fundamentals,False
+P7,Product Strategist,C1,A,4,course:p7_c1_other_c,Pricing Strategy: A Short Overview,False
+P7,Product Strategist,C2,B,1,course:p7_c2_selected,Communication Skills for Product Leaders,True
+P7,Product Strategist,C2,B,2,course:p7_c2_other_a,Applying Roadmap Planning,False
+P7,Product Strategist,C2,B,3,course:p7_c2_other_b,Getting Started with Stakeholder Alignment,False
+P7,Product Strategist,C2,B,4,course:p7_c2_other_c,A Short Guide to Pricing Strategy,False
+P7,Product Strategist,C3,C,1,course:p7_c3_selected,Go-to-Market Strategy in Practice,True
+P7,Product Strategist,C3,C,2,course:p7_c3_other_a,Roadmap Planning for Practitioners,False
+P7,Product Strategist,C3,C,3,course:p7_c3_other_b,Stakeholder Alignment Basics,False
+P7,Product Strategist,C3,C,4,course:p7_c3_other_c,Pricing Strategy in Brief,False
+P8,Senior Functional Consultant,C1,B,1,course:p8_c1_selected,Cross-Functional Expertise for Senior Consultants,True
+P8,Senior Functional Consultant,C1,B,2,course:p8_c1_other_a,Solution Evaluation in Practice,False
+P8,Senior Functional Consultant,C1,B,3,course:p8_c1_other_b,Requirements Gathering Fundamentals,False
+P8,Senior Functional Consultant,C1,B,4,course:p8_c1_other_c,Change Management: A Short Overview,False
+P8,Senior Functional Consultant,C2,C,1,course:p8_c2_selected,Solution Design Leadership in Practice,True
+P8,Senior Functional Consultant,C2,C,2,course:p8_c2_other_a,Applying Solution Evaluation,False
+P8,Senior Functional Consultant,C2,C,3,course:p8_c2_other_b,Getting Started with Requirements Gathering,False
+P8,Senior Functional Consultant,C2,C,4,course:p8_c2_other_c,A Short Guide to Change Management,False
+P8,Senior Functional Consultant,C3,A,1,course:p8_c3_selected,Becoming a Trusted Advisor,True
+P8,Senior Functional Consultant,C3,A,2,course:p8_c3_other_a,Solution Evaluation for Practitioners,False
+P8,Senior Functional Consultant,C3,A,3,course:p8_c3_other_b,Requirements Gathering Basics,False
+P8,Senior Functional Consultant,C3,A,4,course:p8_c3_other_c,Change Management in Brief,False
 P9,Data Engineering Lead,C1,C,1,course:p9_c1_selected,Data Pipeline Architecture at Scale,True
 P9,Data Engineering Lead,C1,C,2,course:p9_c1_other_a,ETL Design in Practice,False
 P9,Data Engineering Lead,C1,C,3,course:p9_c1_other_b,Stakeholder Reporting Fundamentals,False
