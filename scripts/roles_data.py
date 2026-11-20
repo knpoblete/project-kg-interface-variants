@@ -47,7 +47,32 @@ person's real starting point. A respondent with no usable Q9/Q14 answer
 entirely rather than guessed at -- ask before inventing an aspiration a
 respondent didn't actually state. strongfiller/weakfiller/unused are
 invented filler, same as every other role, never shown as a main/secondary
-reason. Every new real participant's data is additive and frozen once
+reason.
+
+MANDATORY editorial check before finalizing any new participant's 12 skill
+names (main1-3, secondary1-3, strongfiller1-2, weakfiller1-2, unused1-2):
+every pair must be DISTINCT IN SUBSTANCE, not just differently worded.
+"No literal duplicate" is not enough -- a skill that is a sub-topic,
+component, or near-synonym of another skill in the SAME participant's list
+will surface as what looks like a duplicate course once rendered (main/
+secondary skills and strongfiller1/weakfiller1/weakfiller2 all generate
+real course titles the participant sees side by side in the same round).
+P7 and P8 both shipped with exactly this mistake -- P7's "pricing
+strategy" (weakfiller2) is a sub-topic of its own "go-to-market strategy"
+(main3), and "roadmap planning" (strongfiller1) is a sub-topic of its own
+"product management" (main1); P8's "solution evaluation" (strongfiller1)
+heavily overlaps its own "solution design leadership" (main2). Both are
+frozen and left as-is (already evaluated with real participants), but the
+mistake must not repeat: before writing a new NEW_ROLE_CONTENT entry,
+explicitly list all 12 names and cross-check every pair by hand -- would a
+participant reasonably see these as "basically the same topic"? If yes,
+pick a genuinely different filler skill. This can't be reliably automated
+(subset/component relationships rarely share keywords -- "roadmap
+planning"/"product management" share no words at all), so validate.py's
+check_skill_overlap_advisory is a best-effort keyword-overlap hint, not a
+substitute for this manual pass.
+
+Every new real participant's data is additive and frozen once
 generated: earlier IDs' NEW_ROLE_CONTENT entries are never edited again once
 a real recruit occupies that slot, only appended to (the next new recruit
 takes the next P<n> slot). P9 remains the original fictional placeholder

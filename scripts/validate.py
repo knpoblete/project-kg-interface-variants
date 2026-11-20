@@ -651,6 +651,47 @@ def check_determinism(out_dir: Path, seed: int, participants: str) -> tuple[bool
 
 
 # ---------------------------------------------------------------------------
+# Advisory (non-blocking): same-participant skill names that share a
+# significant word, as a hint that two of a participant's own 12 skills
+# might be the same topic wearing different clothes (a sub-topic, component,
+# or near-synonym of each other) -- the exact mistake P7/P8 shipped with
+# ("pricing strategy" is a sub-topic of their own "go-to-market strategy";
+# "solution evaluation" overlaps "solution design leadership"). This is a
+# best-effort HINT, not a real semantic-similarity check: it will both
+# miss real overlaps that share no words ("roadmap planning" vs "product
+# management" -- P7's other shipped mistake) and flag legitimate pairs that
+# happen to share a generic word (e.g. "risk management" / "cost management"
+# are genuinely distinct skills that both contain "management"). It never
+# fails the suite -- see roles_data.py's module docstring for the mandatory
+# manual cross-check this is a hint toward, not a replacement for.
+# ---------------------------------------------------------------------------
+
+_ADVISORY_STOPWORDS = {"and", "or", "for", "of", "the", "to", "in", "with", "a", "an"}
+
+
+def _significant_words(skill_name: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z]+", skill_name.lower()) if w not in _ADVISORY_STOPWORDS}
+
+
+def check_skill_overlap_advisory(out_dir: Path, only: list[str] | None = None) -> list[str]:
+    hints = []
+    participants_cfg = _load_participants_cfg()
+    for pid in only or ALL_IDS:
+        job_id = participants_cfg[pid]["job_id"]
+        triples = _load_json(out_dir / "kg" / "triples.json")
+        entities = _load_json(out_dir / "kg" / "entities.json")
+        name_by_id = {s["id"]: s["name"] for s in entities["skills"]}
+        skill_names = [name_by_id[t["tail"]] for t in triples if t["relation"] == "requires" and t["head"] == job_id]
+        words_by_name = {name: _significant_words(name) for name in skill_names}
+        for i, a in enumerate(skill_names):
+            for b in skill_names[i + 1 :]:
+                shared = words_by_name[a] & words_by_name[b]
+                if shared:
+                    hints.append(f"{pid}: {a!r} / {b!r} share {sorted(shared)} -- worth a manual re-read")
+    return hints
+
+
+# ---------------------------------------------------------------------------
 # Runner
 # ---------------------------------------------------------------------------
 
@@ -661,6 +702,13 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=2026, help="seed to assume was used for --dir, for the determinism check")
     parser.add_argument("--participants", default="all", help="participants to assume were generated into --dir")
     parser.add_argument("--skip-determinism", action="store_true", help="skip the (slower) determinism re-run check")
+    parser.add_argument(
+        "--advisory-for",
+        default="",
+        help="comma-separated participant IDs to scope the skill-overlap advisory to (default: all). "
+        "Use this when adding a new participant -- e.g. --advisory-for P9 -- so you only read that "
+        "participant's hints instead of every participant's.",
+    )
     args = parser.parse_args()
 
     out_dir = Path(args.dir)
@@ -694,6 +742,15 @@ def main() -> None:
         if len(errors) > 20:
             print(f"    ... and {len(errors) - 20} more")
         all_ok = all_ok and ok
+
+    advisory_only = [p.strip() for p in args.advisory_for.split(",") if p.strip()] or None
+    hints = check_skill_overlap_advisory(out_dir, advisory_only)
+    scope = ",".join(advisory_only) if advisory_only else "all participants"
+    print(f"[ADVISORY] skill_overlap_hints for {scope} ({len(hints)} found -- review, doesn't affect pass/fail)")
+    for h in hints[:20]:
+        print(f"    - {h}")
+    if len(hints) > 20:
+        print(f"    ... and {len(hints) - 20} more (re-run with --advisory-for <ID> to scope)")
 
     sys.exit(0 if all_ok else 1)
 
