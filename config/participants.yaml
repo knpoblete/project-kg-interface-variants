@@ -3,21 +3,26 @@
 # ads", "<role_title>s need..."). context_note is NOT shown to participants
 # -- kept here only for traceability into scripts/roles_data.py.
 #
-# P1-P8 are real recruited participants, sourced from their prescreening
-# questionnaire (mockups/prescreening.csv). role_title is each person's
-# stated ASPIRATIONAL role (Q9: "what role are you working towards"), not
-# their current job title (Q6) -- the study recommends courses toward a goal
-# role, so that's the one shown as "the role you picked". See roles_data.py's
-# module docstring for how each role's skills were derived from Q13/Q14.
+# P1-P11 are all real recruited participants, sourced from their
+# prescreening questionnaire (mockups/prescreening.csv) -- no fictional
+# placeholder profiles remain. role_title is each person's stated
+# ASPIRATIONAL role (Q9: "what role are you working towards"), not their
+# current job title (Q6) -- the study recommends courses toward a goal role,
+# so that's the one shown as "the role you picked". Several Q9 answers
+# weren't usable as titles verbatim (a single word, a sentence of goals, a
+# typo) and were cleaned; each such cleanup is recorded in that
+# participant's context_note below. See roles_data.py's module docstring for
+# how each role's skills were derived from Q13/Q14, and for the mandatory
+# distinctness check every new entry must pass.
+#
 # Once a real recruit's data is generated it's frozen -- re-running the
 # generator must never change an already-generated participant's content;
 # only new recruits get added, into the next free P<n> slot. A respondent
 # with no usable Q9/Q14 answer is skipped until corrected, never guessed at.
 #
-# P9 is a reserved placeholder slot for 1 more participant not yet
-# recruited -- its fictional profile is unchanged from the original
-# synthetic build, kept only so config/order.yaml's confirmed 9-slot Latin
-# square stays balanced until that last one is added.
+# P5 and P6 dropped out before running; see the note above their entries.
+# config/order.yaml holds the E-slot counterbalance design and records which
+# P<n> occupies which slot.
 
 P1:
   role_title: Consulting Director
@@ -39,15 +44,20 @@ P4:
   job_id: "job:llm_engineer"
   context_note: "Currently an Engineering Manager (IT/software, 8+ yrs; people/project management, technical systems acumen); growing into LLMOps, prompt engineering, fine-tuning -- a management-to-IC technical transition."
 
+# DROPPED OUT -- P5 and P6 withdrew before their sessions ran. Their entries
+# and generated data are kept (so re-running the generator stays
+# byte-identical for everyone else and the record survives), but they are
+# removed from pilot/roster.js so neither can be started by mistake, and
+# they are excluded from the E-slot design in config/order.yaml.
 P5:
   role_title: Executive Director
   job_id: "job:executive_director_nonprofit"
-  context_note: "Currently a Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
+  context_note: "DROPPED OUT (never ran). Was: Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
 
 P6:
   role_title: Senior Finance Manager
   job_id: "job:senior_finance_manager"
-  context_note: "Currently a Group Controller/Consultant (real estate and accounting services, 8+ yrs; financial statement analysis, regulatory compliance, forecasting/budgeting); growing into strategic planning, risk management, organizational development."
+  context_note: "DROPPED OUT (never ran). Was: Group Controller/Consultant (real estate and accounting services, 8+ yrs; financial statement analysis, regulatory compliance, forecasting/budgeting); growing into strategic planning, risk management, organizational development."
 
 P7:
   role_title: Product Strategist
@@ -60,9 +70,19 @@ P8:
   context_note: "Currently a Functional Consultant Level 3 (software consultancy, 4-7 yrs; software/product knowledge, configuration troubleshooting, workshop facilitation, mentoring junior consultants); growing into cross-functional expertise, solution design leadership, trusted advisory, solution evaluation -- a level 3-to-4 progression within the same track. role_title cleaned from their literal Q9 answer \"Functional Consultant Level 4\" (an internal grade, not an external job-ad title) into a standard seniority label."
 
 P9:
-  role_title: Data Engineering Lead
-  job_id: "job:data_engineering_lead"
-  context_note: "Data engineering plus change management and coaching for leads; specific, not \"engineering in general\"."
+  role_title: Conservation Programme Manager
+  job_id: "job:conservation_programme_manager"
+  context_note: "Currently a Research Coordinator (wildlife conservation, 1-3 yrs; statistical analysis, science communication, stakeholder engagement); growing into capacity building, statistical modelling, project management. role_title cleaned from their literal Q9 answer \"Management\" (a single word, not a title), read against their Q14 project-management/capacity-building goals."
+
+P10:
+  role_title: Monitoring and Evaluation Specialist
+  job_id: "job:monitoring_evaluation_specialist"
+  context_note: "Currently a Monitoring, Evaluation and Learning Officer (Tamaraw conservation, 1-3 yrs; monitoring, evaluation, reporting); growing into indicator and metric design, data visualization, team management. role_title derived from their Q9 answer, which was a sentence of learning goals (tracking indicators, assessing programme outcomes, creating metrics) rather than a job title."
+
+P11:
+  role_title: People Manager
+  job_id: "job:people_manager"
+  context_note: "Currently a Manager/Individual Contributor (pharmaceutical industry, 8+ yrs; teamwork, adaptability, statistical programming); growing into people management, applied machine learning, structured problem solving. role_title cleaned from their literal Q9 answer \"Manager (People's Manager0\" -- an IC-to-people-manager shift."
 
 D0:
   role_title: UX Designer

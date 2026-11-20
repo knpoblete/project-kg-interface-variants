@@ -95,18 +95,42 @@ P8,Senior Functional Consultant,C3,A,1,course:p8_c3_selected,Becoming a Trusted 
 P8,Senior Functional Consultant,C3,A,2,course:p8_c3_other_a,Solution Evaluation for Practitioners,False
 P8,Senior Functional Consultant,C3,A,3,course:p8_c3_other_b,Requirements Gathering Basics,False
 P8,Senior Functional Consultant,C3,A,4,course:p8_c3_other_c,Change Management in Brief,False
-P9,Data Engineering Lead,C1,C,1,course:p9_c1_selected,Data Pipeline Architecture at Scale,True
-P9,Data Engineering Lead,C1,C,2,course:p9_c1_other_a,ETL Design in Practice,False
-P9,Data Engineering Lead,C1,C,3,course:p9_c1_other_b,Stakeholder Reporting Fundamentals,False
-P9,Data Engineering Lead,C1,C,4,course:p9_c1_other_c,Budget Tracking for Data Teams: A Short Overview,False
-P9,Data Engineering Lead,C2,A,1,course:p9_c2_selected,Change Management for Technical Teams,True
-P9,Data Engineering Lead,C2,A,2,course:p9_c2_other_a,Applying ETL Design,False
-P9,Data Engineering Lead,C2,A,3,course:p9_c2_other_b,Getting Started with Stakeholder Reporting,False
-P9,Data Engineering Lead,C2,A,4,course:p9_c2_other_c,A Short Guide to Budget Tracking for Data Teams,False
-P9,Data Engineering Lead,C3,B,1,course:p9_c3_selected,Coaching and Mentoring Engineering Leads,True
-P9,Data Engineering Lead,C3,B,2,course:p9_c3_other_a,ETL Design for Practitioners,False
-P9,Data Engineering Lead,C3,B,3,course:p9_c3_other_b,Stakeholder Reporting Basics,False
-P9,Data Engineering Lead,C3,B,4,course:p9_c3_other_c,Budget Tracking for Data Teams in Brief,False
+P9,Conservation Programme Manager,C1,A,1,course:p9_c1_selected,Capacity Building for Conservation Teams,True
+P9,Conservation Programme Manager,C1,A,2,course:p9_c1_other_a,Conservation Policy in Practice,False
+P9,Conservation Programme Manager,C1,A,3,course:p9_c1_other_b,Species Monitoring Protocols Fundamentals,False
+P9,Conservation Programme Manager,C1,A,4,course:p9_c1_other_c,Geospatial Mapping: A Short Overview,False
+P9,Conservation Programme Manager,C2,C,1,course:p9_c2_selected,Statistical Modelling for Field Research,True
+P9,Conservation Programme Manager,C2,C,2,course:p9_c2_other_a,Applying Grant Writing,False
+P9,Conservation Programme Manager,C2,C,3,course:p9_c2_other_b,Getting Started with Geospatial Mapping,False
+P9,Conservation Programme Manager,C2,C,4,course:p9_c2_other_c,A Short Guide to Habitat Restoration,False
+P9,Conservation Programme Manager,C3,B,1,course:p9_c3_selected,Project Management for Conservation Programmes,True
+P9,Conservation Programme Manager,C3,B,2,course:p9_c3_other_a,Environmental Impact Assessment for Practitioners,False
+P9,Conservation Programme Manager,C3,B,3,course:p9_c3_other_b,Habitat Restoration Basics,False
+P9,Conservation Programme Manager,C3,B,4,course:p9_c3_other_c,Species Monitoring Protocols in Brief,False
+P10,Monitoring and Evaluation Specialist,C1,C,1,course:p10_c1_selected,Designing Indicators and Metrics That Work,True
+P10,Monitoring and Evaluation Specialist,C1,C,2,course:p10_c1_other_a,Data Quality Assurance in Practice,False
+P10,Monitoring and Evaluation Specialist,C1,C,3,course:p10_c1_other_b,Field Survey Logistics Fundamentals,False
+P10,Monitoring and Evaluation Specialist,C1,C,4,course:p10_c1_other_c,Donor Communication: A Short Overview,False
+P10,Monitoring and Evaluation Specialist,C2,B,1,course:p10_c2_selected,Data Visualization for Evaluators,True
+P10,Monitoring and Evaluation Specialist,C2,B,2,course:p10_c2_other_a,Applying Programme Budgeting,False
+P10,Monitoring and Evaluation Specialist,C2,B,3,course:p10_c2_other_b,Getting Started with Donor Communication,False
+P10,Monitoring and Evaluation Specialist,C2,B,4,course:p10_c2_other_c,A Short Guide to Geographic Information Systems,False
+P10,Monitoring and Evaluation Specialist,C3,A,1,course:p10_c3_selected,Team Management for Programme Staff,True
+P10,Monitoring and Evaluation Specialist,C3,A,2,course:p10_c3_other_a,Qualitative Interviewing for Practitioners,False
+P10,Monitoring and Evaluation Specialist,C3,A,3,course:p10_c3_other_b,Geographic Information Systems Basics,False
+P10,Monitoring and Evaluation Specialist,C3,A,4,course:p10_c3_other_c,Field Survey Logistics in Brief,False
+P11,People Manager,C1,B,1,course:p11_c1_selected,People Management for New Managers,True
+P11,People Manager,C1,B,2,course:p11_c1_other_a,Clinical Data Standards in Practice,False
+P11,People Manager,C1,B,3,course:p11_c1_other_b,Regulatory Submissions Fundamentals,False
+P11,People Manager,C1,B,4,course:p11_c1_other_c,Scientific Writing: A Short Overview,False
+P11,People Manager,C2,A,1,course:p11_c2_selected,Applied Machine Learning for Analysts,True
+P11,People Manager,C2,A,2,course:p11_c2_other_a,Applying Stakeholder Influence,False
+P11,People Manager,C2,A,3,course:p11_c2_other_b,Getting Started with Scientific Writing,False
+P11,People Manager,C2,A,4,course:p11_c2_other_c,A Short Guide to Data Visualization,False
+P11,People Manager,C3,C,1,course:p11_c3_selected,Structured Problem Solving in Practice,True
+P11,People Manager,C3,C,2,course:p11_c3_other_a,Clinical Trial Design for Practitioners,False
+P11,People Manager,C3,C,3,course:p11_c3_other_b,Data Visualization Basics,False
+P11,People Manager,C3,C,4,course:p11_c3_other_c,Regulatory Submissions in Brief,False
 D0,UX Designer,C1,A,1,course:d0_c1_selected,Prototyping Interactive Interfaces in Figma,True
 D0,UX Designer,C1,A,2,course:d0_c1_other_a,Wireframing in Practice,False
 D0,UX Designer,C1,A,3,course:d0_c1_other_b,Design Systems Fundamentals,False

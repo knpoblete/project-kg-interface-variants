@@ -507,27 +507,96 @@ NEW_ROLE_CONTENT = {
             "Becoming a Trusted Advisor",
         ],
     },
+    # P9: role_title cleaned from Q9's single word "Management"; main2 is
+    # Q14's "advance stats" rendered as "statistical modelling" rather than
+    # "advanced statistics" for two reasons -- "advanced statistics" would
+    # collide with its own alternates template ("Advanced Advanced Statistics
+    # Techniques") and it was too close in substance to Q13's "statistical
+    # analysis", which is therefore dropped from secondary (Q13's other two
+    # answers plus one adjacent skill fill those slots instead).
     "P9": {
-        "sector": "Data Engineering",
-        "role_basis": "O*NET 15-1243.00 Database Architects, extended with a data-engineering-lead/people-management skill set",
+        "sector": "Conservation",
+        "role_basis": "O*NET 19-1031.00 Conservation Scientists / ESCO 'nature conservation officer' occupation (programme-manager profile)",
         "skills": {
-            "main1": "data pipeline architecture",
-            "main2": "change management for technical teams",
-            "main3": "coaching and mentoring leads",
-            "secondary1": "data governance",
-            "secondary2": "stakeholder communication",
-            "secondary3": "cloud data platforms",
-            "strongfiller1": "etl design",
-            "strongfiller2": "data quality engineering",
-            "weakfiller1": "stakeholder reporting",
-            "weakfiller2": "budget tracking for data teams",
-            "unused1": "frontend frameworks",
-            "unused2": "graphic design basics",
+            "main1": "capacity building",
+            "main2": "statistical modelling",
+            "main3": "project management",
+            "secondary1": "science communication",
+            "secondary2": "stakeholder engagement",
+            "secondary3": "field data collection",
+            "othera1": "conservation policy",
+            "othera2": "grant writing",
+            "othera3": "environmental impact assessment",
+            "weakf1": "species monitoring protocols",
+            "weakf2": "geospatial mapping",
+            "weakf3": "habitat restoration",
+            "unused1": "permit and compliance basics",
+            "unused2": "equipment maintenance basics",
         },
         "selected_titles": [
-            "Data Pipeline Architecture at Scale",
-            "Change Management for Technical Teams",
-            "Coaching and Mentoring Engineering Leads",
+            "Capacity Building for Conservation Teams",
+            "Statistical Modelling for Field Research",
+            "Project Management for Conservation Programmes",
+        ],
+    },
+    # P10: role_title derived from Q9, which was a sentence of learning goals
+    # ("track indicators, assess program outcomes, create suitable metrics")
+    # rather than a title -- main1 captures the metric/indicator half of that
+    # directly. Q14's "constructing graphs" -> "data visualization",
+    # "management skills" -> "team management".
+    "P10": {
+        "sector": "Conservation",
+        "role_basis": "O*NET 13-1111.00 Management Analysts / ESCO 'monitoring and evaluation officer' occupation (M&E specialist profile)",
+        "skills": {
+            "main1": "indicator and metric design",
+            "main2": "data visualization",
+            "main3": "team management",
+            "secondary1": "report writing",
+            "secondary2": "programme monitoring",
+            "secondary3": "outcome evaluation",
+            "othera1": "data quality assurance",
+            "othera2": "programme budgeting",
+            "othera3": "qualitative interviewing",
+            "weakf1": "field survey logistics",
+            "weakf2": "donor communication",
+            "weakf3": "geographic information systems",
+            "unused1": "ethics and safeguarding basics",
+            "unused2": "archival data management basics",
+        },
+        "selected_titles": [
+            "Designing Indicators and Metrics That Work",
+            "Data Visualization for Evaluators",
+            "Team Management for Programme Staff",
+        ],
+    },
+    # P11: role_title cleaned from Q9's "Manager (People's Manager0" typo --
+    # an individual-contributor-to-people-manager shift. Q14's "AI/ML" is
+    # spelled out as "applied machine learning" (acronyms leak lowercase into
+    # sentence prose), and Q13's "SAS Coding" is generalised to "statistical
+    # programming" because SAS is a real commercial brand (config/blocklist).
+    "P11": {
+        "sector": "Pharmaceuticals",
+        "role_basis": "O*NET 11-9121.00 Natural Sciences Managers / ESCO 'research and development manager' occupation (pharmaceutical people-manager profile)",
+        "skills": {
+            "main1": "people management",
+            "main2": "applied machine learning",
+            "main3": "structured problem solving",
+            "secondary1": "teamwork",
+            "secondary2": "statistical programming",
+            "secondary3": "adaptability",
+            "othera1": "clinical data standards",
+            "othera2": "stakeholder influence",
+            "othera3": "clinical trial design",
+            "weakf1": "regulatory submissions",
+            "weakf2": "scientific writing",
+            "weakf3": "data visualization",
+            "unused1": "pharmacovigilance basics",
+            "unused2": "laboratory operations basics",
+        },
+        "selected_titles": [
+            "People Management for New Managers",
+            "Applied Machine Learning for Analysts",
+            "Structured Problem Solving in Practice",
         ],
     },
     # D0 (demo/pilot participant): skill names reused from the original
@@ -616,6 +685,36 @@ STRONG_FILLER_REQUIRES = {"strongfiller1": 0.75, "strongfiller2": 0.72}
 WEAK_FILLER_REQUIRES = {"weakfiller1": 0.50, "weakfiller2": 0.45}
 UNUSED_REQUIRES = {"unused1": 0.30, "unused2": 0.20}
 
+# ---------------------------------------------------------------------------
+# "Varied fillers" structure (opt-in; see module docstring)
+# ---------------------------------------------------------------------------
+# The original structure above reuses ONE strong filler and TWO weak fillers
+# across all three content sets, so a participant's "other" courses are the
+# same three topics reworded three times ("X in Practice" / "Applying X" /
+# "X for Practitioners"). Three of their four courses per round were
+# therefore recognisably the same topics every round.
+#
+# An entry whose "skills" dict has othera1/weakf1 keys instead of
+# strongfiller1/weakfiller1 uses this structure instead:
+#   - othera1..3: a DIFFERENT strong filler per content set, so other_a is a
+#     genuinely new topic every round.
+#   - weakf1..3: three weak fillers round-robined across the six
+#     other_b/other_c slots (C1: w1,w2  C2: w2,w3  C3: w3,w1), so each
+#     appears in exactly 2 of 3 rounds instead of all 3, and never twice
+#     within the same round.
+# Still 4 courses per round, same as the original setup.
+#
+# Why not fully distinct (12 topics, zero repeats)? Spec §5.1 caps a role at
+# 10-14 skills with at most 4-6 in the weak band. Twelve distinct courses
+# would need 6 strong + 9 weak = 15+ skills, which breaks that cap. This
+# structure sits exactly at the spec's ceiling: 14 skills, 6 strong / 6 weak
+# / 2 unused. Going fully distinct needs §5.1 amended first.
+VARIED_OTHER_A_CONF = [(0.75, 0.85), (0.73, 0.85), (0.72, 0.85)]  # othera1..3: requires, teaches
+VARIED_WEAK_FILLER_REQUIRES = {"weakf1": 0.50, "weakf2": 0.48, "weakf3": 0.45}
+VARIED_WEAK_TEACHES = 0.50
+# Which weak filler fills (other_b, other_c) in content sets 1, 2, 3.
+VARIED_WEAK_SLOTS = [("weakf1", "weakf2"), ("weakf2", "weakf3"), ("weakf3", "weakf1")]
+
 
 _ACRONYM_FIXUPS = {"Hr": "HR", "Cad": "CAD", "Api": "API", "Ci/Cd": "CI/CD", "Etl": "ETL", "Qa": "QA"}
 _LOWERCASE_IN_TITLES = {"and", "or", "for", "in", "of", "the", "to", "with", "a", "an"}
@@ -663,10 +762,17 @@ def _expand_new_role(participant_id, role_title, job_id, seed, skill_registry, s
         sec_req, _ = SELECTED_CONF[i - 1]["secondary"]
         _add_requires(result, job, skill_obj[f"main{i}"], main_req, seed, participant_id, skill_registry)
         _add_requires(result, job, skill_obj[f"secondary{i}"], sec_req, seed, participant_id, skill_registry)
-    for slot, req in STRONG_FILLER_REQUIRES.items():
-        _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
-    for slot, req in WEAK_FILLER_REQUIRES.items():
-        _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
+    varied_fillers = "othera1" in content["skills"]
+    if varied_fillers:
+        for n, (req, _) in enumerate(VARIED_OTHER_A_CONF, start=1):
+            _add_requires(result, job, skill_obj[f"othera{n}"], req, seed, participant_id, skill_registry)
+        for slot, req in VARIED_WEAK_FILLER_REQUIRES.items():
+            _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
+    else:
+        for slot, req in STRONG_FILLER_REQUIRES.items():
+            _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
+        for slot, req in WEAK_FILLER_REQUIRES.items():
+            _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
     for slot, req in UNUSED_REQUIRES.items():
         _add_requires(result, job, skill_obj[slot], req, seed, participant_id, skill_registry)
 
@@ -690,7 +796,26 @@ def _expand_new_role(participant_id, role_title, job_id, seed, skill_registry, s
         )
         result.course_id_by_slug[f"c{i}_selected"] = selected_id
 
-        strongfiller = skill_obj["strongfiller1"]
+        # other_a / other_b / other_c. Under the varied-filler structure each
+        # content set draws its own strong filler and a round-robined pair of
+        # weak fillers, so the three "other" courses aren't the same topics
+        # reworded every round; under the original structure they are (kept
+        # for the already-generated participants, whose data is frozen).
+        if varied_fillers:
+            strongfiller = skill_obj[f"othera{i}"]
+            other_a_teach = VARIED_OTHER_A_CONF[idx][1]
+            weak_b_slot, weak_c_slot = VARIED_WEAK_SLOTS[idx]
+            weakfiller = skill_obj[weak_b_slot]
+            weakfiller2 = skill_obj[weak_c_slot]
+            other_b_teach = other_c_teach = VARIED_WEAK_TEACHES
+        else:
+            strongfiller = skill_obj["strongfiller1"]
+            other_a_teach = OTHER_A_CONF[1]
+            weakfiller = skill_obj["weakfiller1"]
+            weakfiller2 = skill_obj["weakfiller2"]
+            other_b_teach = OTHER_B_CONF[1]
+            other_c_teach = OTHER_C_CONF[1]
+
         other_a_title = OTHER_A_TITLE_TEMPLATES[idx].format(skill=_title_case_skill(strongfiller.name))
         other_a_id = f"course:{participant_id.lower()}_c{i}_other_a"
         _add_course(
@@ -698,12 +823,11 @@ def _expand_new_role(participant_id, role_title, job_id, seed, skill_registry, s
             other_a_id,
             other_a_title,
             OTHER_META[0],
-            [(strongfiller.id, strongfiller.name, OTHER_A_CONF[1])],
+            [(strongfiller.id, strongfiller.name, other_a_teach)],
             role_title,
         )
         result.course_id_by_slug[f"c{i}_other_a"] = other_a_id
 
-        weakfiller = skill_obj["weakfiller1"]
         other_b_title = OTHER_B_TITLE_TEMPLATES[idx].format(skill=_title_case_skill(weakfiller.name))
         other_b_id = f"course:{participant_id.lower()}_c{i}_other_b"
         _add_course(
@@ -711,12 +835,11 @@ def _expand_new_role(participant_id, role_title, job_id, seed, skill_registry, s
             other_b_id,
             other_b_title,
             OTHER_META[1],
-            [(weakfiller.id, weakfiller.name, OTHER_B_CONF[1])],
+            [(weakfiller.id, weakfiller.name, other_b_teach)],
             role_title,
         )
         result.course_id_by_slug[f"c{i}_other_b"] = other_b_id
 
-        weakfiller2 = skill_obj["weakfiller2"]
         other_c_title = OTHER_C_TITLE_TEMPLATES[idx].format(skill=_title_case_skill(weakfiller2.name))
         other_c_id = f"course:{participant_id.lower()}_c{i}_other_c"
         _add_course(
@@ -724,7 +847,7 @@ def _expand_new_role(participant_id, role_title, job_id, seed, skill_registry, s
             other_c_id,
             other_c_title,
             OTHER_META[2],
-            [(weakfiller2.id, weakfiller2.name, OTHER_C_CONF[1])],
+            [(weakfiller2.id, weakfiller2.name, other_c_teach)],
             role_title,
         )
         result.course_id_by_slug[f"c{i}_other_c"] = other_c_id

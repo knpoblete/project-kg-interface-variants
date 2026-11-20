@@ -10,7 +10,11 @@
 // all three rounds; that was removed since a real session can't reuse
 // the same courses round to round without confounding the comparison.
 
-const PARTICIPANT_IDS = ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "D0"];
+// Every participant with generated data, for the test harness's dropdown.
+// Includes P5/P6, who dropped out before running -- their data still exists
+// and stays previewable here, but they're absent from pilot/roster.js so no
+// session can be started for them.
+const PARTICIPANT_IDS = ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "D0"];
 
 async function fetchJson(path) {
   // no-store: the underlying JSON changes frequently as the generator is

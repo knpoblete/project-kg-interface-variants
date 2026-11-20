@@ -22,7 +22,7 @@ from wording import BANNED_WORDS, confidence_band
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
-PARTICIPANT_IDS = [f"P{i}" for i in range(1, 10)]
+PARTICIPANT_IDS = [f"P{i}" for i in range(1, 12)]
 # D0 (the demo/pilot participant) now goes through the exact same generation
 # path as P1-P9 and gets the exact same per-content-set checks -- except
 # check_order's Latin-square balance, which is specifically about the 9
@@ -561,30 +561,62 @@ def check_blocklist(out_dir: Path) -> tuple[bool, list[str]]:
 
 
 # ---------------------------------------------------------------------------
-# §12.10 order: each variant in each position exactly 3 times across P1-P9
+# §12.10 order: every participant's order is a valid A/B/C permutation and
+# matches what their generated data actually stores.
+#
+# The original version of this check also asserted perfect balance (each
+# variant in each position exactly 3 times across exactly 9 participants).
+# That assertion is gone: the design is now the 12-slot E-slot scheme in
+# config/order.yaml (all 6 permutations, twice each), recruitment is still in
+# progress, and two participants dropped out -- so exact balance is simply
+# not a property the data can have mid-study, and asserting it would turn a
+# normal recruitment state into a hard failure. Balance is reported as an
+# advisory instead (see report_order_balance_advisory), where it informs
+# rather than blocks.
 # ---------------------------------------------------------------------------
 
 
 def check_order(out_dir: Path) -> tuple[bool, list[str]]:
     errors = []
     order_cfg = _load_order_cfg()
-    counts = {}
     for pid in PARTICIPANT_IDS:
         order = order_cfg[pid]
         if len(order) != 3 or sorted(order) != ["A", "B", "C"]:
             errors.append(f"{pid}: order.yaml entry {order!r} isn't a permutation of A/B/C")
             continue
-        for position, variant in enumerate(order, start=1):
-            counts[(variant, position)] = counts.get((variant, position), 0) + 1
         for i, s_cs in zip((1, 2, 3), _load_participant_sets(out_dir, pid)):
             if s_cs["position"] != i or s_cs["variant"] != order[i - 1]:
                 errors.append(f"{pid}/C{i}: stored position/variant ({s_cs['position']}/{s_cs['variant']}) != order.yaml ({i}/{order[i - 1]})")
-    for variant in "ABC":
-        for position in (1, 2, 3):
-            n = counts.get((variant, position), 0)
-            if n != 3:
-                errors.append(f"variant {variant} at position {position} appears {n} times across P1-P9, expected 3")
     return not errors, errors
+
+
+def report_order_balance_advisory() -> list[str]:
+    """Current order distribution, as information rather than a pass/fail --
+    which orders are over/under-subscribed against the 12-slot design.
+
+    Participants who dropped out hold no slot, so they're excluded. Dropouts
+    are identified by their context_note starting with "DROPPED OUT" rather
+    than a hardcoded list, so marking a future dropout that way in
+    config/participants.yaml is all that's needed here."""
+    order_cfg = _load_order_cfg()
+    participants_cfg = _load_participants_cfg()
+    by_order: dict[tuple[str, ...], list[str]] = {}
+    for pid in PARTICIPANT_IDS:
+        if participants_cfg[pid].get("context_note", "").startswith("DROPPED OUT"):
+            continue
+        by_order.setdefault(tuple(order_cfg[pid]), []).append(pid)
+    all_perms = [("A", "B", "C"), ("B", "C", "A"), ("C", "A", "B"), ("A", "C", "B"), ("C", "B", "A"), ("B", "A", "C")]
+    lines = []
+    for perm in all_perms:
+        pids = by_order.get(perm, [])
+        arrow = " -> ".join(perm)
+        note = ""
+        if len(pids) > 2:
+            note = "  <-- more participants than the 12-slot design's 2 slots"
+        elif len(pids) < 2:
+            note = f"  ({2 - len(pids)} slot(s) open at 2-per-order)"
+        lines.append(f"{arrow}: {len(pids)} [{', '.join(pids) if pids else 'none'}]{note}")
+    return lines
 
 
 # ---------------------------------------------------------------------------
@@ -751,6 +783,10 @@ def main() -> None:
         print(f"    - {h}")
     if len(hints) > 20:
         print(f"    ... and {len(hints) - 20} more (re-run with --advisory-for <ID> to scope)")
+
+    print("[ADVISORY] order_balance against the 12-slot design (doesn't affect pass/fail)")
+    for line in report_order_balance_advisory():
+        print(f"    - {line}")
 
     sys.exit(0 if all_ok else 1)
 

@@ -36,7 +36,20 @@ ITEM4_OPTIONS = ["Yes", "No", "Not sure"]
 # The filler-skill pool (spec §5.1's "enough skills ... plus distractors for
 # the comprehension check") -- the only skills a role requires (>=0.40) that
 # are never a main/secondary skill in any of the participant's content sets.
+#
+# Two filler structures exist (see roles_data.py): the original
+# strongfiller/weakfiller pair, and the varied-filler structure
+# (othera1-3 + weakf1-3) that gives each content set its own "other"
+# courses. Pick whichever the role actually has, so distractors are drawn
+# from real filler skills either way.
 FILLER_SLOTS = ["strongfiller1", "strongfiller2", "weakfiller1", "weakfiller2"]
+VARIED_FILLER_SLOTS = ["othera1", "othera2", "othera3", "weakf1", "weakf2", "weakf3"]
+
+
+def _filler_slots(expanded: ExpandedRole) -> list[str]:
+    if "othera1" in expanded.skill_name_by_slot:
+        return VARIED_FILLER_SLOTS
+    return FILLER_SLOTS
 
 
 def _seeded_rng(seed: int, participant_id: str, content_set_id: str, item: int) -> random.Random:
@@ -52,8 +65,9 @@ def _shuffle_with_correct(seed, participant_id, content_set_id, item, options, c
 
 
 def _distractor_names(expanded: ExpandedRole, content_set_num: int, item: int) -> list[str]:
-    offset = ((content_set_num - 1) + (0 if item == 2 else 2)) % 4
-    rotated = FILLER_SLOTS[offset:] + FILLER_SLOTS[:offset]
+    slots = _filler_slots(expanded)
+    offset = ((content_set_num - 1) + (0 if item == 2 else 2)) % len(slots)
+    rotated = slots[offset:] + slots[:offset]
     return [expanded.skill_name_by_slot[s] for s in rotated[:3]]
 
 

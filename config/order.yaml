@@ -1,25 +1,86 @@
-# Variant order per participant (spec §4.4, confirmed). Task assignment is by
-# position: the 1st variant listed shows T1, the 2nd shows T2, the 3rd shows T3.
+# Variant order per participant (A = natural language, B = graph,
+# C = rule-based). Task assignment is by position: the 1st variant listed is
+# shown with content set C1, the 2nd with C2, the 3rd with C3.
 #
-# Confirmed Latin square:
-#   A -> B -> C : P1, P4, P7
-#   B -> C -> A : P2, P5, P8
-#   C -> A -> B : P3, P6, P9
+# ---------------------------------------------------------------------------
+# The E-slot design (12 slots, all 6 A/B/C permutations used twice)
+# ---------------------------------------------------------------------------
 #
-# D0 is a demo persona, not part of the confirmed Latin square -- its order is
-# fixed to A -> B -> C because that's the sequence the existing mid-fi mockups
-# already show (Main.dc.html = A = T1, Graph.dc.html = B = T2, Rules.dc.html = C = T3).
+#   Slot   Order        First     Second    Third
+#   E1     A -> B -> C  A (C1)    B (C2)    C (C3)
+#   E2     B -> C -> A  B (C1)    C (C2)    A (C3)
+#   E3     C -> A -> B  C (C1)    A (C2)    B (C3)
+#   E4     A -> C -> B  A (C1)    C (C2)    B (C3)
+#   E5     C -> B -> A  C (C1)    B (C2)    A (C3)
+#   E6     B -> A -> C  B (C1)    A (C2)    C (C3)
+#   E7     A -> B -> C  (repeat of E1)
+#   E8     B -> C -> A  (repeat of E2)
+#   E9     C -> A -> B  (repeat of E3)
+#   E10    A -> C -> B  (repeat of E4)
+#   E11    C -> B -> A  (repeat of E5)
+#   E12    B -> A -> C  (repeat of E6)
+#
+# This replaces the original 9-slot design, which only used the three cyclic
+# rotations (A->B->C, B->C->A, C->A->B) with 3 participants each. The six
+# participants who already ran did so under that old design, so their orders
+# below are historical fact and must never change.
+#
+# ---------------------------------------------------------------------------
+# Slot occupancy
+# ---------------------------------------------------------------------------
+#
+#   E1   A -> B -> C   P1   (ran -- Consulting Director)
+#   E7   A -> B -> C   P4   (ran -- LLM Engineer)
+#   -    A -> B -> C   P7   (ran -- Product Strategist) SURPLUS: a third
+#                           participant saw this order, but the design has
+#                           only two A->B->C slots. Placement pending -- see
+#                           "Open decisions" below.
+#   E2   B -> C -> A   P2   (ran -- DevOps Engineer (AI Specialization))
+#   E8   B -> C -> A   P8   (ran -- Senior Functional Consultant)
+#   E3   C -> A -> B   P3   (ran -- Senior Marketing Manager)
+#   E4   A -> C -> B   P9   (scheduled -- Conservation Programme Manager)
+#   E5   C -> B -> A   P10  (scheduled -- Monitoring and Evaluation Specialist)
+#   E6   B -> A -> C   P11  (scheduled -- People Manager)
+#   E9   C -> A -> B   open
+#   E10  A -> C -> B   open
+#   E11  C -> B -> A   open
+#   E12  B -> A -> C   open
+#
+# P9/P10/P11 were deliberately assigned the three orders nobody had run yet,
+# so that after their sessions all six permutations have at least one
+# participant.
+#
+# P5 and P6 dropped out before running and hold no slot. Their entries below
+# keep their original (never-shown) orders purely so the generator's output
+# stays byte-identical for everyone else; they are excluded from the design.
+#
+# ---------------------------------------------------------------------------
+# Open decisions (not settled in config yet)
+# ---------------------------------------------------------------------------
+#  1. Final N: 12 slots (2 per order) or 18 (3 per order). At 3 per order the
+#     A->B->C surplus disappears, since P1/P4/P7 would fill that cell exactly.
+#  2. Whether P7 and P8 stay in the analysed set at all -- both of their
+#     sessions showed near-duplicate courses (see roles_data.py's docstring),
+#     a content defect independent of counterbalancing.
 
-P1: [A, B, C]
-P4: [A, B, C]
-P7: [A, B, C]
+# --- ran under the original 9-slot design (historical, never change) ---
+P1: [A, B, C]   # E1
+P2: [B, C, A]   # E2
+P3: [C, A, B]   # E3
+P4: [A, B, C]   # E7
+P7: [A, B, C]   # surplus -- third A->B->C participant
+P8: [B, C, A]   # E8
 
-P2: [B, C, A]
+# --- scheduled, assigned the three previously-unused orders ---
+P9: [A, C, B]   # E4
+P10: [C, B, A]  # E5
+P11: [B, A, C]  # E6
+
+# --- dropped out before running; hold no slot ---
 P5: [B, C, A]
-P8: [B, C, A]
-
-P3: [C, A, B]
 P6: [C, A, B]
-P9: [C, A, B]
 
+# D0 is a demo persona, not part of the design -- its order is fixed to
+# A -> B -> C because that's the sequence the original mid-fi mockups show
+# (Main.dc.html = A, Graph.dc.html = B, Rules.dc.html = C).
 D0: [A, B, C]

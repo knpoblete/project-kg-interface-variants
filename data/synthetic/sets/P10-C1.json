@@ -1,0 +1,834 @@
+{
+  "participant_id": "P10",
+  "content_set": "C1",
+  "position": 1,
+  "variant": "C",
+  "role": {
+    "job_id": "job:monitoring_evaluation_specialist",
+    "title": "Monitoring and Evaluation Specialist",
+    "sector": "Conservation",
+    "role_basis": "O*NET 13-1111.00 Management Analysts / ESCO 'monitoring and evaluation officer' occupation (M&E specialist profile)",
+    "context_note": "Currently a Monitoring, Evaluation and Learning Officer (Tamaraw conservation, 1-3 yrs; monitoring, evaluation, reporting); growing into indicator and metric design, data visualization, team management. role_title derived from their Q9 answer, which was a sentence of learning goals (tracking indicators, assessing programme outcomes, creating metrics) rather than a job title."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Monitoring and Evaluation Specialist job ads.",
+    "based_on_chips": [
+      "Monitoring and Evaluation Specialist job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p10_c1_selected",
+      "title": "Designing Indicators and Metrics That Work",
+      "level": "Intermediate",
+      "duration_min": 125,
+      "updated": "2026-02",
+      "description": "By the end of Designing Indicators and Metrics That Work, you'll be able to apply indicator and metric design confidently in Monitoring and Evaluation Specialist work, with a working sense of where report writing fits alongside it. The course moves from core indicator and metric design technique through a few applied exercises, with a lighter look at report writing woven in throughout.",
+      "learning_outcomes": [
+        "Applying indicator and metric design to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing indicator and metric design through guided exercises",
+        "Getting a working introduction to report writing",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 2h 05m · Updated Feb 2026",
+      "dur": "2h 05m",
+      "meta_no_duration": "Intermediate · Updated Feb 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:indicator_and_metric_design",
+          "skill_name": "indicator and metric design",
+          "teaches_confidence": 0.9,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:report_writing",
+          "skill_name": "report writing",
+          "teaches_confidence": 0.55,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches indicator and metric design, which comes up often in Monitoring and Evaluation Specialist job ads.",
+        "A": {
+          "panel_prose": "Indicator and metric design comes up often in Monitoring and Evaluation Specialist job ads, and it's the main topic of this course. Report writing comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Monitoring and Evaluation Specialist job ads: indicator and metric design is mentioned often.",
+              "report_ids": [
+                "P10-C1-main-requires"
+              ]
+            },
+            {
+              "text": "From Monitoring and Evaluation Specialist job ads: report writing is mentioned sometimes.",
+              "report_ids": [
+                "P10-C1-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: indicator and metric design is the main topic; report writing is covered in part.",
+              "report_ids": [
+                "P10-C1-main-teaches",
+                "P10-C1-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches indicator and metric design, which comes up often in Monitoring and Evaluation Specialist job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Monitoring and Evaluation Specialist"
+            },
+            {
+              "id": "skill:indicator_and_metric_design",
+              "kind": "skill",
+              "label": "Indicator and metric design",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:report_writing",
+              "kind": "skill",
+              "label": "Report writing",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p10_c1_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:indicator_and_metric_design",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-main-requires"
+            },
+            {
+              "from": "skill:indicator_and_metric_design",
+              "to": "course:p10_c1_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P10-C1-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:report_writing",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-secondary-requires"
+            },
+            {
+              "from": "skill:report_writing",
+              "to": "course:p10_c1_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P10-C1-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Monitoring and Evaluation Specialist → Indicator and metric design → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "indicator and metric design",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "indicator and metric design",
+                  "source_text": "Comes up often in Monitoring and Evaluation Specialist job ads",
+                  "report_id": "P10-C1-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "indicator and metric design",
+                  "source_text": "From the course description",
+                  "report_id": "P10-C1-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "report writing",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "report writing",
+                  "source_text": "Comes up sometimes in Monitoring and Evaluation Specialist job ads",
+                  "report_id": "P10-C1-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "report writing",
+                  "source_text": "From the course description",
+                  "report_id": "P10-C1-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p10_c1_other_a",
+      "title": "Data Quality Assurance in Practice",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "Data Quality Assurance in Practice is a focused course on data quality assurance for people already working toward a Monitoring and Evaluation Specialist role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying data quality assurance on your own.",
+      "learning_outcomes": [
+        "Applying data quality assurance to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing data quality assurance through guided exercises",
+        "Building a short data quality assurance exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:data_quality_assurance",
+          "skill_name": "data quality assurance",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches data quality assurance, which comes up often in Monitoring and Evaluation Specialist job ads.",
+        "A": {
+          "panel_prose": "Data quality assurance comes up often in Monitoring and Evaluation Specialist job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From Monitoring and Evaluation Specialist job ads: data quality assurance is mentioned often.",
+              "report_ids": [
+                "P10-C1-c1_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: data quality assurance is main topic.",
+              "report_ids": [
+                "P10-C1-c1_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches data quality assurance, which comes up often in Monitoring and Evaluation Specialist job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Monitoring and Evaluation Specialist"
+            },
+            {
+              "id": "skill:data_quality_assurance",
+              "kind": "skill",
+              "label": "Data quality assurance",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p10_c1_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:data_quality_assurance",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-c1_other_a-requires"
+            },
+            {
+              "from": "skill:data_quality_assurance",
+              "to": "course:p10_c1_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P10-C1-c1_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Monitoring and Evaluation Specialist → Data quality assurance → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "data quality assurance",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "data quality assurance",
+                  "source_text": "Comes up often in Monitoring and Evaluation Specialist job ads",
+                  "report_id": "P10-C1-c1_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "data quality assurance",
+                  "source_text": "From the course description",
+                  "report_id": "P10-C1-c1_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p10_c1_other_b",
+      "title": "Field Survey Logistics Fundamentals",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "Field Survey Logistics Fundamentals walks you through the basics of field survey logistics, built for people new to Monitoring and Evaluation Specialist work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of field survey logistics, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying field survey logistics to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing field survey logistics through guided exercises",
+        "Building a short field survey logistics exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:field_survey_logistics",
+          "skill_name": "field survey logistics",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches field survey logistics, which comes up sometimes in Monitoring and Evaluation Specialist job ads.",
+        "A": {
+          "panel_prose": "Field survey logistics comes up sometimes in Monitoring and Evaluation Specialist job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Monitoring and Evaluation Specialist job ads: field survey logistics is mentioned sometimes.",
+              "report_ids": [
+                "P10-C1-c1_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: field survey logistics is covered in part.",
+              "report_ids": [
+                "P10-C1-c1_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches field survey logistics, which comes up sometimes in Monitoring and Evaluation Specialist job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Monitoring and Evaluation Specialist"
+            },
+            {
+              "id": "skill:field_survey_logistics",
+              "kind": "skill",
+              "label": "Field survey logistics",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p10_c1_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:field_survey_logistics",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-c1_other_b-requires"
+            },
+            {
+              "from": "skill:field_survey_logistics",
+              "to": "course:p10_c1_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P10-C1-c1_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Monitoring and Evaluation Specialist → Field survey logistics → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "field survey logistics",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "field survey logistics",
+                  "source_text": "Comes up sometimes in Monitoring and Evaluation Specialist job ads",
+                  "report_id": "P10-C1-c1_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "field survey logistics",
+                  "source_text": "From the course description",
+                  "report_id": "P10-C1-c1_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p10_c1_other_c",
+      "title": "Donor Communication: A Short Overview",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "Donor Communication: A Short Overview is a short introduction to donor communication for people moving toward a Monitoring and Evaluation Specialist role. You'll walk through the essential vocabulary and a few guided exercises that show donor communication in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if donor communication is new to you.",
+      "learning_outcomes": [
+        "Applying donor communication to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing donor communication through guided exercises",
+        "Building a short donor communication exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:donor_communication",
+          "skill_name": "donor communication",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches donor communication, which comes up sometimes in Monitoring and Evaluation Specialist job ads.",
+        "A": {
+          "panel_prose": "Donor communication comes up sometimes in Monitoring and Evaluation Specialist job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Monitoring and Evaluation Specialist job ads: donor communication is mentioned sometimes.",
+              "report_ids": [
+                "P10-C1-c1_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: donor communication is covered in part.",
+              "report_ids": [
+                "P10-C1-c1_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches donor communication, which comes up sometimes in Monitoring and Evaluation Specialist job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Monitoring and Evaluation Specialist"
+            },
+            {
+              "id": "skill:donor_communication",
+              "kind": "skill",
+              "label": "Donor communication",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p10_c1_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:donor_communication",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-c1_other_c-requires"
+            },
+            {
+              "from": "skill:donor_communication",
+              "to": "course:p10_c1_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P10-C1-c1_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Monitoring and Evaluation Specialist → Donor communication → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "donor communication",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "donor communication",
+                  "source_text": "Comes up sometimes in Monitoring and Evaluation Specialist job ads",
+                  "report_id": "P10-C1-c1_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "donor communication",
+                  "source_text": "From the course description",
+                  "report_id": "P10-C1-c1_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p10_c1_selected",
+  "course_score": 1.0225,
+  "paths": [
+    {
+      "skill_id": "skill:indicator_and_metric_design",
+      "skill_name": "indicator and metric design",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.9,
+      "requires_report_id": "P10-C1-main-requires",
+      "teaches_report_id": "P10-C1-main-teaches",
+      "evidence_span": {
+        "text": "indicator and metric design",
+        "start": 82,
+        "end": 109
+      }
+    },
+    {
+      "skill_id": "skill:report_writing",
+      "skill_name": "report writing",
+      "which": "secondary",
+      "requires_confidence": 0.55,
+      "teaches_confidence": 0.55,
+      "requires_report_id": "P10-C1-secondary-requires",
+      "teaches_report_id": "P10-C1-secondary-teaches",
+      "evidence_span": {
+        "text": "report writing",
+        "start": 198,
+        "end": 212
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches indicator and metric design, which comes up often in Monitoring and Evaluation Specialist job ads.",
+    "A": {
+      "panel_prose": "Indicator and metric design comes up often in Monitoring and Evaluation Specialist job ads, and it's the main topic of this course. Report writing comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From Monitoring and Evaluation Specialist job ads: indicator and metric design is mentioned often.",
+          "report_ids": [
+            "P10-C1-main-requires"
+          ]
+        },
+        {
+          "text": "From Monitoring and Evaluation Specialist job ads: report writing is mentioned sometimes.",
+          "report_ids": [
+            "P10-C1-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: indicator and metric design is the main topic; report writing is covered in part.",
+          "report_ids": [
+            "P10-C1-main-teaches",
+            "P10-C1-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches indicator and metric design, which comes up often in Monitoring and Evaluation Specialist job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "Monitoring and Evaluation Specialist"
+        },
+        {
+          "id": "skill:indicator_and_metric_design",
+          "kind": "skill",
+          "label": "Indicator and metric design",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:report_writing",
+          "kind": "skill",
+          "label": "Report writing",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p10_c1_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:indicator_and_metric_design",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From Monitoring and Evaluation Specialist job ads",
+          "report_id": "P10-C1-main-requires"
+        },
+        {
+          "from": "skill:indicator_and_metric_design",
+          "to": "course:p10_c1_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P10-C1-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:report_writing",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From Monitoring and Evaluation Specialist job ads",
+          "report_id": "P10-C1-secondary-requires"
+        },
+        {
+          "from": "skill:report_writing",
+          "to": "course:p10_c1_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P10-C1-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "Monitoring and Evaluation Specialist → Indicator and metric design → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "indicator and metric design",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "indicator and metric design",
+              "source_text": "Comes up often in Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "indicator and metric design",
+              "source_text": "From the course description",
+              "report_id": "P10-C1-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "report writing",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "report writing",
+              "source_text": "Comes up sometimes in Monitoring and Evaluation Specialist job ads",
+              "report_id": "P10-C1-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "report writing",
+              "source_text": "From the course description",
+              "report_id": "P10-C1-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p10_c1_alt_a",
+      "title": "Indicator and Metric Design Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Indicator and Metric Design Essentials walks you through the basics of indicator and metric design, built for people new to Monitoring and Evaluation Specialist work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of indicator and metric design, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying indicator and metric design to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing indicator and metric design through guided exercises",
+        "Building a short indicator and metric design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:indicator_and_metric_design",
+          "skill_name": "indicator and metric design",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p10_c1_alt_b",
+      "title": "Advanced Indicator and Metric Design Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Indicator and Metric Design Techniques goes beyond the basics of indicator and metric design, for people already working toward a Monitoring and Evaluation Specialist role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in indicator and metric design and want to go further.",
+      "learning_outcomes": [
+        "Applying indicator and metric design to a real Monitoring and Evaluation Specialist scenario",
+        "Practicing indicator and metric design through guided exercises",
+        "Building a short indicator and metric design exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:indicator_and_metric_design",
+          "skill_name": "indicator and metric design",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}
