@@ -566,7 +566,7 @@ def check_blocklist(out_dir: Path) -> tuple[bool, list[str]]:
 #
 # The original version of this check also asserted perfect balance (each
 # variant in each position exactly 3 times across exactly 9 participants).
-# That assertion is gone: the design is now the 12-slot E-slot scheme in
+# That assertion is gone: the design is now the 18-slot E-slot scheme in
 # config/order.yaml (all 6 permutations, twice each), recruitment is still in
 # progress, and two participants dropped out -- so exact balance is simply
 # not a property the data can have mid-study, and asserting it would turn a
@@ -590,9 +590,12 @@ def check_order(out_dir: Path) -> tuple[bool, list[str]]:
     return not errors, errors
 
 
+SLOTS_PER_ORDER = 3  # config/order.yaml's 18-slot design: 6 orders x 3
+
+
 def report_order_balance_advisory() -> list[str]:
     """Current order distribution, as information rather than a pass/fail --
-    which orders are over/under-subscribed against the 12-slot design.
+    which orders are over/under-subscribed against the 18-slot design.
 
     Participants who dropped out hold no slot, so they're excluded. Dropouts
     are identified by their context_note starting with "DROPPED OUT" rather
@@ -607,15 +610,21 @@ def report_order_balance_advisory() -> list[str]:
         by_order.setdefault(tuple(order_cfg[pid]), []).append(pid)
     all_perms = [("A", "B", "C"), ("B", "C", "A"), ("C", "A", "B"), ("A", "C", "B"), ("C", "B", "A"), ("B", "A", "C")]
     lines = []
+    total_open = 0
     for perm in all_perms:
         pids = by_order.get(perm, [])
         arrow = " -> ".join(perm)
-        note = ""
-        if len(pids) > 2:
-            note = "  <-- more participants than the 12-slot design's 2 slots"
-        elif len(pids) < 2:
-            note = f"  ({2 - len(pids)} slot(s) open at 2-per-order)"
-        lines.append(f"{arrow}: {len(pids)} [{', '.join(pids) if pids else 'none'}]{note}")
+        if len(pids) > SLOTS_PER_ORDER:
+            note = f"  <-- {len(pids) - SLOTS_PER_ORDER} more than this order's {SLOTS_PER_ORDER} slots"
+        elif len(pids) < SLOTS_PER_ORDER:
+            open_count = SLOTS_PER_ORDER - len(pids)
+            total_open += open_count
+            note = f"  ({open_count} to recruit)"
+        else:
+            note = "  CELL FULL"
+        lines.append(f"{arrow}: {len(pids)}/{SLOTS_PER_ORDER} [{', '.join(pids) if pids else 'none'}]{note}")
+    filled = sum(len(p) for p in by_order.values())
+    lines.append(f"total: {filled}/{SLOTS_PER_ORDER * len(all_perms)} filled, {total_open} still to recruit")
     return lines
 
 
@@ -784,7 +793,7 @@ def main() -> None:
     if len(hints) > 20:
         print(f"    ... and {len(hints) - 20} more (re-run with --advisory-for <ID> to scope)")
 
-    print("[ADVISORY] order_balance against the 12-slot design (doesn't affect pass/fail)")
+    print("[ADVISORY] order_balance against the 18-slot design (doesn't affect pass/fail)")
     for line in report_order_balance_advisory():
         print(f"    - {line}")
 

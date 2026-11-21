@@ -21,8 +21,9 @@
 # with no usable Q9/Q14 answer is skipped until corrected, never guessed at.
 #
 # P5 and P6 dropped out before running; see the note above their entries.
-# config/order.yaml holds the E-slot counterbalance design and records which
-# P<n> occupies which slot.
+# config/order.yaml holds the E-slot counterbalance design (18 slots: all 6
+# A/B/C orders x 3 participants each) and records which P<n> occupies which
+# slot. 9 of 18 are filled, so 9 more recruits are needed.
 
 P1:
   role_title: Consulting Director

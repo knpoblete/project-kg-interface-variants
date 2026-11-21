@@ -3,7 +3,7 @@
 # shown with content set C1, the 2nd with C2, the 3rd with C3.
 #
 # ---------------------------------------------------------------------------
-# The E-slot design (12 slots, all 6 A/B/C permutations used twice)
+# The E-slot design: 18 slots, all 6 A/B/C permutations x 3 participants each
 # ---------------------------------------------------------------------------
 #
 #   Slot   Order        First     Second    Third
@@ -13,38 +13,46 @@
 #   E4     A -> C -> B  A (C1)    C (C2)    B (C3)
 #   E5     C -> B -> A  C (C1)    B (C2)    A (C3)
 #   E6     B -> A -> C  B (C1)    A (C2)    C (C3)
-#   E7     A -> B -> C  (repeat of E1)
-#   E8     B -> C -> A  (repeat of E2)
-#   E9     C -> A -> B  (repeat of E3)
-#   E10    A -> C -> B  (repeat of E4)
-#   E11    C -> B -> A  (repeat of E5)
-#   E12    B -> A -> C  (repeat of E6)
+#   E7-E12   second pass through the same six permutations, in the same order
+#   E13-E18  third pass through the same six permutations, in the same order
 #
-# This replaces the original 9-slot design, which only used the three cyclic
+# So each permutation owns three slots: A->B->C = E1/E7/E13,
+# B->C->A = E2/E8/E14, C->A->B = E3/E9/E15, A->C->B = E4/E10/E16,
+# C->B->A = E5/E11/E17, B->A->C = E6/E12/E18.
+#
+# This replaces the original 9-slot design, which used only the three cyclic
 # rotations (A->B->C, B->C->A, C->A->B) with 3 participants each. The six
 # participants who already ran did so under that old design, so their orders
-# below are historical fact and must never change.
+# below are historical fact and must never change -- but all three of their
+# orders are also slots in this design, so every one of them keeps a valid
+# place in it.
 #
 # ---------------------------------------------------------------------------
-# Slot occupancy
+# Slot occupancy -- 9 of 18 filled, 9 still to recruit
 # ---------------------------------------------------------------------------
 #
-#   E1   A -> B -> C   P1   (ran -- Consulting Director)
-#   E7   A -> B -> C   P4   (ran -- LLM Engineer)
-#   -    A -> B -> C   P7   (ran -- Product Strategist) SURPLUS: a third
-#                           participant saw this order, but the design has
-#                           only two A->B->C slots. Placement pending -- see
-#                           "Open decisions" below.
-#   E2   B -> C -> A   P2   (ran -- DevOps Engineer (AI Specialization))
-#   E8   B -> C -> A   P8   (ran -- Senior Functional Consultant)
-#   E3   C -> A -> B   P3   (ran -- Senior Marketing Manager)
-#   E4   A -> C -> B   P9   (scheduled -- Conservation Programme Manager)
-#   E5   C -> B -> A   P10  (scheduled -- Monitoring and Evaluation Specialist)
-#   E6   B -> A -> C   P11  (scheduled -- People Manager)
-#   E9   C -> A -> B   open
-#   E10  A -> C -> B   open
-#   E11  C -> B -> A   open
-#   E12  B -> A -> C   open
+#   A -> B -> C   E1  P1   (ran -- Consulting Director)
+#                 E7  P4   (ran -- LLM Engineer)
+#                 E13 P7   (ran -- Product Strategist)          CELL FULL
+#   B -> C -> A   E2  P2   (ran -- DevOps Engineer (AI Specialization))
+#                 E8  P8   (ran -- Senior Functional Consultant)
+#                 E14 open
+#   C -> A -> B   E3  P3   (ran -- Senior Marketing Manager)
+#                 E9  open
+#                 E15 open
+#   A -> C -> B   E4  P9   (scheduled -- Conservation Programme Manager)
+#                 E10 open
+#                 E16 open
+#   C -> B -> A   E5  P10  (scheduled -- Monitoring and Evaluation Specialist)
+#                 E11 open
+#                 E17 open
+#   B -> A -> C   E6  P11  (scheduled -- People Manager)
+#                 E12 open
+#                 E18 open
+#
+# At 3 per order there is no surplus: P1/P4/P7 fill the A->B->C cell exactly,
+# so P7 holds E13 rather than sitting outside the design (which it would have
+# under the earlier 12-slot/2-per-order variant).
 #
 # P9/P10/P11 were deliberately assigned the three orders nobody had run yet,
 # so that after their sessions all six permutations have at least one
@@ -55,20 +63,21 @@
 # stays byte-identical for everyone else; they are excluded from the design.
 #
 # ---------------------------------------------------------------------------
-# Open decisions (not settled in config yet)
+# Still open
 # ---------------------------------------------------------------------------
-#  1. Final N: 12 slots (2 per order) or 18 (3 per order). At 3 per order the
-#     A->B->C surplus disappears, since P1/P4/P7 would fill that cell exactly.
-#  2. Whether P7 and P8 stay in the analysed set at all -- both of their
-#     sessions showed near-duplicate courses (see roles_data.py's docstring),
-#     a content defect independent of counterbalancing.
+#  - Whether P7 and P8 stay in the analysed set. Both of their sessions ran
+#    with the near-duplicate-course defect (see roles_data.py's docstring),
+#    which is a content-quality question independent of counterbalancing --
+#    the design itself now has room for both.
+#  - Next 9 recruits should fill, in order of need: C->A->B (2),
+#    A->C->B (2), C->B->A (2), B->A->C (2), B->C->A (1).
 
 # --- ran under the original 9-slot design (historical, never change) ---
 P1: [A, B, C]   # E1
 P2: [B, C, A]   # E2
 P3: [C, A, B]   # E3
 P4: [A, B, C]   # E7
-P7: [A, B, C]   # surplus -- third A->B->C participant
+P7: [A, B, C]   # E13
 P8: [B, C, A]   # E8
 
 # --- scheduled, assigned the three previously-unused orders ---
