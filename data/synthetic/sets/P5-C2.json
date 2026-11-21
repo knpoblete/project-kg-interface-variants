@@ -8,7 +8,7 @@
     "title": "Executive Director",
     "sector": "Nonprofit",
     "role_basis": "ESCO 'non-governmental organisation director' occupation / O*NET 11-9151.00 Social and Community Service Managers (executive-director profile)",
-    "context_note": "DROPPED OUT (never ran). Was: Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
+    "context_note": "Currently a Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management. Withdrew before their session, then returned -- holds slot E14."
   },
   "ui": {
     "role_bar": "We suggest courses based on the role you picked and real job ads.",
@@ -206,15 +206,15 @@
     },
     {
       "id": "course:p5_c2_other_a",
-      "title": "Applying Fundraising and Grant Writing",
+      "title": "Applying Board Governance",
       "level": "Intermediate",
       "duration_min": 100,
       "updated": "2025-12",
-      "description": "Applying Fundraising and Grant Writing goes beyond the basics of fundraising and grant writing, for people already working toward a Executive Director role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in fundraising and grant writing and want to go further.",
+      "description": "Applying Board Governance is a focused course on board governance for people already working toward a Executive Director role who want to go further. You'll work through applied exercises that push past the basics and into more realistic scenarios, with less hand-holding than an introductory course. By the end, you should feel noticeably more confident applying board governance on your own.",
       "learning_outcomes": [
-        "Applying fundraising and grant writing to a real Executive Director scenario",
-        "Practicing fundraising and grant writing through guided exercises",
-        "Building a short fundraising and grant writing exercise from scratch",
+        "Applying board governance to a real Executive Director scenario",
+        "Practicing board governance through guided exercises",
+        "Building a short board governance exercise from scratch",
         "Reviewing common mistakes and how to avoid them"
       ],
       "provider": "[Learning platform]",
@@ -229,31 +229,31 @@
       "rules_matched": "Rule A (teaches)",
       "taught_skills": [
         {
-          "skill_id": "skill:fundraising_and_grant_writing",
-          "skill_name": "fundraising and grant writing",
+          "skill_id": "skill:board_governance",
+          "skill_name": "board governance",
           "teaches_confidence": 0.85,
           "band": "strong"
         }
       ],
       "explanation": {
-        "summary": "Teaches fundraising and grant writing, which comes up often in Executive Director job ads.",
+        "summary": "Teaches board governance, which comes up often in Executive Director job ads.",
         "A": {
-          "panel_prose": "Fundraising and grant writing comes up often in Executive Director job ads, and it's the main topic of this course.",
+          "panel_prose": "Board governance comes up often in Executive Director job ads, and it's the main topic of this course.",
           "detail_bullets": [
             {
-              "text": "From Executive Director job ads: fundraising and grant writing is mentioned often.",
+              "text": "From Executive Director job ads: board governance is mentioned often.",
               "report_ids": [
                 "P5-C2-c2_other_a-requires"
               ]
             },
             {
-              "text": "From the course description: fundraising and grant writing is main topic.",
+              "text": "From the course description: board governance is main topic.",
               "report_ids": [
                 "P5-C2-c2_other_a-teaches"
               ]
             }
           ],
-          "card_reason": "Teaches fundraising and grant writing, which comes up often in Executive Director job ads."
+          "card_reason": "Teaches board governance, which comes up often in Executive Director job ads."
         },
         "B": {
           "nodes": [
@@ -263,9 +263,9 @@
               "label": "Executive Director"
             },
             {
-              "id": "skill:fundraising_and_grant_writing",
+              "id": "skill:board_governance",
               "kind": "skill",
-              "label": "Fundraising and grant writing",
+              "label": "Board governance",
               "caption": "Skill employers want"
             },
             {
@@ -277,14 +277,14 @@
           "edges": [
             {
               "from": "role",
-              "to": "skill:fundraising_and_grant_writing",
+              "to": "skill:board_governance",
               "strength": "strong",
               "label": "often asked for",
               "source_label": "From Executive Director job ads",
               "report_id": "P5-C2-c2_other_a-requires"
             },
             {
-              "from": "skill:fundraising_and_grant_writing",
+              "from": "skill:board_governance",
               "to": "course:p5_c2_other_a",
               "strength": "strong",
               "label": "main topic",
@@ -299,7 +299,7 @@
             "Skill employers want",
             "Recommended course"
           ],
-          "card_path": "Executive Director → Fundraising and grant writing → This course"
+          "card_path": "Executive Director → Board governance → This course"
         },
         "C": {
           "rules_matched": [
@@ -308,17 +308,17 @@
               "ui_label": "Rule A",
               "name": "Courses that teach a skill your role needs",
               "strength": "Strong match",
-              "skill": "fundraising and grant writing",
+              "skill": "board governance",
               "conditions": [
                 {
                   "label": "A skill your role needs:",
-                  "value": "fundraising and grant writing",
+                  "value": "board governance",
                   "source_text": "Comes up often in Executive Director job ads",
                   "report_id": "P5-C2-c2_other_a-requires"
                 },
                 {
                   "label": "Main topic of this course:",
-                  "value": "fundraising and grant writing",
+                  "value": "board governance",
                   "source_text": "From the course description",
                   "report_id": "P5-C2-c2_other_a-teaches"
                 }
@@ -333,138 +333,11 @@
     },
     {
       "id": "course:p5_c2_other_b",
-      "title": "Getting Started with Budget Planning for Nonprofits",
+      "title": "Getting Started with Volunteer Program Management",
       "level": "Beginner",
       "duration_min": 55,
       "updated": "2025-10",
-      "description": "Getting Started with Budget Planning for Nonprofits is a short introduction to budget planning for nonprofits for people moving toward a Executive Director role. You'll walk through the essential vocabulary and a few guided exercises that show budget planning for nonprofits in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if budget planning for nonprofits is new to you.",
-      "learning_outcomes": [
-        "Applying budget planning for nonprofits to a real Executive Director scenario",
-        "Practicing budget planning for nonprofits through guided exercises",
-        "Building a short budget planning for nonprofits exercise from scratch",
-        "Reviewing common mistakes and how to avoid them"
-      ],
-      "provider": "[Learning platform]",
-      "instructor": "[Instructor name]",
-      "certificate": true,
-      "thumbnail": null,
-      "meta_line": "Beginner · 55m · Updated Oct 2025",
-      "dur": "55m",
-      "meta_no_duration": "Beginner · Updated Oct 2025",
-      "badge": "Good fit",
-      "covers_line": "Covers 1 skill employers ask for",
-      "rules_matched": "Rule B (covers part)",
-      "taught_skills": [
-        {
-          "skill_id": "skill:budget_planning_for_nonprofits",
-          "skill_name": "budget planning for nonprofits",
-          "teaches_confidence": 0.5,
-          "band": "weak"
-        }
-      ],
-      "explanation": {
-        "summary": "Teaches budget planning for nonprofits, which comes up sometimes in Executive Director job ads.",
-        "A": {
-          "panel_prose": "Budget planning for nonprofits comes up sometimes in Executive Director job ads, and the course covers some of it.",
-          "detail_bullets": [
-            {
-              "text": "From Executive Director job ads: budget planning for nonprofits is mentioned sometimes.",
-              "report_ids": [
-                "P5-C2-c2_other_b-requires"
-              ]
-            },
-            {
-              "text": "From the course description: budget planning for nonprofits is covered in part.",
-              "report_ids": [
-                "P5-C2-c2_other_b-teaches"
-              ]
-            }
-          ],
-          "card_reason": "Teaches budget planning for nonprofits, which comes up sometimes in Executive Director job ads."
-        },
-        "B": {
-          "nodes": [
-            {
-              "id": "role",
-              "kind": "role",
-              "label": "Executive Director"
-            },
-            {
-              "id": "skill:budget_planning_for_nonprofits",
-              "kind": "skill",
-              "label": "Budget planning for nonprofits",
-              "caption": "Skill employers want"
-            },
-            {
-              "id": "course:p5_c2_other_b",
-              "kind": "course",
-              "label": "This course"
-            }
-          ],
-          "edges": [
-            {
-              "from": "role",
-              "to": "skill:budget_planning_for_nonprofits",
-              "strength": "weaker",
-              "label": "sometimes asked for",
-              "source_label": "From Executive Director job ads",
-              "report_id": "P5-C2-c2_other_b-requires"
-            },
-            {
-              "from": "skill:budget_planning_for_nonprofits",
-              "to": "course:p5_c2_other_b",
-              "strength": "weaker",
-              "label": "covered in part",
-              "source_label": "From the course description",
-              "report_id": "P5-C2-c2_other_b-teaches"
-            }
-          ],
-          "legend": [
-            "Strong connection",
-            "Weaker connection",
-            "Your role",
-            "Skill employers want",
-            "Recommended course"
-          ],
-          "card_path": "Executive Director → Budget planning for nonprofits → This course"
-        },
-        "C": {
-          "rules_matched": [
-            {
-              "rule_id": "R2",
-              "ui_label": "Rule B",
-              "name": "Courses that cover part of a skill your role needs",
-              "strength": "Weaker match",
-              "skill": "budget planning for nonprofits",
-              "conditions": [
-                {
-                  "label": "A skill your role needs:",
-                  "value": "budget planning for nonprofits",
-                  "source_text": "Comes up sometimes in Executive Director job ads",
-                  "report_id": "P5-C2-c2_other_b-requires"
-                },
-                {
-                  "label": "Partly covered in this course:",
-                  "value": "budget planning for nonprofits",
-                  "source_text": "From the course description",
-                  "report_id": "P5-C2-c2_other_b-teaches"
-                }
-              ],
-              "also_matched_count": 2
-            }
-          ],
-          "header": "1 rule matched: weaker",
-          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
-        }
-      }
-    },
-    {
-      "id": "course:p5_c2_other_c",
-      "title": "A Short Guide to Volunteer Program Management",
-      "level": "Beginner",
-      "duration_min": 40,
-      "updated": "2025-09",
-      "description": "A Short Guide to Volunteer Program Management walks you through the basics of volunteer program management, built for people new to Executive Director work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of volunteer program management, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "description": "Getting Started with Volunteer Program Management is a short introduction to volunteer program management for people moving toward a Executive Director role. You'll walk through the essential vocabulary and a few guided exercises that show volunteer program management in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if volunteer program management is new to you.",
       "learning_outcomes": [
         "Applying volunteer program management to a real Executive Director scenario",
         "Practicing volunteer program management through guided exercises",
@@ -475,9 +348,9 @@
       "instructor": "[Instructor name]",
       "certificate": true,
       "thumbnail": null,
-      "meta_line": "Beginner · 40m · Updated Sep 2025",
-      "dur": "40m",
-      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
       "badge": "Good fit",
       "covers_line": "Covers 1 skill employers ask for",
       "rules_matched": "Rule B (covers part)",
@@ -497,13 +370,13 @@
             {
               "text": "From Executive Director job ads: volunteer program management is mentioned sometimes.",
               "report_ids": [
-                "P5-C2-c2_other_c-requires"
+                "P5-C2-c2_other_b-requires"
               ]
             },
             {
               "text": "From the course description: volunteer program management is covered in part.",
               "report_ids": [
-                "P5-C2-c2_other_c-teaches"
+                "P5-C2-c2_other_b-teaches"
               ]
             }
           ],
@@ -523,7 +396,7 @@
               "caption": "Skill employers want"
             },
             {
-              "id": "course:p5_c2_other_c",
+              "id": "course:p5_c2_other_b",
               "kind": "course",
               "label": "This course"
             }
@@ -535,15 +408,15 @@
               "strength": "weaker",
               "label": "sometimes asked for",
               "source_label": "From Executive Director job ads",
-              "report_id": "P5-C2-c2_other_c-requires"
+              "report_id": "P5-C2-c2_other_b-requires"
             },
             {
               "from": "skill:volunteer_program_management",
-              "to": "course:p5_c2_other_c",
+              "to": "course:p5_c2_other_b",
               "strength": "weaker",
               "label": "covered in part",
               "source_label": "From the course description",
-              "report_id": "P5-C2-c2_other_c-teaches"
+              "report_id": "P5-C2-c2_other_b-teaches"
             }
           ],
           "legend": [
@@ -568,11 +441,138 @@
                   "label": "A skill your role needs:",
                   "value": "volunteer program management",
                   "source_text": "Comes up sometimes in Executive Director job ads",
-                  "report_id": "P5-C2-c2_other_c-requires"
+                  "report_id": "P5-C2-c2_other_b-requires"
                 },
                 {
                   "label": "Partly covered in this course:",
                   "value": "volunteer program management",
+                  "source_text": "From the course description",
+                  "report_id": "P5-C2-c2_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p5_c2_other_c",
+      "title": "A Short Guide to Safeguarding Policy",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "A Short Guide to Safeguarding Policy is a short introduction to safeguarding policy for people moving toward a Executive Director role. You'll walk through the essential vocabulary and a few guided exercises that show safeguarding policy in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if safeguarding policy is new to you.",
+      "learning_outcomes": [
+        "Applying safeguarding policy to a real Executive Director scenario",
+        "Practicing safeguarding policy through guided exercises",
+        "Building a short safeguarding policy exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:safeguarding_policy",
+          "skill_name": "safeguarding policy",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches safeguarding policy, which comes up sometimes in Executive Director job ads.",
+        "A": {
+          "panel_prose": "Safeguarding policy comes up sometimes in Executive Director job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Executive Director job ads: safeguarding policy is mentioned sometimes.",
+              "report_ids": [
+                "P5-C2-c2_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: safeguarding policy is covered in part.",
+              "report_ids": [
+                "P5-C2-c2_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches safeguarding policy, which comes up sometimes in Executive Director job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Executive Director"
+            },
+            {
+              "id": "skill:safeguarding_policy",
+              "kind": "skill",
+              "label": "Safeguarding policy",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p5_c2_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:safeguarding_policy",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Executive Director job ads",
+              "report_id": "P5-C2-c2_other_c-requires"
+            },
+            {
+              "from": "skill:safeguarding_policy",
+              "to": "course:p5_c2_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P5-C2-c2_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Executive Director → Safeguarding policy → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "safeguarding policy",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "safeguarding policy",
+                  "source_text": "Comes up sometimes in Executive Director job ads",
+                  "report_id": "P5-C2-c2_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "safeguarding policy",
                   "source_text": "From the course description",
                   "report_id": "P5-C2-c2_other_c-teaches"
                 }

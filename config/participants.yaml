@@ -20,10 +20,11 @@
 # only new recruits get added, into the next free P<n> slot. A respondent
 # with no usable Q9/Q14 answer is skipped until corrected, never guessed at.
 #
-# P5 and P6 dropped out before running; see the note above their entries.
+# P6 dropped out before running; see the note above their entry. P5 withdrew
+# and later returned, and holds a slot again.
 # config/order.yaml holds the E-slot counterbalance design (18 slots: all 6
 # A/B/C orders x 3 participants each) and records which P<n> occupies which
-# slot. 9 of 18 are filled, so 9 more recruits are needed.
+# slot. 10 of 18 are filled, so 8 more recruits are needed.
 
 P1:
   role_title: Consulting Director
@@ -45,16 +46,20 @@ P4:
   job_id: "job:llm_engineer"
   context_note: "Currently an Engineering Manager (IT/software, 8+ yrs; people/project management, technical systems acumen); growing into LLMOps, prompt engineering, fine-tuning -- a management-to-IC technical transition."
 
-# DROPPED OUT -- P5 and P6 withdrew before their sessions ran. Their entries
-# and generated data are kept (so re-running the generator stays
-# byte-identical for everyone else and the record survives), but they are
-# removed from pilot/roster.js so neither can be started by mistake, and
-# they are excluded from the E-slot design in config/order.yaml.
+# P5 withdrew and then returned, so they hold slot E14 again. Because their
+# session never actually ran, nothing of theirs was frozen -- their course
+# data was regenerated on the varied-filler structure (see roles_data.py) so
+# their session won't show the repeated-topic problem that P1-P8's did.
 P5:
   role_title: Executive Director
   job_id: "job:executive_director_nonprofit"
-  context_note: "DROPPED OUT (never ran). Was: Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management."
+  context_note: "Currently a Project Manager (nonprofit, 4-7 yrs; project management, leadership, communication); growing into project development, monitoring and evaluation, stakeholder management. Withdrew before their session, then returned -- holds slot E14."
 
+# DROPPED OUT -- P6 withdrew before their session ran. The entry and the
+# generated data are kept (so re-running the generator stays byte-identical
+# for everyone else and the record survives), but they're removed from
+# pilot/roster.js so the session can't be started by mistake, and they hold
+# no slot in the E-slot design in config/order.yaml.
 P6:
   role_title: Senior Finance Manager
   job_id: "job:senior_finance_manager"

@@ -415,6 +415,12 @@ NEW_ROLE_CONTENT = {
             "Fine-Tuning and Model Adaptation for AI Teams",
         ],
     },
+    # P5 withdrew before their session, then returned. Because they never
+    # ran, none of their content was frozen, so they were upgraded from the
+    # original filler structure to the varied-filler one (othera1-3 +
+    # weakf1-3): "advocacy and campaigning" and "safeguarding policy" are
+    # new, and the two former strongfillers now serve as othera1/othera2.
+    # Their order (B -> C -> A) is kept, which fills slot E14.
     "P5": {
         "sector": "Nonprofit",
         "role_basis": "ESCO 'non-governmental organisation director' occupation / O*NET 11-9151.00 Social and Community Service Managers (executive-director profile)",
@@ -425,10 +431,12 @@ NEW_ROLE_CONTENT = {
             "secondary1": "leadership",
             "secondary2": "communication",
             "secondary3": "project management",
-            "strongfiller1": "fundraising and grant writing",
-            "strongfiller2": "board governance",
-            "weakfiller1": "budget planning for nonprofits",
-            "weakfiller2": "volunteer program management",
+            "othera1": "fundraising and grant writing",
+            "othera2": "board governance",
+            "othera3": "advocacy and campaigning",
+            "weakf1": "budget planning for nonprofits",
+            "weakf2": "volunteer program management",
+            "weakf3": "safeguarding policy",
             "unused1": "donor relationship management",
             "unused2": "nonprofit compliance basics",
         },

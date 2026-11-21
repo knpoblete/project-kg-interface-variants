@@ -10,11 +10,12 @@
 // label. D0 (facilitator demo) is intentionally left out of this picker and
 // stays reachable only via an explicit ?participant=D0 link.
 //
-// P5 (Project Manager, nonprofit) and P6 (Group Controller/Consultant, real
-// estate and accounting) DROPPED OUT before their sessions ran and are
-// removed from this list so neither can be started by mistake -- their
-// generated data still exists and is still previewable in the test
-// prototype, it just can't be run as a session.
+// P6 (Group Controller/Consultant, real estate and accounting) DROPPED OUT
+// before their session ran and is removed from this list so it can't be
+// started by mistake -- their generated data still exists and is still
+// previewable in the test prototype, it just can't be run as a session.
+// P5 (Project Manager, nonprofit) withdrew and then returned, so they're
+// listed again, in their original position.
 //
 // New recruits are appended, never inserted earlier, so an existing
 // participant's ?participant= link never changes meaning.
@@ -24,6 +25,7 @@ const PARTICIPANT_ROSTER = [
   { id: "P2", currentRole: "DevOps Engineer", industry: "IT / Electrical Signal Analysis" },
   { id: "P3", currentRole: "Marketing Analytics Manager", industry: "Hospitality" },
   { id: "P4", currentRole: "Engineering Manager", industry: "IT and Software" },
+  { id: "P5", currentRole: "Project Manager", industry: "Nonprofit" },
   { id: "P7", currentRole: "Product Analyst", industry: "Fintech" },
   { id: "P8", currentRole: "Functional Consultant Level 3", industry: "Software Consultancy" },
   { id: "P9", currentRole: "Research Coordinator", industry: "Wildlife Conservation" },

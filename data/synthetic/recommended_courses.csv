@@ -52,13 +52,13 @@ P5,Executive Director,C1,B,2,course:p5_c1_other_a,Fundraising and Grant Writing 
 P5,Executive Director,C1,B,3,course:p5_c1_other_b,Budget Planning for Nonprofits Fundamentals,False
 P5,Executive Director,C1,B,4,course:p5_c1_other_c,Volunteer Program Management: A Short Overview,False
 P5,Executive Director,C2,C,1,course:p5_c2_selected,Monitoring and Evaluation in Practice,True
-P5,Executive Director,C2,C,2,course:p5_c2_other_a,Applying Fundraising and Grant Writing,False
-P5,Executive Director,C2,C,3,course:p5_c2_other_b,Getting Started with Budget Planning for Nonprofits,False
-P5,Executive Director,C2,C,4,course:p5_c2_other_c,A Short Guide to Volunteer Program Management,False
+P5,Executive Director,C2,C,2,course:p5_c2_other_a,Applying Board Governance,False
+P5,Executive Director,C2,C,3,course:p5_c2_other_b,Getting Started with Volunteer Program Management,False
+P5,Executive Director,C2,C,4,course:p5_c2_other_c,A Short Guide to Safeguarding Policy,False
 P5,Executive Director,C3,A,1,course:p5_c3_selected,Stakeholder Management for Executive Directors,True
-P5,Executive Director,C3,A,2,course:p5_c3_other_a,Fundraising and Grant Writing for Practitioners,False
-P5,Executive Director,C3,A,3,course:p5_c3_other_b,Budget Planning for Nonprofits Basics,False
-P5,Executive Director,C3,A,4,course:p5_c3_other_c,Volunteer Program Management in Brief,False
+P5,Executive Director,C3,A,2,course:p5_c3_other_a,Advocacy and Campaigning for Practitioners,False
+P5,Executive Director,C3,A,3,course:p5_c3_other_b,Safeguarding Policy Basics,False
+P5,Executive Director,C3,A,4,course:p5_c3_other_c,Budget Planning for Nonprofits in Brief,False
 P6,Senior Finance Manager,C1,C,1,course:p6_c1_selected,Strategic Planning for Finance Leaders,True
 P6,Senior Finance Manager,C1,C,2,course:p6_c1_other_a,Financial Reporting Standards in Practice,False
 P6,Senior Finance Manager,C1,C,3,course:p6_c1_other_b,Cost Management Fundamentals,False

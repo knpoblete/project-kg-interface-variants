@@ -28,7 +28,7 @@
 # place in it.
 #
 # ---------------------------------------------------------------------------
-# Slot occupancy -- 9 of 18 filled, 9 still to recruit
+# Slot occupancy -- 10 of 18 filled, 8 still to recruit
 # ---------------------------------------------------------------------------
 #
 #   A -> B -> C   E1  P1   (ran -- Consulting Director)
@@ -36,7 +36,7 @@
 #                 E13 P7   (ran -- Product Strategist)          CELL FULL
 #   B -> C -> A   E2  P2   (ran -- DevOps Engineer (AI Specialization))
 #                 E8  P8   (ran -- Senior Functional Consultant)
-#                 E14 open
+#                 E14 P5   (returned -- Executive Director)      CELL FULL
 #   C -> A -> B   E3  P3   (ran -- Senior Marketing Manager)
 #                 E9  open
 #                 E15 open
@@ -58,9 +58,14 @@
 # so that after their sessions all six permutations have at least one
 # participant.
 #
-# P5 and P6 dropped out before running and hold no slot. Their entries below
-# keep their original (never-shown) orders purely so the generator's output
-# stays byte-identical for everyone else; they are excluded from the design.
+# P5 withdrew before their session and later returned. Since they never ran,
+# their order was never shown to anyone and nothing of theirs was frozen --
+# keeping B -> C -> A fills E14 and completes that cell, and their course
+# data was regenerated on the varied-filler structure.
+#
+# P6 dropped out before running and holds no slot. The entry below keeps the
+# original (never-shown) order purely so the generator's output stays
+# byte-identical for everyone else; P6 is excluded from the design.
 #
 # ---------------------------------------------------------------------------
 # Still open
@@ -69,8 +74,8 @@
 #    with the near-duplicate-course defect (see roles_data.py's docstring),
 #    which is a content-quality question independent of counterbalancing --
 #    the design itself now has room for both.
-#  - Next 9 recruits should fill, in order of need: C->A->B (2),
-#    A->C->B (2), C->B->A (2), B->A->C (2), B->C->A (1).
+#  - Next 8 recruits should fill, in order of need: C->A->B (2),
+#    A->C->B (2), C->B->A (2), B->A->C (2).
 
 # --- ran under the original 9-slot design (historical, never change) ---
 P1: [A, B, C]   # E1
@@ -85,8 +90,10 @@ P9: [A, C, B]   # E4
 P10: [C, B, A]  # E5
 P11: [B, A, C]  # E6
 
-# --- dropped out before running; hold no slot ---
-P5: [B, C, A]
+# --- withdrew, then returned; never ran, so nothing was frozen ---
+P5: [B, C, A]   # E14
+
+# --- dropped out before running; holds no slot ---
 P6: [C, A, B]
 
 # D0 is a demo persona, not part of the design -- its order is fixed to
