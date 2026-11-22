@@ -90,6 +90,11 @@ P11:
   job_id: "job:people_manager"
   context_note: "Currently a Manager/Individual Contributor (pharmaceutical industry, 8+ yrs; teamwork, adaptability, statistical programming); growing into people management, applied machine learning, structured problem solving. role_title cleaned from their literal Q9 answer \"Manager (People's Manager0\" -- an IC-to-people-manager shift."
 
+P12:
+  role_title: IT Head
+  job_id: "job:it_head"
+  context_note: "Currently a Senior IT Section Leader (tire manufacturing / IT, 8+ yrs; business partnership, service delivery); growing into business strategy, financial planning, people management. Scheduled alongside P10; both assigned the C -> A -> B order."
+
 D0:
   role_title: UX Designer
   job_id: "job:ux_designer"

@@ -607,6 +607,36 @@ NEW_ROLE_CONTENT = {
             "Structured Problem Solving in Practice",
         ],
     },
+    # P12: Q9 "IT Head" is usable as a title verbatim. Q14's bare "Finance"
+    # and "Management" are read as financial planning and people management
+    # for a department head. Skill names avoid the "IT" acronym (it would
+    # render lowercase in sentence prose); the role_title itself is a
+    # literal string, so "IT Head" there is fine.
+    "P12": {
+        "sector": "Information Technology",
+        "role_basis": "O*NET 11-3021.00 Computer and Information Systems Managers / ESCO 'ICT department manager' occupation",
+        "skills": {
+            "main1": "business strategy",
+            "main2": "financial planning",
+            "main3": "people management",
+            "secondary1": "business partnership",
+            "secondary2": "service delivery",
+            "secondary3": "requirements gathering",
+            "othera1": "technology governance",
+            "othera2": "enterprise architecture",
+            "othera3": "disaster recovery planning",
+            "weakf1": "vendor management",
+            "weakf2": "data centre operations",
+            "weakf3": "technical documentation",
+            "unused1": "network administration basics",
+            "unused2": "helpdesk ticketing basics",
+        },
+        "selected_titles": [
+            "Business Strategy for Technology Leaders",
+            "Financial Planning for IT Departments",
+            "People Management for Technical Teams",
+        ],
+    },
     # D0 (demo/pilot participant): skill names reused from the original
     # mockup-fidelity build where the mapping lines up (main1-3/secondary1-3,
     # strongfiller2 = the old "design critique" background-only filler).

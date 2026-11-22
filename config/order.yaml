@@ -3,69 +3,58 @@
 # shown with content set C1, the 2nd with C2, the 3rd with C3.
 #
 # ---------------------------------------------------------------------------
-# The E-slot design: 18 slots, all 6 A/B/C permutations x 3 participants each
+# Partial counterbalance (the original design) -- COMPLETE at 9
 # ---------------------------------------------------------------------------
+# Three cyclic rotations, 3 participants each. This is the design to report
+# if the study stops here.
 #
-#   Slot   Order        First     Second    Third
-#   E1     A -> B -> C  A (C1)    B (C2)    C (C3)
-#   E2     B -> C -> A  B (C1)    C (C2)    A (C3)
-#   E3     C -> A -> B  C (C1)    A (C2)    B (C3)
-#   E4     A -> C -> B  A (C1)    C (C2)    B (C3)
-#   E5     C -> B -> A  C (C1)    B (C2)    A (C3)
-#   E6     B -> A -> C  B (C1)    A (C2)    C (C3)
-#   E7-E12   second pass through the same six permutations, in the same order
-#   E13-E18  third pass through the same six permutations, in the same order
+#   A -> B -> C   P1   (ran -- Consulting Director)
+#                 P4   (ran -- LLM Engineer)
+#                 P7   (ran -- Product Strategist)                CELL FULL
+#   B -> C -> A   P2   (ran -- DevOps Engineer (AI Specialization))
+#                 P8   (ran -- Senior Functional Consultant)
+#                 P5   (scheduled -- Executive Director)          CELL FULL
+#   C -> A -> B   P3   (ran -- Senior Marketing Manager)
+#                 P10  (scheduled -- Monitoring and Evaluation Specialist)
+#                 P12  (scheduled -- IT Head)                     CELL FULL
 #
-# So each permutation owns three slots: A->B->C = E1/E7/E13,
-# B->C->A = E2/E8/E14, C->A->B = E3/E9/E15, A->C->B = E4/E10/E16,
-# C->B->A = E5/E11/E17, B->A->C = E6/E12/E18.
-#
-# This replaces the original 9-slot design, which used only the three cyclic
-# rotations (A->B->C, B->C->A, C->A->B) with 3 participants each. The six
-# participants who already ran did so under that old design, so their orders
-# below are historical fact and must never change -- but all three of their
-# orders are also slots in this design, so every one of them keeps a valid
-# place in it.
+# 9 of 9 filled. Each variant appears in each position exactly 3 times, so
+# position effects are balanced across the three rotations used.
 #
 # ---------------------------------------------------------------------------
-# Slot occupancy -- 10 of 18 filled, 8 still to recruit
+# Full counterbalance (optional extension) -- 11 of 18
 # ---------------------------------------------------------------------------
+# Adds the three reverse orders, 3 participants each, for 18 total. The nine
+# above keep their places; P9 and P11 already hold two of the extra slots.
 #
-#   A -> B -> C   E1  P1   (ran -- Consulting Director)
-#                 E7  P4   (ran -- LLM Engineer)
-#                 E13 P7   (ran -- Product Strategist)          CELL FULL
-#   B -> C -> A   E2  P2   (ran -- DevOps Engineer (AI Specialization))
-#                 E8  P8   (ran -- Senior Functional Consultant)
-#                 E14 P5   (returned -- Executive Director)      CELL FULL
-#   C -> A -> B   E3  P3   (ran -- Senior Marketing Manager)
-#                 E9  open
-#                 E15 open
-#   A -> C -> B   E4  P9   (scheduled -- Conservation Programme Manager)
-#                 E10 open
-#                 E16 open
-#   C -> B -> A   E5  P10  (scheduled -- Monitoring and Evaluation Specialist)
-#                 E11 open
-#                 E17 open
-#   B -> A -> C   E6  P11  (scheduled -- People Manager)
-#                 E12 open
-#                 E18 open
+#   A -> C -> B   P9   (scheduled -- Conservation Programme Manager)   1/3
+#   C -> B -> A   (none)                                               0/3
+#   B -> A -> C   P11  (scheduled -- People Manager)                   1/3
 #
-# At 3 per order there is no surplus: P1/P4/P7 fill the A->B->C cell exactly,
-# so P7 holds E13 rather than sitting outside the design (which it would have
-# under the earlier 12-slot/2-per-order variant).
+# 7 more recruits would be needed: A->C->B (2), C->B->A (3), B->A->C (2).
 #
-# P9/P10/P11 were deliberately assigned the three orders nobody had run yet,
-# so that after their sessions all six permutations have at least one
-# participant.
+# ---------------------------------------------------------------------------
+# Notes on individual participants
+# ---------------------------------------------------------------------------
+# P10 and P12 are scheduled together and were both assigned C -> A -> B,
+# which is what completes the partial design. P10 previously held C -> B -> A
+# and was reassigned before running, so nothing of theirs had been shown.
+#
+# P9 and P11 keep the reverse orders they were given, so they slot straight
+# into the full counterbalance if the study extends. Neither has run.
 #
 # P5 withdrew before their session and later returned. Since they never ran,
-# their order was never shown to anyone and nothing of theirs was frozen --
-# keeping B -> C -> A fills E14 and completes that cell, and their course
-# data was regenerated on the varied-filler structure.
+# their order was never shown and nothing of theirs was frozen; keeping
+# B -> C -> A completes that cell, and their course data was regenerated on
+# the varied-filler structure.
 #
 # P6 dropped out before running and holds no slot. The entry below keeps the
 # original (never-shown) order purely so the generator's output stays
-# byte-identical for everyone else; P6 is excluded from the design.
+# byte-identical for everyone else; P6 is excluded from both designs.
+#
+# The six participants who have already run (P1, P2, P3, P4, P7, P8) did so
+# under the original design, so their orders are historical fact and must
+# never change. All three of their rotations exist in both designs.
 #
 # ---------------------------------------------------------------------------
 # Still open
@@ -73,25 +62,28 @@
 #  - Whether P7 and P8 stay in the analysed set. Both of their sessions ran
 #    with the near-duplicate-course defect (see roles_data.py's docstring),
 #    which is a content-quality question independent of counterbalancing --
-#    the design itself now has room for both.
-#  - Next 8 recruits should fill, in order of need: C->A->B (2),
-#    A->C->B (2), C->B->A (2), B->A->C (2).
+#    both designs have room for them.
 
-# --- ran under the original 9-slot design (historical, never change) ---
-P1: [A, B, C]   # E1
-P2: [B, C, A]   # E2
-P3: [C, A, B]   # E3
-P4: [A, B, C]   # E7
-P7: [A, B, C]   # E13
-P8: [B, C, A]   # E8
+# --- already ran (historical, never change) ---
+P1: [A, B, C]
+P2: [B, C, A]
+P3: [C, A, B]
+P4: [A, B, C]
+P7: [A, B, C]
+P8: [B, C, A]
 
-# --- scheduled, assigned the three previously-unused orders ---
-P9: [A, C, B]   # E4
-P10: [C, B, A]  # E5
-P11: [B, A, C]  # E6
+# --- scheduled tomorrow; both assigned C -> A -> B, which completes the
+#     partial counterbalance ---
+P10: [C, A, B]
+P12: [C, A, B]
+
+# --- scheduled, holding two of the three extra orders the full
+#     counterbalance would need ---
+P9: [A, C, B]
+P11: [B, A, C]
 
 # --- withdrew, then returned; never ran, so nothing was frozen ---
-P5: [B, C, A]   # E14
+P5: [B, C, A]
 
 # --- dropped out before running; holds no slot ---
 P6: [C, A, B]

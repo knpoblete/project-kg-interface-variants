@@ -111,14 +111,14 @@ P10,Monitoring and Evaluation Specialist,C1,C,1,course:p10_c1_selected,Designing
 P10,Monitoring and Evaluation Specialist,C1,C,2,course:p10_c1_other_a,Data Quality Assurance in Practice,False
 P10,Monitoring and Evaluation Specialist,C1,C,3,course:p10_c1_other_b,Field Survey Logistics Fundamentals,False
 P10,Monitoring and Evaluation Specialist,C1,C,4,course:p10_c1_other_c,Donor Communication: A Short Overview,False
-P10,Monitoring and Evaluation Specialist,C2,B,1,course:p10_c2_selected,Data Visualization for Evaluators,True
-P10,Monitoring and Evaluation Specialist,C2,B,2,course:p10_c2_other_a,Applying Programme Budgeting,False
-P10,Monitoring and Evaluation Specialist,C2,B,3,course:p10_c2_other_b,Getting Started with Donor Communication,False
-P10,Monitoring and Evaluation Specialist,C2,B,4,course:p10_c2_other_c,A Short Guide to Geographic Information Systems,False
-P10,Monitoring and Evaluation Specialist,C3,A,1,course:p10_c3_selected,Team Management for Programme Staff,True
-P10,Monitoring and Evaluation Specialist,C3,A,2,course:p10_c3_other_a,Qualitative Interviewing for Practitioners,False
-P10,Monitoring and Evaluation Specialist,C3,A,3,course:p10_c3_other_b,Geographic Information Systems Basics,False
-P10,Monitoring and Evaluation Specialist,C3,A,4,course:p10_c3_other_c,Field Survey Logistics in Brief,False
+P10,Monitoring and Evaluation Specialist,C2,A,1,course:p10_c2_selected,Data Visualization for Evaluators,True
+P10,Monitoring and Evaluation Specialist,C2,A,2,course:p10_c2_other_a,Applying Programme Budgeting,False
+P10,Monitoring and Evaluation Specialist,C2,A,3,course:p10_c2_other_b,Getting Started with Donor Communication,False
+P10,Monitoring and Evaluation Specialist,C2,A,4,course:p10_c2_other_c,A Short Guide to Geographic Information Systems,False
+P10,Monitoring and Evaluation Specialist,C3,B,1,course:p10_c3_selected,Team Management for Programme Staff,True
+P10,Monitoring and Evaluation Specialist,C3,B,2,course:p10_c3_other_a,Qualitative Interviewing for Practitioners,False
+P10,Monitoring and Evaluation Specialist,C3,B,3,course:p10_c3_other_b,Geographic Information Systems Basics,False
+P10,Monitoring and Evaluation Specialist,C3,B,4,course:p10_c3_other_c,Field Survey Logistics in Brief,False
 P11,People Manager,C1,B,1,course:p11_c1_selected,People Management for New Managers,True
 P11,People Manager,C1,B,2,course:p11_c1_other_a,Clinical Data Standards in Practice,False
 P11,People Manager,C1,B,3,course:p11_c1_other_b,Regulatory Submissions Fundamentals,False
@@ -131,6 +131,18 @@ P11,People Manager,C3,C,1,course:p11_c3_selected,Structured Problem Solving in P
 P11,People Manager,C3,C,2,course:p11_c3_other_a,Clinical Trial Design for Practitioners,False
 P11,People Manager,C3,C,3,course:p11_c3_other_b,Data Visualization Basics,False
 P11,People Manager,C3,C,4,course:p11_c3_other_c,Regulatory Submissions in Brief,False
+P12,IT Head,C1,C,1,course:p12_c1_selected,Business Strategy for Technology Leaders,True
+P12,IT Head,C1,C,2,course:p12_c1_other_a,Technology Governance in Practice,False
+P12,IT Head,C1,C,3,course:p12_c1_other_b,Vendor Management Fundamentals,False
+P12,IT Head,C1,C,4,course:p12_c1_other_c,Data Centre Operations: A Short Overview,False
+P12,IT Head,C2,A,1,course:p12_c2_selected,Financial Planning for IT Departments,True
+P12,IT Head,C2,A,2,course:p12_c2_other_a,Applying Enterprise Architecture,False
+P12,IT Head,C2,A,3,course:p12_c2_other_b,Getting Started with Data Centre Operations,False
+P12,IT Head,C2,A,4,course:p12_c2_other_c,A Short Guide to Technical Documentation,False
+P12,IT Head,C3,B,1,course:p12_c3_selected,People Management for Technical Teams,True
+P12,IT Head,C3,B,2,course:p12_c3_other_a,Disaster Recovery Planning for Practitioners,False
+P12,IT Head,C3,B,3,course:p12_c3_other_b,Technical Documentation Basics,False
+P12,IT Head,C3,B,4,course:p12_c3_other_c,Vendor Management in Brief,False
 D0,UX Designer,C1,A,1,course:d0_c1_selected,Prototyping Interactive Interfaces in Figma,True
 D0,UX Designer,C1,A,2,course:d0_c1_other_a,Wireframing in Practice,False
 D0,UX Designer,C1,A,3,course:d0_c1_other_b,Design Systems Fundamentals,False
