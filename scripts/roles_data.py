@@ -637,6 +637,39 @@ NEW_ROLE_CONTENT = {
             "People Management for Technical Teams",
         ],
     },
+    # P13: Q9 "Data Analyst" is usable verbatim. Q13/Q14 named three
+    # specific commercial products by brand; one of those vendors is on
+    # config/blocklist.txt and the spec requires fictional course content,
+    # so all three are generalised to brand-free skills -- the office suite
+    # becomes spreadsheet modelling, the workflow-automation tool becomes
+    # workflow automation, and the cloud platform becomes cloud platforms.
+    # Q13 named only one skill, so secondary2/3 come from their current
+    # admin-and-finance role.
+    "P13": {
+        "sector": "Data & Analytics",
+        "role_basis": "O*NET 15-2051.01 Business Intelligence Analysts / ESCO 'data analyst' occupation",
+        "skills": {
+            "main1": "data analytics",
+            "main2": "workflow automation",
+            "main3": "cloud platforms",
+            "secondary1": "spreadsheet modelling",
+            "secondary2": "financial record keeping",
+            "secondary3": "stakeholder communication",
+            "othera1": "database querying",
+            "othera2": "requirements gathering",
+            "othera3": "data governance",
+            "weakf1": "survey data collection",
+            "weakf2": "volunteer coordination",
+            "weakf3": "training delivery",
+            "unused1": "hardware procurement basics",
+            "unused2": "office facilities basics",
+        },
+        "selected_titles": [
+            "Data Analytics for Nonprofit Teams",
+            "Building Automated Workflows",
+            "Cloud Platforms for Data Work",
+        ],
+    },
     # D0 (demo/pilot participant): skill names reused from the original
     # mockup-fidelity build where the mapping lines up (main1-3/secondary1-3,
     # strongfiller2 = the old "design critique" background-only filler).

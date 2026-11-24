@@ -95,6 +95,11 @@ P12:
   job_id: "job:it_head"
   context_note: "Currently a Senior IT Section Leader (tire manufacturing / IT, 8+ yrs; business partnership, service delivery); growing into business strategy, financial planning, people management. Scheduled alongside P10; both assigned the C -> A -> B order."
 
+P13:
+  role_title: Data Analyst
+  job_id: "job:data_analyst"
+  context_note: "Currently an Admin and Finance Officer (nonprofit healthcare / surgical charity, under 1 year; office and spreadsheet proficiency); growing into data analytics, workflow automation, cloud platforms. Q13/Q14 named specific commercial products (an office suite, a workflow-automation tool and a cloud platform); generalised to brand-free skill names per config/blocklist.txt -- note context_note ships inside the generated JSON, so it must stay brand-free too. Assigned B -> C -> A as a fourth in that cell, by request."
+
 D0:
   role_title: UX Designer
   job_id: "job:ux_designer"

@@ -14,7 +14,7 @@
 // Includes P5/P6, who dropped out before running -- their data still exists
 // and stays previewable here, but they're absent from pilot/roster.js so no
 // session can be started for them.
-const PARTICIPANT_IDS = ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "D0"];
+const PARTICIPANT_IDS = ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "D0"];
 
 async function fetchJson(path) {
   // no-store: the underlying JSON changes frequently as the generator is

@@ -1,0 +1,834 @@
+{
+  "participant_id": "P13",
+  "content_set": "C2",
+  "position": 2,
+  "variant": "C",
+  "role": {
+    "job_id": "job:data_analyst",
+    "title": "Data Analyst",
+    "sector": "Data & Analytics",
+    "role_basis": "O*NET 15-2051.01 Business Intelligence Analysts / ESCO 'data analyst' occupation",
+    "context_note": "Currently an Admin and Finance Officer (nonprofit healthcare / surgical charity, under 1 year; office and spreadsheet proficiency); growing into data analytics, workflow automation, cloud platforms. Q13/Q14 named specific commercial products (an office suite, a workflow-automation tool and a cloud platform); generalised to brand-free skill names per config/blocklist.txt -- note context_note ships inside the generated JSON, so it must stay brand-free too. Assigned B -> C -> A as a fourth in that cell, by request."
+  },
+  "ui": {
+    "role_bar": "We suggest courses based on the role you picked and real job ads.",
+    "sort_line": "Best fit first, based on the skills employers ask for in Data Analyst job ads.",
+    "based_on_chips": [
+      "Data Analyst job ads",
+      "Course description"
+    ]
+  },
+  "courses": [
+    {
+      "id": "course:p13_c2_selected",
+      "title": "Building Automated Workflows",
+      "level": "Intermediate",
+      "duration_min": 130,
+      "updated": "2026-03",
+      "description": "Building Automated Workflows focuses on workflow automation for people working toward a Data Analyst role, through hands-on exercises and short review checkpoints. It also introduces financial record keeping, enough to apply alongside workflow automation in real Data Analyst work. By the end, you'll be able to explain your approach to workflow automation and show how financial record keeping supports it.",
+      "learning_outcomes": [
+        "Applying workflow automation to a real Data Analyst scenario",
+        "Practicing workflow automation through guided exercises",
+        "Getting a working introduction to financial record keeping",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 2h 10m · Updated Mar 2026",
+      "dur": "2h 10m",
+      "meta_no_duration": "Intermediate · Updated Mar 2026",
+      "badge": "Great fit",
+      "covers_line": "Covers 2 skills employers ask for",
+      "rules_matched": "Rule A (teaches) · Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:workflow_automation",
+          "skill_name": "workflow automation",
+          "teaches_confidence": 0.89,
+          "band": "strong"
+        },
+        {
+          "skill_id": "skill:financial_record_keeping",
+          "skill_name": "financial record keeping",
+          "teaches_confidence": 0.54,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches workflow automation, which comes up often in Data Analyst job ads.",
+        "A": {
+          "panel_prose": "Workflow automation comes up often in Data Analyst job ads, and it's the main topic of this course. Financial record keeping comes up sometimes in those ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Analyst job ads: workflow automation is mentioned often.",
+              "report_ids": [
+                "P13-C2-main-requires"
+              ]
+            },
+            {
+              "text": "From Data Analyst job ads: financial record keeping is mentioned sometimes.",
+              "report_ids": [
+                "P13-C2-secondary-requires"
+              ]
+            },
+            {
+              "text": "From the course description: workflow automation is the main topic; financial record keeping is covered in part.",
+              "report_ids": [
+                "P13-C2-main-teaches",
+                "P13-C2-secondary-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches workflow automation, which comes up often in Data Analyst job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Analyst"
+            },
+            {
+              "id": "skill:workflow_automation",
+              "kind": "skill",
+              "label": "Workflow automation",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "skill:financial_record_keeping",
+              "kind": "skill",
+              "label": "Financial record keeping",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p13_c2_selected",
+              "kind": "course",
+              "label": "This course",
+              "title": null
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:workflow_automation",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Data Analyst job ads",
+              "report_id": "P13-C2-main-requires"
+            },
+            {
+              "from": "skill:workflow_automation",
+              "to": "course:p13_c2_selected",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P13-C2-main-teaches"
+            },
+            {
+              "from": "role",
+              "to": "skill:financial_record_keeping",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Analyst job ads",
+              "report_id": "P13-C2-secondary-requires"
+            },
+            {
+              "from": "skill:financial_record_keeping",
+              "to": "course:p13_c2_selected",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P13-C2-secondary-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Analyst → Workflow automation → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "workflow automation",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "workflow automation",
+                  "source_text": "Comes up often in Data Analyst job ads",
+                  "report_id": "P13-C2-main-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "workflow automation",
+                  "source_text": "From the course description",
+                  "report_id": "P13-C2-main-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            },
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "financial record keeping",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "financial record keeping",
+                  "source_text": "Comes up sometimes in Data Analyst job ads",
+                  "report_id": "P13-C2-secondary-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "financial record keeping",
+                  "source_text": "From the course description",
+                  "report_id": "P13-C2-secondary-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "2 rules matched: 1 strong, 1 weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p13_c2_other_a",
+      "title": "Applying Requirements Gathering",
+      "level": "Intermediate",
+      "duration_min": 100,
+      "updated": "2025-12",
+      "description": "Applying Requirements Gathering goes beyond the basics of requirements gathering, for people already working toward a Data Analyst role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in requirements gathering and want to go further.",
+      "learning_outcomes": [
+        "Applying requirements gathering to a real Data Analyst scenario",
+        "Practicing requirements gathering through guided exercises",
+        "Building a short requirements gathering exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Intermediate · 1h 40m · Updated Dec 2025",
+      "dur": "1h 40m",
+      "meta_no_duration": "Intermediate · Updated Dec 2025",
+      "badge": "Great fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule A (teaches)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:requirements_gathering",
+          "skill_name": "requirements gathering",
+          "teaches_confidence": 0.85,
+          "band": "strong"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches requirements gathering, which comes up often in Data Analyst job ads.",
+        "A": {
+          "panel_prose": "Requirements gathering comes up often in Data Analyst job ads, and it's the main topic of this course.",
+          "detail_bullets": [
+            {
+              "text": "From Data Analyst job ads: requirements gathering is mentioned often.",
+              "report_ids": [
+                "P13-C2-c2_other_a-requires"
+              ]
+            },
+            {
+              "text": "From the course description: requirements gathering is main topic.",
+              "report_ids": [
+                "P13-C2-c2_other_a-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches requirements gathering, which comes up often in Data Analyst job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Analyst"
+            },
+            {
+              "id": "skill:requirements_gathering",
+              "kind": "skill",
+              "label": "Requirements gathering",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p13_c2_other_a",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:requirements_gathering",
+              "strength": "strong",
+              "label": "often asked for",
+              "source_label": "From Data Analyst job ads",
+              "report_id": "P13-C2-c2_other_a-requires"
+            },
+            {
+              "from": "skill:requirements_gathering",
+              "to": "course:p13_c2_other_a",
+              "strength": "strong",
+              "label": "main topic",
+              "source_label": "From the course description",
+              "report_id": "P13-C2-c2_other_a-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Analyst → Requirements gathering → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R1",
+              "ui_label": "Rule A",
+              "name": "Courses that teach a skill your role needs",
+              "strength": "Strong match",
+              "skill": "requirements gathering",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "requirements gathering",
+                  "source_text": "Comes up often in Data Analyst job ads",
+                  "report_id": "P13-C2-c2_other_a-requires"
+                },
+                {
+                  "label": "Main topic of this course:",
+                  "value": "requirements gathering",
+                  "source_text": "From the course description",
+                  "report_id": "P13-C2-c2_other_a-teaches"
+                }
+              ],
+              "also_matched_count": 1
+            }
+          ],
+          "header": "1 rule matched: strong",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p13_c2_other_b",
+      "title": "Getting Started with Volunteer Coordination",
+      "level": "Beginner",
+      "duration_min": 55,
+      "updated": "2025-10",
+      "description": "Getting Started with Volunteer Coordination is a short introduction to volunteer coordination for people moving toward a Data Analyst role. You'll walk through the essential vocabulary and a few guided exercises that show volunteer coordination in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if volunteer coordination is new to you.",
+      "learning_outcomes": [
+        "Applying volunteer coordination to a real Data Analyst scenario",
+        "Practicing volunteer coordination through guided exercises",
+        "Building a short volunteer coordination exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 55m · Updated Oct 2025",
+      "dur": "55m",
+      "meta_no_duration": "Beginner · Updated Oct 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:volunteer_coordination",
+          "skill_name": "volunteer coordination",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches volunteer coordination, which comes up sometimes in Data Analyst job ads.",
+        "A": {
+          "panel_prose": "Volunteer coordination comes up sometimes in Data Analyst job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Analyst job ads: volunteer coordination is mentioned sometimes.",
+              "report_ids": [
+                "P13-C2-c2_other_b-requires"
+              ]
+            },
+            {
+              "text": "From the course description: volunteer coordination is covered in part.",
+              "report_ids": [
+                "P13-C2-c2_other_b-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches volunteer coordination, which comes up sometimes in Data Analyst job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Analyst"
+            },
+            {
+              "id": "skill:volunteer_coordination",
+              "kind": "skill",
+              "label": "Volunteer coordination",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p13_c2_other_b",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:volunteer_coordination",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Analyst job ads",
+              "report_id": "P13-C2-c2_other_b-requires"
+            },
+            {
+              "from": "skill:volunteer_coordination",
+              "to": "course:p13_c2_other_b",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P13-C2-c2_other_b-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Analyst → Volunteer coordination → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "volunteer coordination",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "volunteer coordination",
+                  "source_text": "Comes up sometimes in Data Analyst job ads",
+                  "report_id": "P13-C2-c2_other_b-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "volunteer coordination",
+                  "source_text": "From the course description",
+                  "report_id": "P13-C2-c2_other_b-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    },
+    {
+      "id": "course:p13_c2_other_c",
+      "title": "A Short Guide to Training Delivery",
+      "level": "Beginner",
+      "duration_min": 40,
+      "updated": "2025-09",
+      "description": "A Short Guide to Training Delivery is a short introduction to training delivery for people moving toward a Data Analyst role. You'll walk through the essential vocabulary and a few guided exercises that show training delivery in context, with no prior experience assumed. The pace is gentle, with short lessons rather than a heavy project. It's a reasonable starting point if training delivery is new to you.",
+      "learning_outcomes": [
+        "Applying training delivery to a real Data Analyst scenario",
+        "Practicing training delivery through guided exercises",
+        "Building a short training delivery exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 40m · Updated Sep 2025",
+      "dur": "40m",
+      "meta_no_duration": "Beginner · Updated Sep 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 1 skill employers ask for",
+      "rules_matched": "Rule B (covers part)",
+      "taught_skills": [
+        {
+          "skill_id": "skill:training_delivery",
+          "skill_name": "training delivery",
+          "teaches_confidence": 0.5,
+          "band": "weak"
+        }
+      ],
+      "explanation": {
+        "summary": "Teaches training delivery, which comes up sometimes in Data Analyst job ads.",
+        "A": {
+          "panel_prose": "Training delivery comes up sometimes in Data Analyst job ads, and the course covers some of it.",
+          "detail_bullets": [
+            {
+              "text": "From Data Analyst job ads: training delivery is mentioned sometimes.",
+              "report_ids": [
+                "P13-C2-c2_other_c-requires"
+              ]
+            },
+            {
+              "text": "From the course description: training delivery is covered in part.",
+              "report_ids": [
+                "P13-C2-c2_other_c-teaches"
+              ]
+            }
+          ],
+          "card_reason": "Teaches training delivery, which comes up sometimes in Data Analyst job ads."
+        },
+        "B": {
+          "nodes": [
+            {
+              "id": "role",
+              "kind": "role",
+              "label": "Data Analyst"
+            },
+            {
+              "id": "skill:training_delivery",
+              "kind": "skill",
+              "label": "Training delivery",
+              "caption": "Skill employers want"
+            },
+            {
+              "id": "course:p13_c2_other_c",
+              "kind": "course",
+              "label": "This course"
+            }
+          ],
+          "edges": [
+            {
+              "from": "role",
+              "to": "skill:training_delivery",
+              "strength": "weaker",
+              "label": "sometimes asked for",
+              "source_label": "From Data Analyst job ads",
+              "report_id": "P13-C2-c2_other_c-requires"
+            },
+            {
+              "from": "skill:training_delivery",
+              "to": "course:p13_c2_other_c",
+              "strength": "weaker",
+              "label": "covered in part",
+              "source_label": "From the course description",
+              "report_id": "P13-C2-c2_other_c-teaches"
+            }
+          ],
+          "legend": [
+            "Strong connection",
+            "Weaker connection",
+            "Your role",
+            "Skill employers want",
+            "Recommended course"
+          ],
+          "card_path": "Data Analyst → Training delivery → This course"
+        },
+        "C": {
+          "rules_matched": [
+            {
+              "rule_id": "R2",
+              "ui_label": "Rule B",
+              "name": "Courses that cover part of a skill your role needs",
+              "strength": "Weaker match",
+              "skill": "training delivery",
+              "conditions": [
+                {
+                  "label": "A skill your role needs:",
+                  "value": "training delivery",
+                  "source_text": "Comes up sometimes in Data Analyst job ads",
+                  "report_id": "P13-C2-c2_other_c-requires"
+                },
+                {
+                  "label": "Partly covered in this course:",
+                  "value": "training delivery",
+                  "source_text": "From the course description",
+                  "report_id": "P13-C2-c2_other_c-teaches"
+                }
+              ],
+              "also_matched_count": 2
+            }
+          ],
+          "header": "1 rule matched: weaker",
+          "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+        }
+      }
+    }
+  ],
+  "selected_course_id": "course:p13_c2_selected",
+  "course_score": 1.0036,
+  "paths": [
+    {
+      "skill_id": "skill:workflow_automation",
+      "skill_name": "workflow automation",
+      "which": "main",
+      "requires_confidence": 0.8,
+      "teaches_confidence": 0.89,
+      "requires_report_id": "P13-C2-main-requires",
+      "teaches_report_id": "P13-C2-main-teaches",
+      "evidence_span": {
+        "text": "workflow automation",
+        "start": 40,
+        "end": 59
+      }
+    },
+    {
+      "skill_id": "skill:financial_record_keeping",
+      "skill_name": "financial record keeping",
+      "which": "secondary",
+      "requires_confidence": 0.54,
+      "teaches_confidence": 0.54,
+      "requires_report_id": "P13-C2-secondary-requires",
+      "teaches_report_id": "P13-C2-secondary-teaches",
+      "evidence_span": {
+        "text": "financial record keeping",
+        "start": 183,
+        "end": 207
+      }
+    }
+  ],
+  "explanation": {
+    "summary": "Teaches workflow automation, which comes up often in Data Analyst job ads.",
+    "A": {
+      "panel_prose": "Workflow automation comes up often in Data Analyst job ads, and it's the main topic of this course. Financial record keeping comes up sometimes in those ads, and the course covers some of it.",
+      "detail_bullets": [
+        {
+          "text": "From Data Analyst job ads: workflow automation is mentioned often.",
+          "report_ids": [
+            "P13-C2-main-requires"
+          ]
+        },
+        {
+          "text": "From Data Analyst job ads: financial record keeping is mentioned sometimes.",
+          "report_ids": [
+            "P13-C2-secondary-requires"
+          ]
+        },
+        {
+          "text": "From the course description: workflow automation is the main topic; financial record keeping is covered in part.",
+          "report_ids": [
+            "P13-C2-main-teaches",
+            "P13-C2-secondary-teaches"
+          ]
+        }
+      ],
+      "card_reason": "Teaches workflow automation, which comes up often in Data Analyst job ads."
+    },
+    "B": {
+      "nodes": [
+        {
+          "id": "role",
+          "kind": "role",
+          "label": "Data Analyst"
+        },
+        {
+          "id": "skill:workflow_automation",
+          "kind": "skill",
+          "label": "Workflow automation",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "skill:financial_record_keeping",
+          "kind": "skill",
+          "label": "Financial record keeping",
+          "caption": "Skill employers want"
+        },
+        {
+          "id": "course:p13_c2_selected",
+          "kind": "course",
+          "label": "This course",
+          "title": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "role",
+          "to": "skill:workflow_automation",
+          "strength": "strong",
+          "label": "often asked for",
+          "source_label": "From Data Analyst job ads",
+          "report_id": "P13-C2-main-requires"
+        },
+        {
+          "from": "skill:workflow_automation",
+          "to": "course:p13_c2_selected",
+          "strength": "strong",
+          "label": "main topic",
+          "source_label": "From the course description",
+          "report_id": "P13-C2-main-teaches"
+        },
+        {
+          "from": "role",
+          "to": "skill:financial_record_keeping",
+          "strength": "weaker",
+          "label": "sometimes asked for",
+          "source_label": "From Data Analyst job ads",
+          "report_id": "P13-C2-secondary-requires"
+        },
+        {
+          "from": "skill:financial_record_keeping",
+          "to": "course:p13_c2_selected",
+          "strength": "weaker",
+          "label": "covered in part",
+          "source_label": "From the course description",
+          "report_id": "P13-C2-secondary-teaches"
+        }
+      ],
+      "legend": [
+        "Strong connection",
+        "Weaker connection",
+        "Your role",
+        "Skill employers want",
+        "Recommended course"
+      ],
+      "card_path": "Data Analyst → Workflow automation → This course"
+    },
+    "C": {
+      "rules_matched": [
+        {
+          "rule_id": "R1",
+          "ui_label": "Rule A",
+          "name": "Courses that teach a skill your role needs",
+          "strength": "Strong match",
+          "skill": "workflow automation",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "workflow automation",
+              "source_text": "Comes up often in Data Analyst job ads",
+              "report_id": "P13-C2-main-requires"
+            },
+            {
+              "label": "Main topic of this course:",
+              "value": "workflow automation",
+              "source_text": "From the course description",
+              "report_id": "P13-C2-main-teaches"
+            }
+          ],
+          "also_matched_count": 1
+        },
+        {
+          "rule_id": "R2",
+          "ui_label": "Rule B",
+          "name": "Courses that cover part of a skill your role needs",
+          "strength": "Weaker match",
+          "skill": "financial record keeping",
+          "conditions": [
+            {
+              "label": "A skill your role needs:",
+              "value": "financial record keeping",
+              "source_text": "Comes up sometimes in Data Analyst job ads",
+              "report_id": "P13-C2-secondary-requires"
+            },
+            {
+              "label": "Partly covered in this course:",
+              "value": "financial record keeping",
+              "source_text": "From the course description",
+              "report_id": "P13-C2-secondary-teaches"
+            }
+          ],
+          "also_matched_count": 2
+        }
+      ],
+      "header": "2 rules matched: 1 strong, 1 weaker",
+      "footnote": "We use the same small set of rules to suggest courses for every role. A rule matches when all of its conditions are met."
+    }
+  },
+  "alternates": [
+    {
+      "id": "course:p13_c2_alt_a",
+      "title": "Workflow Automation Essentials",
+      "level": "Beginner",
+      "duration_min": 50,
+      "updated": "2025-08",
+      "description": "Workflow Automation Essentials walks you through the basics of workflow automation, built for people new to Data Analyst work. Starting from the essential vocabulary, you'll work through a handful of guided exercises that build a working sense of workflow automation, with no prior experience assumed. Expect short, practical lessons rather than a long project, with just enough depth to get you started.",
+      "learning_outcomes": [
+        "Applying workflow automation to a real Data Analyst scenario",
+        "Practicing workflow automation through guided exercises",
+        "Building a short workflow automation exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Beginner · 50m · Updated Aug 2025",
+      "dur": "50m",
+      "meta_no_duration": "Beginner · Updated Aug 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:workflow_automation",
+          "skill_name": "workflow automation",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    },
+    {
+      "id": "course:p13_c2_alt_b",
+      "title": "Advanced Workflow Automation Techniques",
+      "level": "Advanced",
+      "duration_min": 160,
+      "updated": "2025-07",
+      "description": "Advanced Workflow Automation Techniques goes beyond the basics of workflow automation, for people already working toward a Data Analyst role. Through a handful of applied exercises and more realistic scenarios, you'll build the kind of judgement that only comes with practice, rather than following a fixed recipe. It's built for people who already have some grounding in workflow automation and want to go further.",
+      "learning_outcomes": [
+        "Applying workflow automation to a real Data Analyst scenario",
+        "Practicing workflow automation through guided exercises",
+        "Building a short workflow automation exercise from scratch",
+        "Reviewing common mistakes and how to avoid them"
+      ],
+      "provider": "[Learning platform]",
+      "instructor": "[Instructor name]",
+      "certificate": true,
+      "thumbnail": null,
+      "meta_line": "Advanced · 2h 40m · Updated Jul 2025",
+      "dur": "2h 40m",
+      "meta_no_duration": "Advanced · Updated Jul 2025",
+      "badge": "Good fit",
+      "covers_line": "Covers 0 skills employers ask for",
+      "rules_matched": "",
+      "taught_skills": [
+        {
+          "skill_id": "skill:workflow_automation",
+          "skill_name": "workflow automation",
+          "teaches_confidence": 0.25,
+          "band": "unused"
+        }
+      ]
+    }
+  ]
+}

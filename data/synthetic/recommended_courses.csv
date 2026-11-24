@@ -143,6 +143,18 @@ P12,IT Head,C3,B,1,course:p12_c3_selected,People Management for Technical Teams,
 P12,IT Head,C3,B,2,course:p12_c3_other_a,Disaster Recovery Planning for Practitioners,False
 P12,IT Head,C3,B,3,course:p12_c3_other_b,Technical Documentation Basics,False
 P12,IT Head,C3,B,4,course:p12_c3_other_c,Vendor Management in Brief,False
+P13,Data Analyst,C1,B,1,course:p13_c1_selected,Data Analytics for Nonprofit Teams,True
+P13,Data Analyst,C1,B,2,course:p13_c1_other_a,Database Querying in Practice,False
+P13,Data Analyst,C1,B,3,course:p13_c1_other_b,Survey Data Collection Fundamentals,False
+P13,Data Analyst,C1,B,4,course:p13_c1_other_c,Volunteer Coordination: A Short Overview,False
+P13,Data Analyst,C2,C,1,course:p13_c2_selected,Building Automated Workflows,True
+P13,Data Analyst,C2,C,2,course:p13_c2_other_a,Applying Requirements Gathering,False
+P13,Data Analyst,C2,C,3,course:p13_c2_other_b,Getting Started with Volunteer Coordination,False
+P13,Data Analyst,C2,C,4,course:p13_c2_other_c,A Short Guide to Training Delivery,False
+P13,Data Analyst,C3,A,1,course:p13_c3_selected,Cloud Platforms for Data Work,True
+P13,Data Analyst,C3,A,2,course:p13_c3_other_a,Data Governance for Practitioners,False
+P13,Data Analyst,C3,A,3,course:p13_c3_other_b,Training Delivery Basics,False
+P13,Data Analyst,C3,A,4,course:p13_c3_other_c,Survey Data Collection in Brief,False
 D0,UX Designer,C1,A,1,course:d0_c1_selected,Prototyping Interactive Interfaces in Figma,True
 D0,UX Designer,C1,A,2,course:d0_c1_other_a,Wireframing in Practice,False
 D0,UX Designer,C1,A,3,course:d0_c1_other_b,Design Systems Fundamentals,False

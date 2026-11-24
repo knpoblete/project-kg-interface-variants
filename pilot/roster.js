@@ -32,4 +32,5 @@ const PARTICIPANT_ROSTER = [
   { id: "P10", currentRole: "Monitoring, Evaluation, and Learning Officer", industry: "Tamaraw Conservation" },
   { id: "P11", currentRole: "Manager (Individual Contributor)", industry: "Pharmaceutical Industry" },
   { id: "P12", currentRole: "Senior IT Section Leader", industry: "Tire Manufacturing / IT" },
+  { id: "P13", currentRole: "Admin and Finance Officer", industry: "Nonprofit Healthcare / Surgical Charity" },
 ];

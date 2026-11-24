@@ -85,6 +85,9 @@ P11: [B, A, C]
 # --- withdrew, then returned; never ran, so nothing was frozen ---
 P5: [B, C, A]
 
+# --- fourth in the B -> C -> A cell, by request ---
+P13: [B, C, A]
+
 # --- dropped out before running; holds no slot ---
 P6: [C, A, B]
 

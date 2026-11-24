@@ -22,7 +22,7 @@ from wording import BANNED_WORDS, confidence_band
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
-PARTICIPANT_IDS = [f"P{i}" for i in range(1, 13)]
+PARTICIPANT_IDS = [f"P{i}" for i in range(1, 14)]
 # D0 (the demo/pilot participant) now goes through the exact same generation
 # path as P1-P9 and gets the exact same per-content-set checks -- except
 # check_order's Latin-square balance, which is specifically about the 9
